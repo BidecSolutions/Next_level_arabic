@@ -1,0 +1,18 @@
+ #header {
+    position: fixed;
+    display: flex;
+    /* flex-direction: row;  */
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    /* left: 40%;
+    right: 50%; */
+    /* width: 8rem; */
+    /* z-index: 9999 !important; */
+    transition: transform 0.3s ease-in-out;
+}
+
+#header.header-hidden {
+    transform: translateY(-250%);
+    transition: transform 0.3s ease-in-out;
+}

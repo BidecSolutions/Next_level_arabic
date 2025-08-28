@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "newsLetter";
+  src: url(/font/static/JosefinSans-Regular.ttf);
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+
+  --color-blue-50: #ebffff;
+  --color-blue-100: #e0f5fa;
+  --color-blue-200: #b2e6f2;
+  --color-blue-300: #7fd5e9;
+  --color-blue-400: #3cb8d6;
+  --color-blue-500: #087590;
+  --color-blue-600: #066377;
+  --color-blue-700: #044d5f;
+  --color-blue-800: #116279;
+  --color-blue-900: #135166;
+  --color-blue-950: #053547;
+  --color-blue-50: #ebffff;
+
+  --color-green-50: #e8f5f0;
+  --color-green-100: #c6e9db;
+  --color-green-200: #9bd9c2;
+  --color-green-300: #67c3a5;
+  --color-green-400: #36a384;
+  --color-green-500: #175f48;
+  --color-green-600: #12513e;
+  --color-green-700: #0d4233;
+  --color-green-800: #093528;
+  --color-green-900: #05281e;
+
+}
+
+@media (prefers-color-scheme: dark) {
+ 
+}
+
+@font-face {
+  font-family: 'SaudiRiyal';
+  src: url('/font/SaudiRiyal.ttf') format('truetype');
+}
+
+.price {
+  font-family: 'SaudiRiyal';
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Custom scrollbar-hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.search-emoji {
+  display: none;
+}
+.search-box {
+  width: 100%;
+}
+.flag-dropdown  {
+  color: black !important;
+}
+.placeholder-price::placeholder {
+  font-family: 'SaudiRiyal';
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}

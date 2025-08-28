@@ -1,0 +1,29 @@
+.mySwiper .swiper-pagination-bullet {
+  background-color: #D9D9D9 !important;
+  opacity: 1 !important;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #555555 !important;
+}
+
+.mySwiper .swiper-slide {
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.mySwiper .swiper-slide-custom {
+  width: 80%; /* Default slide size */
+}
+
+.mySwiper .swiper-slide-active {
+  transform: scale(1.1); /* Slightly larger scale for active slide */
+}
+
+.mySwiper .swiper-slide-prev,
+.mySwiper .swiper-slide-next {
+  transform: scale(0.9); /* Slightly smaller scale for left and right slides */
+}
+
+.mySwiper .swiper-pagination-bullets {
+position: static;
+}

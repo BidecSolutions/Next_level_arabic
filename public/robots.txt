@@ -1,0 +1,24 @@
+User-agent: *
+
+Disallow: /*?search
+Disallow: /*?filter
+Disallow: /*?sort
+Disallow: /search
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /forms/
+Disallow: /_inc/
+Disallow: /_inc/ctrlFormProcessor.ashx
+Disallow: /property/filter/
+Disallow: /map/filter
+Disallow: /ajax/
+Disallow: */*&limit
+Disallow: */*?spec=
+Disallow: */*&spec=
+
+Allow: /
+
+Sitemap: https://www.nextlevelrealestate.ae/sitemap.xml

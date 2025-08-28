@@ -1,0 +1,76 @@
+input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 5px;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    background: #555555;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  input[type='range']::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 20%;
+    background: white;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .min-thumb {
+    pointer-events: all;
+  }
+  
+  .max-thumb {
+    pointer-events: all;
+  }
+  
+  
+  /* Customize the appearance of the checkbox */
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9F9F9F;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checked {
+    background-color: #555555;
+    /* Change to your teal color */
+    border-color: #555555;
+  }
+  
+  .checkmark {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    /* Red color for scrollbar */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
