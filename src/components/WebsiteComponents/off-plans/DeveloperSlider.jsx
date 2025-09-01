@@ -21,11 +21,11 @@ const DeveloperSlider = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full md:my-24">
             <h3 className="text-center text-[#8F8F8F] font-newsLetter text-2xl md:text-[34px] macbook:text-[48px] font-bold uppercase">
-                UAE Top Real Estate Developers
+                أفضل مطوري العقارات في الإمارات العربية المتحدة
             </h3>
             {developers.length === 0 && (
                 <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-[#8F8F8F]">
-                    No Developer available
+                   لا يوجد مطور متاح
                 </p>
             )}
             <div className="w-full md:max-w-[1100px] macbook:max-w-full mt-[25px] hauto mx-auto px-4 py-10">
@@ -70,7 +70,7 @@ const DeveloperSlider = () => {
                 className="bg-[#8F8F8F] w-[150px] text-white py-3 macbook:text-[18px] px-4 rounded-lg hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] transition"
             >
                 <Link href="/developers/" className="font-montserrat">
-                    View More
+                    عرض المزيد
                 </Link>
             </button>
         </div>

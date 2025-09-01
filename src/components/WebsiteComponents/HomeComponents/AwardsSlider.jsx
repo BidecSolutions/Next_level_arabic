@@ -43,7 +43,7 @@ const AwardsSlider = () => {
   return (
     <div className="my-12 md:my-20">
       <h3 className="text-center font-newsLetter uppercase text-[25px] md:text-4xl macbook:text-[48px] text-[#8F8F8F] font-semibold mb-8">
-        Our Winning Awards
+       جوائزنا الفائزة
       </h3>
 
       <div className="relative">

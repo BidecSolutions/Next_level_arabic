@@ -26,12 +26,12 @@ useEffect(() => {
   return (
     <div className="ms:py24 flex my-12 md:my-20 flex-col items-center">
       <h2 className="text-[18px] font-newsLetter md:text-[34px] uppercase macbook:text-[48px] font-semibold text-[#8F8F8F] mb-4 text-center">
-        Prime Investment Opportunities in Dubai Top Projects
+        فرص استثمارية مميزة في أفضل المشاريع بدبي
       </h2>
 
       {properties?.length === 0 && !isLoading && (
         <p className="text-center text-[16px] md:text-[20px] mt-6 font-montserrat w-full flex justify-center text-gray-500">
-          No Property available at this moment
+          لا يوجد عقار متاح في هذه اللحظة
         </p>
       )}
 
@@ -78,7 +78,7 @@ useEffect(() => {
               {property?.property_name?.substring(0, 20)}
             </h2>
             <p className="text-[#8F8F8F] font-montserrat text-[13px] md:text-[16px] text-center md:text-left">
-              Starting From
+              ابتداء من
             </p>
             <p className="flex gap-1 text-[#8F8F8F] font-montserrat font-bombay font-semibold text-[14px] md:text-[18px] text-center md:text-left">
               {property?.starting_price}{" "}
@@ -101,7 +101,7 @@ useEffect(() => {
                 }
                 className="bg-[#8F8F8F] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] font-montserrat w-[80px] md:w-[110px] text-[10px] md:text-[14px] text-white py-1 md:px-4 rounded-[9px] flex justify-center items-center"
               >
-                View More
+                عرض المزيد
               </button>
 
               <div className="flex gap-[5px]">

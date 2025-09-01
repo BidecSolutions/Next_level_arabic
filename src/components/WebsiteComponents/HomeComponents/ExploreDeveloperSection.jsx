@@ -17,7 +17,7 @@ export default function ExploreDeveloperSection() {
     fetchData();
   }, []);
 
-  const targetDevelopers = ["Emaar", "Danube", "Nakheel", "DAMAC"];
+  const targetDevelopers = ["إعمار", "الدانوب", "نخيل", "داماك"];
 
   const filteredDevelopers = developers.filter((developer) =>
     targetDevelopers.includes(developer.name.split(" ")[0])
@@ -26,7 +26,7 @@ export default function ExploreDeveloperSection() {
   return (
     <div className="flex justify-center w-full my-12 md:my-20 flex-col items-center">
       <h3 className="text-center font-newsLetter font-semibold text-[#8F8F8F] text-[24px] md:text-3xl macbook:text-[55px] md:mb8">
-        UAE Top Real Estate Developers
+        أفضل مطوري العقارات في الإمارات العربية المتحدة
       </h3>
 
       <div className="flex mt-5 mb-5 md:mt-16 md:mb-16 w-full justify-center flex-wrap md:flex-nowrap gap-[5px] md:gap-6">
@@ -87,7 +87,7 @@ export default function ExploreDeveloperSection() {
           href="/developers/"
           className="px-6 py-2 font-montserrat bg-[#8F8F8F] text-white hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] macbook:text-[16px] rounded-[6.5px]"
         >
-          View All Developers
+          عرض جميع المطورين
         </Link>
       </div>
     </div>

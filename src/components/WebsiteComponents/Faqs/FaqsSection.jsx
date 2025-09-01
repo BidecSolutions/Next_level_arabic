@@ -100,7 +100,7 @@ useEffect(() => {
         {/* Table of Contents */}
         <div className="md:w-[35%] md:pr-8">
           <p className="text-[24px] md:text-[29px] text-center font-newsLetter md:text-start mb-4 text-[#8F8F8F]">
-            Table of Contents
+            جدول المحتويات
           </p>
 
           {isMobile ? (
@@ -114,7 +114,7 @@ useEffect(() => {
                   ? selectedTitle.substring(0, 30)
                   : titles.length > 0
                   ? titles[0].title.substring(0, 30)
-                  : "No Titles"}
+                  : "لا عناوين"}
                 <IoIosArrowDown className="w-2.5 h-2.5 ms-3" />
               </button>
               {isDropdownOpen && (
@@ -159,7 +159,7 @@ useEffect(() => {
         {/* No FAQs */}
         {faqs.length === 0 && (
           <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-            No FAQs available
+           لا توجد أسئلة وأجوبة متاحة
           </p>
         )}
 

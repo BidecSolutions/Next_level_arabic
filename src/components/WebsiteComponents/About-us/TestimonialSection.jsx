@@ -13,18 +13,18 @@ import "./TestimonialSection.css"; // <-- Import your custom CSS
 const testimonials = [
   {
     id: 1,
-    name: "Rebeka Dawson",
-    designation: "Instructor",
+    name: "ريبيكا داوسون",
+    designation: "مدرب",
     message:
-      "Working with Next Level Real Estate was a truly outstanding experience. Their team’s professionalism and deep market knowledge made finding our dream home in Dubai a smooth and enjoyable process. They listened to our needs and were incredibly responsive and helpful throughout every step.",
+      "كان العمل مع شركة نيكست ليفل للعقارات تجربةً رائعةً حقًا. لقد ساهم احترافية فريقهم ومعرفتهم العميقة بالسوق في جعل عملية العثور على منزل أحلامنا في دبي عمليةً سلسةً وممتعة. لقد استمعوا لاحتياجاتنا وكانوا متجاوبين ومتعاونين للغاية في كل خطوة.",
     image: "/about/person.png", // Replace with actual image URL
   },
   {
     id: 2,
-    name: "Malalal Yousuf",
-    designation: "Instructor",
+    name: "ملالا يوسف",
+    designation: "مدرب",
     message:
-      "I recently sold my property through Next Level Real Estate and was impressed by their efficient and transparent approach. The agents were dedicated, offering personalized advice and support, which was crucial in navigating the market's complexities. Their commitment to achieving the best outcome was evident, resulting in a sale that exceeded my expectations.",
+    'لقد بعتُ مؤخرًا عقاري عبر شركة "نكست ليفل للعقارات"، وأُعجبتُ بنهجهم الفعّال والشفاف. كان الوكلاء ملتزمين، حيث قدّموا نصائح ودعماً شخصياً، وهو ما كان بالغ الأهمية في التعامل مع تعقيدات السوق. لقد كان التزامهم بتحقيق أفضل النتائج واضحًا، مما أسفر عن صفقة بيع فاقت توقعاتي.',
     image: "/about/person2.png", // Replace with actual image URL
   },
   // Add more testimonials here
@@ -39,11 +39,10 @@ const TestimonialSection = () => {
       {/* Left Side (Heading and Description) */}
       <div className="md:w-[40%] macbook:w-[25%] flex flex-col items-center md:items-start ">
         <h3 className=" text-center font-newsLetter text-[28px] md:text-[38px]  md:text-start md:leading-[38px] text-[#8F8F8F] md:w-[90%] ">
-          What Our Customers Are Saying
+          ما يقوله عملاؤنا
         </h3>
         <p className="mt-4 text-[#8F8F8F] font-montserrat text-center md:text-start w-[80%] md:w-[70%] ">
-          Real experiences from our valued customers, sharing how we've helped
-          them find their perfect property and exceed their expectations.
+          تجارب حقيقية من عملائنا الكرام، نشاركهم فيها كيف ساعدناهم في العثور على العقار المثالي لهم وتجاوز توقعاتهم.
         </p>
       </div>
 

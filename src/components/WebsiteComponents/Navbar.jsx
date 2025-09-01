@@ -26,25 +26,25 @@ const Navbar = () => {
   const [services, setServices] = useState([
     {
       id: 1,
-      title: "Property Management",
+      title: "إدارة العقارات",
       image: "/pmanagment.jpg",
       link: "/services/property-management-services/",
     },
     {
       id: 2,
-      title: "Rent a Property",
+      title: "استأجر عقارًا",
       image: "/prent.webp",
       link: "/services/rent-a-property/",
     },
     {
       id: 3,
-      title: "Sell a Property",
+      title: "بِع عقارًا",
       image: "/pselling.jpg",
       link: "/services/sell-a-property/",
     },
     {
       id: 4,
-      title: "Buy a Property",
+      title: "اشترِ عقارًا",
       image: "/pbuying.jpg",
       link: "/services/buy-a-property/",
     },
@@ -53,25 +53,25 @@ const Navbar = () => {
   const [offplanservices, setOffplanServices] = useState([
     {
       id: 1,
-      title: "OFF Plan Apartment",
+      title: "شقة على الخارطة",
       image: "/appartment.jpg",
       link: "/off-plan-apartment-for-sale/",
     },
     {
       id: 2,
-      title: "OFF Plan Villas",
+      title: "فلل قيد الإنشاء",
       image: "/villa.webp",
       link: "/off-plan-villas-for-sale/",
     },
     {
       id: 3,
-      title: "OFF Plan Townhouses",
+      title: "تاون هاوس قيد الإنشاء",
       image: "/Header1.png",
       link: "/off-plan-townhouses-for-sale/",
     },
     {
       id: 4,
-      title: "OFF Plan Penthouses",
+      title: "بنتهاوس قيد الإنشاء",
       image: "/penthouse.jpg",
       link: "/off-plan-penthouses-for-sale/",
     },
@@ -80,25 +80,25 @@ const Navbar = () => {
   const [areas, setAreas] = useState([
     {
       id: 1,
-      title: "Business Bay",
+      title: "الخليج التجاري",
       image: "/buisnessbay.jpg",
       link: "/area/business-bay/",
     },
     {
       id: 2,
-      title: "Downtown Dubai",
+      title: "وسط مدينة دبي",
       image: "/downtown.jpeg",
       link: "/area/downtown-dubai-properties-for-sale/",
     },
     {
       id: 3,
-      title: "Palm Jumeirah",
+      title: "نخلة جميرا",
       image: "/palm.jpg",
       link: "/area/palm-jumeirah/",
     },
     {
       id: 4,
-      title: "Dubari Marina",
+      title: "مارينا دوباري",
       image: "/dubari.webp",
       link: "/area/dubai-marina/",
     },
@@ -107,25 +107,25 @@ const Navbar = () => {
   const [communities, setCommunities] = useState([
     {
       id: 1,
-      title: "Dubai Creek Harbour",
+      title: "ميناء خور دبي",
       image: "/creek.png",
       link: "/community/dubai-creek-harbour-properties-for-sale/",
     },
     {
       id: 2,
-      title: "Damac Lagoons",
+      title: "داماك لاجونز",
       image: "/damac.jpg",
       link: "/community/damac-lagoons-properties-for-sale/",
     },
     {
       id: 3,
-      title: "The Valley",
+      title: "الوادي",
       image: "/valley.jpg",
       link: "/community/the-valley-properties-for-sale/",
     },
     {
       id: 4,
-      title: "Damac Hills",
+      title: "داماك هيلز",
       image: "/hill.jpg",
       link: "/community/damac-hills-properties-for-sale/",
     },
@@ -135,31 +135,31 @@ const Navbar = () => {
   const [buy, setBuy] = useState([
     {
         id: 1,
-        title: "Apartments For Sale",
+        title: "شقق للبيع",
         image: "/appartment.jpg",
         link: "/buy/apartments-for-sale/",
       },
       {
         id: 2,
-        title: "Villas For Sale",
+        title: "فلل للبيع",
         image: "/villa.webp",
         link: "/buy/villas-for-sale/",
       },
       {
         id: 3,
-        title: "Townhouses For Sale",
+        title: "تاون هاوس للبيع",
         image: "/Header1.png",
         link: "/buy/townhouses-for-sale/",
       },
       {
         id: 4,
-        title: "Penthouses For Sale",
+        title: "بنتهاوس للبيع",
         image: "/penthouse.jpg",
         link: "/buy/penthouses-for-sale/",
       },
   ]);
   const [HomeFilters, setHomeFilters] = useState({
-    activeTab: "off plan",
+    activeTab: "خارج الخطة",
     propertyType: "",
     PropertyName: "",
     priceTypeOrSize: "",
@@ -171,7 +171,7 @@ const Navbar = () => {
   useEffect(() => {
     async function fetchData() {
       const projects = await getOffPlanProjects();
-      console.log('Try',projects)
+      console.log('يحاول',projects)
       setOffPlan(projects);
     }
     fetchData();
@@ -232,7 +232,7 @@ const handleInputChange = async (e) => {
     const path = "/off-plan/";
     router.push(path);
     setHomeFilters({
-      activeTab: "off plan",
+      activeTab: "خارج الخطة",
       propertyType: "",
       PropertyName: "",
       priceTypeOrSize: "",
@@ -281,7 +281,7 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsBuyMegaMenuOpen(false)}
               >
                 <button className="flex items-center font-newsLetter text-[13px] macbook:text-[18px]">
-                  <Link href="">Buy</Link>
+                  <Link href="">يشتري</Link>
                   {isBuyMegaMenuOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {isBuyMegaMenuOpen && buy.length > 0 && (
@@ -319,7 +319,7 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsServicesMegaMenuOpen(false)}
               >
                 <button className="flex items-center font-newsLetter text-[13px] macbook:text-[18px]">
-                  <Link href="">Services</Link>
+                  <Link href="">خدمات</Link>
                   {isServicesMegaMenuOpen ? (
                     <IoIosArrowUp />
                   ) : (
@@ -361,7 +361,7 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsOffMegaMenuOpen(false)}
               >
                 <button className="flex items-center font-newsLetter text-[13px] macbook:text-[18px]">
-                  <Link href="/off-plan/">Offplan</Link>
+                  <Link href="/off-plan/">خارج المخطط</Link>
                   {isOffMegaMenuOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {isOffMegaMenuOpen && offplanservices.length > 0 && (
@@ -399,13 +399,13 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsLatestMegaMenuOpen(false)}
               >
                 <button className="flex text-[13px] items-center font-newsLetter macbook:text-[18px]">
-                  <Link href="/off-plan/">Latest Projects</Link>
+                  <Link href="/off-plan/">أحدث المشاريع</Link>
                   {isLatestMegaMenuOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {isLatestMegaMenuOpen && offPlan.length > 0 && (
                   <div className="absolute left-10 top-12 py-4 bg-white shadow-lg mt-3 border border-gray-100 rounded-xl flex flex-col">
                     <div className="px-6 pb-2 text-black bg-white font-semibold rounded-t-xl mt2">
-                      Latest OFF Plan Projects
+                      أحدث مشاريع الإنشاءات على الخريطة
                     </div>
                     <div className="grid grid-cols-4 gap-4 px-6 overflow-y-auto">
                       {offPlan.slice(-8).map((property, index) => {
@@ -459,7 +459,7 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsAreaMegaMenuOpen(false)}
               >
                 <button className="flex items-center font-newsLetter text-[13px] macbook:text-[18px]">
-                  <Link href="/areas/">Areas</Link>
+                  <Link href="/areas/">المناطق</Link>
                   {isAreaMegaMenuOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {isAreaMegaMenuOpen && areas.length > 0 && (
@@ -497,7 +497,7 @@ const handleInputChange = async (e) => {
                 onMouseLeave={() => setIsCommunityMegaMenuOpen(false)}
               >
                 <button className="flex items-center font-newsLetter text-[13px] macbook:text-[18px]">
-                  <Link href="/communities/">Communities</Link>
+                  <Link href="/communities/">المجتمعات</Link>
                   {isCommunityMegaMenuOpen ? (
                     <IoIosArrowUp />
                   ) : (
@@ -536,12 +536,12 @@ const handleInputChange = async (e) => {
 
               <Link href="/my-blogs" passHref>
                 <li className="macbook:text-[18px] text-[14px] font-newsLetter ">
-                  Blogs
+                  مدونات
                 </li>
               </Link>
               <Link href="/contact/" passHref>
                 <li className="macbook:text-[18px] text-[14px] font-newsLetter ">
-                  Contact
+                  اتصال
                 </li>
               </Link>
 
@@ -549,7 +549,7 @@ const handleInputChange = async (e) => {
               <li className="relative group">
                 <Link href="/about-us/" passHref>
                   <button className="flex items-center text-[14px] font-newsLetter macbook:text-[18px]">
-                    About
+                    معلومات عنا
                     <FaChevronDown className="ml-1 mt1" size={12} />
                   </button>
                 </Link>
@@ -558,31 +558,31 @@ const handleInputChange = async (e) => {
                     href="/our-team/"
                     className="px-4 py-2 font-newsLetter hover:bg-gray-100"
                   >
-                    Our Team
+                   فريقنا
                   </Link>
                   <Link
                     href="/career/"
                     className="px-4 py-2 font-newsLetter hover:bg-gray-100"
                   >
-                    Career
+                    حياة مهنية
                   </Link>
                   <Link
                     href="/videos/"
                     className="px-4 py-2 font-newsLetter hover:bg-gray-100"
                   >
-                    Property Videos
+                    فيديوهات الملكية
                   </Link>
                   <Link
                     href="/privacy-policy/"
                     className="px-4 py-2 font-newsLetter hover:bg-gray-100"
                   >
-                    Privacy Policy
+                    سياسة الخصوصية
                   </Link>
                   <Link
                     href="/faqs/"
                     className="px-4 py-2 font-newsLetter hover:bg-gray-100"
                   >
-                    FAQs
+                    الأسئلة الشائعة
                   </Link>
                 </div>
               </li>
@@ -605,7 +605,7 @@ const handleInputChange = async (e) => {
                     <input
                       className="bg-transparent border-2 border-gray-500 px-3 p-2 outline-none w-[200px] h-[39px]"
                       type="text"
-                      placeholder="Search a Property"
+                      placeholder="ابحث عن عقار"
                       name="PropertyName"
                       value={HomeFilters.PropertyName}
                       onChange={handleInputChange}
@@ -665,7 +665,7 @@ const handleInputChange = async (e) => {
             <ul className="space-y-4 mt-8 flex flex-col gap-2 text-black">
               <Link href="/" onClick={() => setShowNav(false)} passHref>
                 <li className="py-1 border-b border-gray-500 font-newsLetter">
-                  Home
+                  بيت
                 </li>
               </Link>
               <Link
@@ -674,14 +674,14 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">Off Plan Properties</li>
+                <li className="font-newsLetter">عقارات خارج الخطة</li>
               </Link>
               <li className="font-newsLetter border-b border-gray-500">
                 <button
                   onClick={() => setBuyDropdownOpen(!buyDropdownOpen)}
                   className="flex items-center justify-between w-full"
                 >
-                  Buy
+                  يشتري
                   {buyDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {buyDropdownOpen && (
@@ -708,7 +708,7 @@ const handleInputChange = async (e) => {
                   onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                   className="flex items-center justify-between w-full"
                 >
-                  Services
+                  خدمات
                   {servicesDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </button>
                 {servicesDropdownOpen && (
@@ -736,7 +736,7 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">Areas</li>
+                <li className="font-newsLetter">المناطق</li>
               </Link>
               <Link
                 href="/communities/"
@@ -744,7 +744,7 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">Communities</li>
+                <li className="font-newsLetter">المجتمعات</li>
               </Link>
               <Link
                 href="/blogs"
@@ -752,7 +752,7 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">Blogs</li>
+                <li className="font-newsLetter">مدونات</li>
               </Link>
               <Link
                 href="/contact/"
@@ -760,7 +760,7 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">Contact Us</li>
+                <li className="font-newsLetter">اتصل بنا</li>
               </Link>
               <Link
                 href="/about-us/"
@@ -768,7 +768,7 @@ const handleInputChange = async (e) => {
                 className="py-1 border-b border-gray-500"
                 passHref
               >
-                <li className="font-newsLetter">About Us</li>
+                <li className="font-newsLetter">معلومات عنا</li>
               </Link>
             </ul>
           </div>

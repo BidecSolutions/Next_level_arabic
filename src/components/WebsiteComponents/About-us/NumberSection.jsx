@@ -1,16 +1,16 @@
 const NumberSection = () => {
   const numbers = [
     {
-      title: "We sell over AED 2 Billion worth of properties every year",
-      num: "AED 2B+",
+      title: "نبيع عقارات بقيمة تزيد عن 2 مليار درهم إماراتي سنويًا",
+      num: "2 مليار درهم إماراتي+",
     },
     {
-      title: "We have over 120 realtors and marketing professionals",
-      num: "100+",
+      title: "لدينا أكثر من 120 من الوكلاء العقاريين ومحترفي التسويق",
+      num: "أكثر من 100",
     },
     {
-      title: "We have been in the real estate business since 2013",
-      num: "15 Years+",
+      title: "نحن نعمل في مجال العقارات منذ عام 2013",
+      num: "15 سنة",
     },
   ];
 

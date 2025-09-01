@@ -10,7 +10,7 @@ import { useFilters } from "@/lib/stores/useFilters";
 
 const Banner = () => {
   const [HomeFilters, setHomeFilters] = useState({
-    activeTab: "Off Plan Property",
+    activeTab: "عقارات خارج الخطة",
     propertyType: "",
     PropertyName: "",
     priceTypeOrSize: "",
@@ -24,7 +24,7 @@ const Banner = () => {
 useEffect(() => {
   async function fetchStatus() {
     const statusList = await getPStatus();
-    console.log('status', statusList)
+    console.log('حالة', statusList)
     setpStatus(statusList);
   }
   fetchStatus();
@@ -52,7 +52,7 @@ useEffect(() => {
 
   const handleSubmit = () => {
       setFilters(HomeFilters);
-    const path = HomeFilters.activeTab === "Ready Property" ? "/ready-properties" : "/off-plan";
+    const path = HomeFilters.activeTab === "عقار جاهز" ? "/ready-properties" : "/off-plan";
     router.push(path);
   };
 
@@ -69,11 +69,11 @@ useEffect(() => {
 
       <div className="relative z-10 w-[90%] md:w-[95%] h-[34rem] md:h-screen macbook:h-[60vh] pt-[100px] md:pt-[140px] flex flex-col items-center justify-center rounded-bl-[50px] rounded-br-[50px] md:rounded-bl-[90px] md:rounded-br-[90px] text-white text-center bg-black/10">
         <h1 className="font-newsLetter w-[80%] md:w-full md:text-[40px] text-[22px] font-semibold">
-          Buy, Sell & Rent Properties Across The UAE
+          شراء وبيع وتأجير العقارات في جميع أنحاء الإمارات العربية المتحدة
         </h1>
 
         <div className="flex gap-5 md:mt-4 my-4">
-          {["Off Plan Property", "Ready Property"].map((tab) => (
+          {["عقارات خارج الخطة", "عقار جاهز"].map((tab) => (
             <button
               key={tab}
               onClick={() => handleTabClick(tab)}
@@ -115,7 +115,7 @@ useEffect(() => {
                 name="PropertyName"
                 value={HomeFilters.PropertyName}
                 onChange={handleInputChange}
-                placeholder="Property Name"
+                placeholder="اسم العقار"
                 className="font-montserrat md:text-[19px] w-full text-[#8D7F764D] text-[13px] pl-[10px] md:px-4 py-3 bg-transparent border-r border-gray-300 text-gray-600 focus:outline-none"
               />
             </div>
@@ -125,7 +125,7 @@ useEffect(() => {
               name="priceTypeOrSize"
               value={HomeFilters.priceTypeOrSize}
               onChange={handleInputChange}
-              placeholder="Property Price"
+              placeholder="سعر العقار"
               className="w-[115px] font-montserrat md:w-[35%] md:text-[19px] text-[13px] text-[#8D7F764D] pl-[10px] md:px-4 py-3 bg-transparent text-gray-600 focus:outline-none"
             />
 
@@ -165,11 +165,11 @@ useEffect(() => {
 
         <div className="mt-6">
           <p className="text-[14px] md:text-[20px] font-montserrat w-64 md:w-96">
-            Welcome To The Award-Winning UAE Real Estate Agency
+           مرحباً بكم في وكالة العقارات الإماراتية الحائزة على جوائز
           </p>
           <Link href="/contact">
             <button className="mt-4 bg-white hover:bg-transparent hover:text-white border border-white text-[#8D7F76] text-[10px] md:text-[16px] h-[30px] w-[100px] md:h-[52px] md:w-[160px] rounded-[20px] md:rounded-[50px] font-montserrat">
-              Contact Us
+             اتصل بنا
             </button>
           </Link>
         </div>

@@ -3,25 +3,25 @@ import React from "react";
 const PrincipleSection = () => {
   const principle = [
     {
-      title: "Our Mission",
-      desc: "Our Mission at Next Level Real Estate Dubai is to elevate your property experience, merging local expertise with global standards. We’re dedicated to transparent dealings, innovative solutions.",
+      title: "مهمتنا",
+      desc: "مهمتنا في شركة نيكست ليفل للعقارات في دبي هي الارتقاء بتجربة عقاركم، من خلال دمج الخبرة المحلية مع المعايير العالمية. نلتزم بالشفافية في التعاملات والحلول المبتكرة.",
       icon: "/about/mission.png",
     },
     {
-      title: "Our Vision",
-      desc: "Our vision is to redefine Dubai’s real estate horizon, setting the benchmark for trust, innovation, and excellence. At Next Level Real Estate.",
+      title: "رؤيتنا",
+      desc: "رؤيتنا هي إعادة تعريف آفاق قطاع العقارات في دبي، ووضع معايير جديدة للثقة والابتكار والتميز. في نيكست ليفل للعقارات.",
       icon: "/about/vision.png",
     },
     {
-      title: "Values",
-      desc: "Local Expertise, Global Outlook \n Client-Centric Approach \n Tailored Experience \n Market Leadership \n Enduring Relationships \n Sustainability Commitment",
+      title: "قيم",
+      desc: "الخبرة المحلية، والنظرة العالمية \n نهج يركز على العميل \n تجربة مخصصة \n قيادة السوق \n العلاقات الدائمة \n التزام الاستدامة",
       icon: "/about/icon1.png",
     },
   ];
   return (
     <div className=" py-10 md:py-24 w-full">
       <h3 className="text-[17px] font-newsLetter md:text-[34px] font-semibold text-[#8F8F8F] mb-8 text-center">
-        Our Purpose and Principles
+        هدفنا ومبادئنا
       </h3>
       <div className=" flex flex-wrap md:flex-nowrap justify-center  gap-[8px] md:gap-[20px] ">
         {principle.map((item, index) => (

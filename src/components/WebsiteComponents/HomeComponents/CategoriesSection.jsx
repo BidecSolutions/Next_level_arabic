@@ -77,7 +77,7 @@ const CategoriesSection = () => {
             href={`/${category?.slug}`}
             className="mt-4 px-4 py-1 font-montserrat macbook:text-[19px] macbook:px-8 macbook:py-2 text-[16px] bg-[#616161B5] hover:bg-transparent hover:text-[#616161B5] hover:border border-[#616161B5] text-white rounded-[8px]"
           >
-            View more detail
+            عرض المزيد من التفاصيل
           </Link>
         </div>
       ))}

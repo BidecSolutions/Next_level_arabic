@@ -8,12 +8,12 @@ import Image from "next/image";
 
 const PlatformSlider = () => {
   const reviews = [
-    { rating: 4.6, platform: "Trustpilot", logo: "/trustpilot.png" },
-    { rating: 4.7, platform: "Google", logo: "/google.png" },
-    { rating: 5, platform: "Hidubai", logo: "/HiDubai.png" },
-    { rating: 5, platform: "Sortlist", logo: "/sortlist.png" },
-    { rating: 4.6, platform: "Other", logo: "/star.png" },
-    { rating: 5, platform: "GoodFirms", logo: "/dil.png" },
+    { rating: 4.6, platform: "تروستبايلوت", logo: "/trustpilot.png" },
+    { rating: 4.7, platform: "جوجل", logo: "/google.png" },
+    { rating: 5, platform: "مرحبا دبي", logo: "/HiDubai.png" },
+    { rating: 5, platform: "قائمة الفرز", logo: "/sortlist.png" },
+    { rating: 4.6, platform: "آخر", logo: "/star.png" },
+    { rating: 5, platform: "شركات جيدة", logo: "/dil.png" },
   ];
 
   return (

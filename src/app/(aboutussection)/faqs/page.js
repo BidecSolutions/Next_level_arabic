@@ -7,8 +7,8 @@ const page = () => {
     return (
         <div>
             <Banner
-                heading="Frequent Asked Question"
-                breadcrumb="Home \ Faq"
+                heading="الأسئلة الشائعة"
+                breadcrumb="بيت \ الأسئلة الشائعة"
             />
             <FaqsSection/>
             <SubmitQuestion/>

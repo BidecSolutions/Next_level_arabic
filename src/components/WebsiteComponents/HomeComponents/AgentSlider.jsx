@@ -49,7 +49,7 @@ const AgentSlider = ({ data }) => {
   return (
     <div className="my-12 md:my-20">
       <p className="text-center font-newsLetter uppercase text-[#8F8F8F] text-[23px] md:text-4xl macbook:text-[48px] mb-8">
-        {data?.agent_heading || "OUR TEAM"}
+        {data?.agent_heading || "فريقنا"}
       </p>
 
       <div className="relative">
@@ -113,7 +113,7 @@ const AgentSlider = ({ data }) => {
                           /[\s-]+/g,
                           ""
                         ),
-                        "Hello, I want to connect!"
+                        "مرحبًا، أريد الاتصال!"
                       )
                     }
                   >

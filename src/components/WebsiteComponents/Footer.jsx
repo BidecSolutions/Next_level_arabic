@@ -25,22 +25,22 @@ function Footer() {
   useEffect(() => {
     // Static data for now
     setCategories([
-      { id: 1, name: "Downtown Dubai", slug: "/downtown-dubai-properties-for-sale/" },
-      { id: 2, name: "Jumeirah Village Circle", slug: "/jumeirah-village-cirlce/" },
-      { id: 3, name: "Business Bay", slug: "/business-bay/" },
-      { id: 4, name: "Jumeirah Lake Tower", slug: "/jumeirah-lake-towers/" },
-      { id: 5, name: "Jumeirah Beach Residence", slug: "/jumeirah-beach-residence/" },
+      { id: 1, name: "وسط مدينة دبي", slug: "/downtown-dubai-properties-for-sale/" },
+      { id: 2, name: "قرية جميرا الدائرية", slug: "/jumeirah-village-cirlce/" },
+      { id: 3, name: "الخليج التجاري", slug: "/business-bay/" },
+      { id: 4, name: "برج بحيرة الجميرا", slug: "/jumeirah-lake-towers/" },
+      { id: 5, name: "جميرا بيتش ريزيدنس", slug: "/jumeirah-beach-residence/" },
     ]);
 
     setProperties([
-      { id: 1, name: "Emaar Properties", slug: "emaar-properties-dubai/" },
-      { id: 2, name: "Dubai Properties", slug: "dubai-holding-properties/" },
-      { id: 3, name: "Damac Properties", slug: "damac-properties/" },
-      { id: 4, name: "Sobha Developer", slug: "sobha-realty-properties-for-sale/" },
-      { id: 5, name: "Nakheel Properties", slug: "nakheel-developer/" },
-      { id: 6, name: "Meeras Developers", slug: "meraas-developer/" },
-      { id: 7, name: "Deyaar Developers", slug: "deyaar-development-dubai/" },
-      { id: 8, name: "MAG Property", slug: "mag-lifestyle-development/" },
+      { id: 1, name: "إعمار العقارية", slug: "emaar-properties-dubai/" },
+      { id: 2, name: "دبي للعقارات", slug: "dubai-holding-properties/" },
+      { id: 3, name: "عقارات داماك", slug: "damac-properties/" },
+      { id: 4, name: "مطور صبحا", slug: "sobha-realty-properties-for-sale/" },
+      { id: 5, name: "عقارات النخيل", slug: "nakheel-developer/" },
+      { id: 6, name: "ميراس للتطوير العقاري", slug: "meraas-developer/" },
+      { id: 7, name: "ديار للتطوير العقاري", slug: "deyaar-development-dubai/" },
+      { id: 8, name: "ماج العقارية", slug: "mag-lifestyle-development/" },
     ]);
   }, []);
 
@@ -56,36 +56,36 @@ function Footer() {
   const handleSubscribe = async (e) => {
     e.preventDefault();
     if (!email) {
-      toast.error("Please enter a valid email");
+      toast.error("الرجاء إدخال بريد إلكتروني صالح");
       return;
     }
     try {
     setLoading(true);
     await formsApi.SubscriptionForm(email);
     setEmail("");
-    toast.success("Subscription successful!");
+    toast.success("الاشتراك ناجح");
   } catch (err) {
-    toast.error(err.response?.data?.message || "Subscription failed");
+    toast.error(err.response?.data?.message || "فشل الاشتراك");
   } finally {
     setLoading(false);
   }
   };
 
-  const handleWhatsAppClick = (message = "Hello, I would like to inquire about your services.") => {
+  const handleWhatsAppClick = (message = "مرحباً، أرغب في الاستفسار عن خدماتكم") => {
     const phoneNumber = "+971552588870";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
   const AboutLinks = [
-    { id: 1, name: "Our Team", slug: "/our-team/" },
-    { id: 2, name: "Contact Us", slug: "/contact/" },
-    { id: 3, name: "About", slug: "/about-us/" },
-    { id: 4, name: "Property Videos", slug: "/videos/" },
-    { id: 5, name: "Privacy Policy", slug: "/privacy-policy/" },
-    { id: 6, name: "Blogs", slug: "/my-blogs/" },
-    { id: 7, name: "Awards", slug: "/" },
-    { id: 8, name: "FAQ's", slug: "/faqs/" },
+    { id: 1, name: "فريقنا", slug: "/our-team/" },
+    { id: 2, name: "اتصل بنا", slug: "/contact/" },
+    { id: 3, name: "عن", slug: "/about-us/" },
+    { id: 4, name: "فيديوهات الملكية", slug: "/videos/" },
+    { id: 5, name: "سياسة الخصوصية", slug: "/privacy-policy/" },
+    { id: 6, name: "مدونات", slug: "/my-blogs/" },
+    { id: 7, name: "الجوائز", slug: "/" },
+    { id: 8, name: "الأسئلة الشائعة", slug: "/faqs/" },
   ];
 
   return (
@@ -95,10 +95,10 @@ function Footer() {
         <div className="flex flex-col justify-between gap-10 pb-2 pt-6 md:py-10">
           <div className="md:w-[90%] flex flex-col items-center text-white">
             <p className="font-montserrat uppercase w-[270px] md:w-full text-center md:text-[39px] text-[17px]">
-              Stay in the loop Through our newsletter
+              ابق على اطلاع من خلال نشرتنا الإخبارية
             </p>
             <p className="font-montserrat text-[9px] md:text-[19px]">
-              Get to know about the latest real estate insights.
+              تعرف على أحدث الرؤى العقارية.
             </p>
           </div>
           <div
@@ -108,7 +108,7 @@ function Footer() {
             <form className="w-full relative" onSubmit={handleSubscribe}>
               <input
                 type="text"
-                placeholder="Enter Your Email"
+                placeholder="أدخل بريدك الإلكتروني"
                 className="w-full text-xs bg-transparent p-4 outline-none border-2 border-white rounded-full"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -118,7 +118,7 @@ function Footer() {
                 type="submit"
                 disabled={loading}
               >
-                {loading ? "SUBSCRIBING..." : "SUBSCRIBE"}
+                {loading ? "جاري الاشتراك" : "يشترك"}
               </button>
             </form>
           </div>
@@ -131,7 +131,7 @@ function Footer() {
         <div className="lg:border-r border-white lg:w-1/4 lg:p-10 py-10 flex flex-col items-center md:items-start gap-5">
           <Image src={logo} alt="Next Level Logo" width={176} height={60} />
           <p className="hidden md:block text-center lg:text-start font-montserrat">
-            We value our clients and therefore leave no stone unturned in providing them the right properties.
+            نحن نقدر عملائنا وبالتالي لا ندخر أي جهد في توفير العقارات المناسبة لهم.
           </p>
           <ul className="py-2 flex gap-2">
             <button
@@ -158,7 +158,7 @@ function Footer() {
           {/* Popular Searches */}
           <div className="md:hidden">
             <div className="flex justify-between items-center py-3 border-b cursor-pointer" onClick={() => setServicesOpen(!isServicesOpen)}>
-              <p className="text-[16px] font-medium">Popular Searches</p>
+              <p className="text-[16px] font-medium">عمليات البحث الشعبية</p>
               {isServicesOpen ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
             </div>
             {isServicesOpen && (
@@ -175,7 +175,7 @@ function Footer() {
           {/* Desktop */}
           <div className="hidden md:flex lg:flex-row flex-col gap-5 p-10">
             <div className="lg:w-1/3">
-              <p className="text-[20px] font-semibold">Popular Searches</p>
+              <p className="text-[20px] font-semibold">عمليات البحث الشعبية</p>
               <ul className="py-5">
                 {navigations.slice(0, 8).map((nav) => (
                   <Link key={nav.id} href={nav.slug} className="block">{nav.name}</Link>
@@ -183,7 +183,7 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/3">
-              <p className="text-[20px] font-semibold">Off Plan Projects Developers</p>
+              <p className="text-[20px] font-semibold">مطورو المشاريع قيد الإنشاء</p>
               <ul className="py-5">
                 {properties.map((dev) => (
                   <Link key={dev.id} href={`/developer/${dev.slug}`} className="block">
@@ -193,7 +193,7 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/3">
-              <p className="text-[20px] font-semibold">Popular Areas</p>
+              <p className="text-[20px] font-semibold">المناطق الشعبية</p>
               <ul className="py-5">
                 {categories.map((cat) => (
                   <Link key={cat.id} href={`/area${cat.slug}`} className="block">
@@ -203,7 +203,7 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/3">
-              <p className="text-2xl font-semibold">About Us</p>
+              <p className="text-2xl font-semibold">معلومات عنا</p>
               <ul className="py-5">
                 {AboutLinks.map((link) => (
                   <Link key={link.id} href={link.slug} className="block">
@@ -218,10 +218,10 @@ function Footer() {
 
       {/* Bottom Bar */}
       <section className="lg:px-20 bg-[#555] rounded-[50px] md:rounded-[100px] text-white md:px-10 py-5 flex justify-between">
-        <p className="text-[9px] md:text-sm">Next Level © {new Date().getFullYear()} All Rights Reserved</p>
+        <p className="text-[9px] md:text-sm">المستوى التالي © {new Date().getFullYear()} جميع الحقوق محفوظة</p>
         <div className="text-[9px] md:text-sm">
-          <Link href="/term-condition">Terms of Service</Link> /{" "}
-          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/term-condition">شروط الخدمة</Link> /{" "}
+          <Link href="/privacy-policy">سياسة الخصوصية</Link>
         </div>
       </section>
     </div>

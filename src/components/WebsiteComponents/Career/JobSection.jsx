@@ -56,9 +56,9 @@ const JobSection = () => {
     const validateInput = (field, value) => {
         let errorMessage = "";
         if (!value.trim()) {
-            errorMessage = "This field is required.";
+            errorMessage = "هذه الخانة مطلوبه.";
         } else if (field === "email" && !/^\S+@\S+\.\S+$/.test(value)) {
-            errorMessage = "Enter a valid email address.";
+            errorMessage = "أدخل عنوان بريد إلكتروني صالحًا.";
         }
         setErrors((prevErrors) => ({ ...prevErrors, [field]: errorMessage }));
     };
@@ -154,14 +154,14 @@ const handleFormSubmit = async (e) => {
     if (Object.values(errors).some((error) => error)) return;
 
     if (!resume || resume.type !== "application/pdf") {
-      setError("Please upload a valid PDF file.");
+      setError("الرجاء تحميل ملف PDF صالح");
       setIsPopUpErrorVisible(true);
       setTimeout(() => setIsPopUpErrorVisible(false), 3000);
       return;
     }
 
     if (!selectedJobId) {
-      setError("Please select the Position.");
+      setError("الرجاء تحديد المنصب");
       setIsPopUpErrorVisible(true);
       careerSectionRef.current?.scrollIntoView({ behavior: "smooth" });
       setTimeout(() => setIsPopUpErrorVisible(false), 3000);
@@ -181,7 +181,7 @@ const handleFormSubmit = async (e) => {
       const response = await submitCareerApplication(formData);
 
       if (!response.success) {
-        setError("Please Try Again");
+        setError("يرجى المحاولة مرة أخرى");
         setIsPopUpErrorVisible(true);
         setTimeout(() => setIsPopUpErrorVisible(false), 3000);
       } else {
@@ -204,7 +204,7 @@ const handleFormSubmit = async (e) => {
             <div className="flex flex-col items-center bg-[#EFEFEF] w-[100%] p-4 pt-8 mb-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-semibold text-[#6B6B6B]">
-                        EXPLORE EXCITING CAREER <br /> OPPORTUNITIES
+                        استكشف مهنة مثيرة <br /> فرص
                     </h2>
                 </div>
                 <div className="flex flex-wrap gap-[20px] macbook:w-[70%] justify-center mb-16">
@@ -241,9 +241,9 @@ const handleFormSubmit = async (e) => {
             <Element name="applyForm">
                 <div className="flex flex-col items-center w-[100%]">
                     <div className="text-center mb-8">
-                        <h3 className="text-[#555555] text-[18px]">Apply For Job</h3>
+                        <h3 className="text-[#555555] text-[18px]">التقدم للوظيفة</h3>
                         <h2 className="text-[35px] font-semibold text-[#8F8F8F]">
-                            APPLY FOR CAREER
+                            التقدم للوظيفة
                         </h2>
                     </div>
                     <form
@@ -255,7 +255,7 @@ const handleFormSubmit = async (e) => {
                                 <input
                                     type="text"
                                     ref={nameRef}
-                                    placeholder="Your Name"
+                                    placeholder="اسمك"
                                     className="border py-[12px] font-montserrat outline-none border-[#0B0B0B] pl-[20px] rounded-[8px] p-2 w-full"
                                     onChange={(e) => validateInput("name", e.target.value)}
                                     required
@@ -270,7 +270,7 @@ const handleFormSubmit = async (e) => {
                                 <input
                                     type="email"
                                     ref={emailRef}
-                                    placeholder="Email Address"
+                                    placeholder="عنوان البريد الإلكتروني"
                                     className="border py-[12px] font-montserrat outline-none border-[#0B0B0B] pl-[20px] rounded-[8px] p-2 w-full"
                                     onChange={(e) => validateInput("email", e.target.value)}
                                     required
@@ -288,7 +288,7 @@ const handleFormSubmit = async (e) => {
                                     type="tel"
                                     maxLength="15"
                                     ref={phoneRef}
-                                    placeholder="Phone"
+                                    placeholder="هاتف"
                                     className="border py-[12px] font-montserrat outline-none border-[#0B0B0B] pl-[20px] rounded-[8px] p-2 w-full"
                                     onChange={(e) => validateInput("phone", e.target.value)}
                                     required
@@ -303,7 +303,7 @@ const handleFormSubmit = async (e) => {
                             <div className="relative">
                                 <input
                                     type="text"
-                                    placeholder="Position"
+                                    placeholder="موضع"
                                     className="border py-[12px] font-montserrat outline-none border-[#0B0B0B] pl-[20px] rounded-[8px] p-2 w-full pr-10"
                                     value={selectedJob}
                                     onChange={(e) => setSelectedJob(e.target.value)}
@@ -322,7 +322,7 @@ const handleFormSubmit = async (e) => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <label className="block">
-                                <span className="text-gray-700">Upload CV</span>
+                                <span className="text-gray-700">تحميل السيرة الذاتية</span>
                                 <input
                                     type="file"
                                     ref={fileRef}
@@ -332,7 +332,7 @@ const handleFormSubmit = async (e) => {
                         </div>
                         <textarea
                             ref={messageRef}
-                            placeholder="Message"
+                            placeholder="رسالة"
                             className="border font-montserrat outline-none resize-none py-[12px] pl-[20px] border-[#0B0B0B] rounded-[8px] p-2 w-full"
                             onChange={(e) => validateInput("message", e.target.value)}
                             required
@@ -346,7 +346,7 @@ const handleFormSubmit = async (e) => {
                             type="submit"
                             className="bg-[#8F8F8F] text-white mx-auto   py-2 px-6 rounded  "
                         >
-                            Submit
+                            يُقدِّم
                         </button>
                     </form>
                 </div>
@@ -373,16 +373,16 @@ const handleFormSubmit = async (e) => {
                             </div>
                         </div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                            Application Submitted Successfully!
+                           تم تقديم الطلب بنجاح!
                         </h3>
                         <p className="text-gray-600     ">
-                            Thank you for applying. We'll get back to you soon.
+                            شكرًا لتقديمك الطلب. سنتواصل معك قريبًا..
                         </p>
                         <button
                             className="mt-6 px-6 py-2 bg-[#A39D9D] text-white rounded-full   transition duration-300"
                             onClick={() => setIsPopUpVisible(false)} // Replace with desired functionality
                         >
-                            OK
+                           حسنا
                         </button>
                     </div>
                 </div>
@@ -411,14 +411,14 @@ const handleFormSubmit = async (e) => {
                             </div>
                         </div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                            Submission Failed
+                            فشل الإرسال
                         </h3>
                         <p className="text-gray-600">{error}</p>
                         <button
                             className="mt-6 px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full transition duration-300"
                             onClick={() => setIsPopUpErrorVisible(false)}
                         >
-                            OK
+                           نعم
                         </button>
                     </div>
                 </div>

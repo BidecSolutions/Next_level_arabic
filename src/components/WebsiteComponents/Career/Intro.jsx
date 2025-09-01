@@ -13,19 +13,19 @@ export const Intro = () => {
         />
         <div className="max-w-[500px] flex flex-col gap-2 my-10">
           <h3 className=" text-2xl text-[#555555]  font-newsLetter  ">
-            Career Opportunity
+           فرصة وظيفية
           </h3>
           <h1 className=" md:text-[26px] md:mb-2 leading-[30px] uppercase text-[#8F8F8F] ">
-            Build Your Future with Next Level Real Estate – Dubai’s Premier Property Experts
+            ابنِ مستقبلك مع نيكست ليفل للعقارات - خبراء العقارات الرائدون في دبي
           </h1>
           <p className="text-[12px] text-[#555555]   font-montserrat ">
-            Are you ready to make your mark in Dubai’s fast-paced real estate market? At Next Level Real Estate, we don’t just offer jobs—we offer long-term careers fueled by passion, purpose, and performance.<br/>
+            هل أنت مستعد لترك بصمتك في سوق العقارات المتسارع في دبي؟ في نيكست ليفل للعقارات، لا نوفر فرص عمل فحسب، بل نوفر أيضًا مسارات مهنية طويلة الأمد مدفوعة بالشغف والهدف والأداء.<br/>
 
-As one of Dubai’s leading property agencies, we empower our team with the tools, training, and support to thrive in the city’s ever-evolving real estate landscape. Whether you're a seasoned expert or just starting out, you'll be surrounded by innovation, collaboration, and endless opportunities to grow.<br/>
+بصفتنا إحدى وكالات العقارات الرائدة في دبي، نزود فريقنا بالأدوات والتدريب والدعم اللازمين للنجاح في سوق العقارات المتطور باستمرار في المدينة. سواء كنت خبيرًا متمرسًا أو مبتدئًا، ستجد نفسك محاطًا بالابتكار والتعاون وفرص النمو اللامحدودة.<br/>
 
-We believe in unlocking potential—yours and our clients’. If you’re ambitious, driven, and ready to work at the forefront of Dubai’s property scene, we’d love to meet you.<br/>
+نؤمن بأهمية إطلاق العنان لإمكاناتك وإمكانات عملائنا. إذا كنت طموحًا، وطموحًا، ومستعدًا للعمل في طليعة قطاع العقارات في دبي، يسعدنا مقابلتك.<br/>
 
-Take the next step. Join the team that’s redefining real estate in Dubai.
+اتخذ الخطوة التالية. انضم إلى الفريق الذي يُعيد تعريف قطاع العقارات في دبي.
           </p>
         </div>
       </div>

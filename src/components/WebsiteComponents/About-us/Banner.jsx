@@ -7,8 +7,8 @@ export const Banner = () => {
           backgroundImage: "url('/Areas/banner.png')",
         }}
       >
-        <h1 className="text-5xl md:text-5xl font-newsLetter  ">ABOUT US</h1>
-        <p className="text-2xl md:text-xl font-newsLetter ">Home \ About us</p>
+        <h1 className="text-5xl md:text-5xl font-newsLetter  ">معلومات عنا</h1>
+        <p className="text-2xl md:text-xl font-newsLetter ">بيت \ معلومات عنا  </p>
       </div>
     </div>
   );

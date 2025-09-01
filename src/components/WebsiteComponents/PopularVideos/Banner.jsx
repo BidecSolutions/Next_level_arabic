@@ -13,8 +13,8 @@ export const Banner = () => {
           backgroundImage: "url('/Areas/banner.png')",
         }}
       >
-        <h1 className="text-2xl md:text-5xl">Property Video</h1>
-        <p className="text-lg md:text-xl">Home \ Property Video</p>
+        <h1 className="text-2xl md:text-5xl">فيديو الملكية</h1>
+        <p className="text-lg md:text-xl">بيت \ فيديو الملكية</p>
       </div>
     </div>
   );

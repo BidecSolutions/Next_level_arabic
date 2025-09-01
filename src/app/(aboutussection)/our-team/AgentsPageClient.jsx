@@ -21,7 +21,7 @@ console.log('ownerData', ownerData);
     <div className="bg-gray-50">
       <Banner
         data={{
-      banner_title: "Our Agents",
+      banner_title: "وكلائنا",
       banner_description: "",
       image_path: null,
     }}

@@ -39,22 +39,21 @@ useEffect(() => {
     <div className="flex flex-col w-full items-center my-12 md:my-20">
       {!dev ? (
         <h4 className="text-[25px] md:text-3xl font-newsLetter text-[#8F8F8F] macbook:text-[48px] font-semibold text-center mb-2">
-          {heading || "MOST POPULAR AREAS"}
+          {heading || "المناطق الأكثر شعبية"}
         </h4>
       ) : (
         <p className="text-[25px] md:text-3xl font-newsLetter text-[#8F8F8F] macbook:text-[48px] font-semibold text-center mb-2">
-          {heading || "MOST POPULAR AREAS"}
+          {heading || "المناطق الأكثر شعبية"}
         </p>
       )}
 
       <p className="text-center font-montserrat md:w-[70%] text-gray-700 macbook:text-[28px] mb-8 md:mb-16">
-        Explore Dubai's top real estate spots: Downtown Dubai, Emirates Hills,
-        Business Bay, and more. Discover luxury and innovation.
+        استكشف أبرز وجهات العقارات في دبي: داون تاون دبي، تلال الإمارات، الخليج التجاري، وغيرها الكثير. اكتشف الفخامة والابتكار.
       </p>
 
       {areas.length === 0 && (
         <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Areas available
+          لا توجد مناطق متاحة
         </p>
       )}
 
@@ -134,7 +133,7 @@ useEffect(() => {
           href="/areas/"
           className="px-6 py-2 font-montserrat bg-[#8F8F8F] text-white hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] macbook:text-[16px] rounded-[6.5px]"
         >
-          View All Areas
+         عرض جميع المناطق
         </Link>
       </div>
     </div>

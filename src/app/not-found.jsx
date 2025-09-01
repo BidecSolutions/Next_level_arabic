@@ -4,8 +4,8 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <div style={{ textAlign: 'center', padding: '100px' }}>
-      <h1 style={{ fontSize: '3rem' }}>404 - Page Not Found</h1>
-      <p>The page you are looking for doesn't exist or has been moved.</p>
+      <h1 style={{ fontSize: '3rem' }}>٤٠٤ - الصفحة غير موجودة</h1>
+      <p>الصفحة التي تبحث عنها غير موجودة أو قد تم نقلها</p>
       <Link
         href="/"
         style={{
@@ -15,7 +15,7 @@ export default function NotFound() {
           textDecoration: 'underline',
         }}
       >
-        Go back 
+       عُد إلى الخلف
       </Link>
     </div>
   );

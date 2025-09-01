@@ -78,12 +78,12 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
   const captchaValue = recaptcha.current ? recaptcha.current.getValue() : null;
 
   if (!captchaValue) {
-    toast.error("Please verify the Captcha");
+    toast.error("يرجى التحقق من الكابتشا");
     return;
   }
 
   if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-    toast.error("Name, Email, and Phone number are required!");
+    toast.error("الاسم والبريد الإلكتروني ورقم الهاتف مطلوبة!");
     return;
   }
 
@@ -91,7 +91,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
   const isValid = isValidPhoneNumber(fullPhone);
 
   if (!isValid) {
-    toast.error("Invalid phone number.");
+    toast.error("رقم الهاتف غير صالح.");
     return;
   }
 
@@ -109,12 +109,12 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
       subject: page,
     });
 
-    toast.success("Form Submitted");
+    toast.success("تم إرسال النموذج");
     setFormData({ name: "", email: "", phone: "", description: "" });
     onClose();
   } catch (error) {
     console.error("Error submitting form:", error);
-    toast.error("Something went wrong");
+    toast.error("حدث خطأ ما");
   } finally {
     setLoading(false);
   }
@@ -145,7 +145,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
         {/* Right Side Form */}
         <div className="relative bg-white w-full max-w-md p-6 rounded-lg py-12">
           <h2 className="text-[17px] md:text-2xl text-black font-semibold mb-4">
-            Register your interest
+            سجل اهتمامك
           </h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-[20px] mt-8">
             <input
@@ -153,7 +153,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Your Name"
+              placeholder="اسمك"
               className="w-full border-b border-black outline-none py-2 text-gray-600"
             />
             <input
@@ -161,7 +161,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email Address"
+              placeholder="عنوان البريد الإلكتروني"
               className="w-full border-b border-black outline-none py-2 text-gray-600"
             />
 
@@ -197,7 +197,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              placeholder="Message"
+              placeholder="رسالة"
               rows={1}
               className="w-full border-b border-black outline-none py-2 text-gray-600 resize-none"
             ></textarea>
@@ -209,7 +209,7 @@ const RegisterInterestModal = ({ isOpen, onClose, page }) => {
               className="bg-[#8F8F8F] w-full text-white py-3 rounded-lg hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] transition"
               disabled={loading}
             >
-              {loading ? "Submitting..." : "Submit"}
+              {loading ? "تقديم" : "يُقدِّم"}
             </button>
           </form>
         </div>

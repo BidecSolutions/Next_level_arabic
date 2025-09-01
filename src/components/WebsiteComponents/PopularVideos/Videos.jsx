@@ -15,21 +15,21 @@ export default function Videos() {
 
   if (isLoading) return <Loader />;
 
-  const videos = [
-    { src: "https://www.youtube.com/embed/1c6vvs1-EN4", title: "Oxford Terraces | Modern Studio with Pool View" },
-    { src: "https://www.youtube.com/embed/WIACQcJtzEo", title: "Oxford Terraces | Studio Apartment in Oxford Terraces by Iman Developers" },
-    { src: "https://www.youtube.com/embed/RmiHRbo7GiU", title: "Blue Waters Island  | 2 Bedroom + Maids Fully Furnished" },
-    { src: "https://www.youtube.com/embed/Aj0FpRrExdQ", title: "EMAAR | Lime Gardens | DHE" },
-    { src: "https://www.youtube.com/embed/LHSk5IDy4iE", title: "Binghatti Mercedes | Located in the very center of Dubai" },
-    { src: "https://www.youtube.com/embed/qn8-IBDK2T0", title: "Villanova - Amaranta 4 bed Townhouse" },
-    { src: "https://www.youtube.com/embed/-BS-dMH5Zt0", title: "LUCKY 1 Residence" },
-    { src: "https://www.youtube.com/embed/Eh7XTiJM26c", title: "JVC | A popular residential community in Dubai | #jvc" },
-  ];
+const videos = [
+  { src: "https://www.youtube.com/embed/1c6vvs1-EN4", title: "أوكسفورد تيراس | استوديو حديث بإطلالة على المسبح" },
+  { src: "https://www.youtube.com/embed/WIACQcJtzEo", title: "أوكسفورد تيراس | شقة استوديو في أوكسفورد تيراس من إيمان ديفيلوبرز" },
+  { src: "https://www.youtube.com/embed/RmiHRbo7GiU", title: "بلو ووترز آيلاند | شقة مفروشة بالكامل من غرفتين + غرفة خادمة" },
+  { src: "https://www.youtube.com/embed/Aj0FpRrExdQ", title: "إعمار | لايم غاردنز | دبي هيلز إستيت" },
+  { src: "https://www.youtube.com/embed/LHSk5IDy4iE", title: "بنغاتي مرسيدس | يقع في قلب دبي" },
+  { src: "https://www.youtube.com/embed/qn8-IBDK2T0", title: "فيلانوفا - أمارانتا | تاون هاوس 4 غرف" },
+  { src: "https://www.youtube.com/embed/-BS-dMH5Zt0", title: "لكي 1 ريزيدنس" },
+  { src: "https://www.youtube.com/embed/Eh7XTiJM26c", title: "قرية جميرا الدائرية (JVC) | مجتمع سكني شهير في دبي" },
+];
 
   return (
     <div className="flex flex-col items-center mt-24 mb-16">
       <h2 className="text-center font-newsLetter text-[#8F8F8F] uppercase text-[25px] md:text-[40px] mb-8">
-        Popular Videos
+       مقاطع فيديو شعبية
       </h2>
 
       <div className="flex flex-wrap md:w-[90%] md:gap-[20px] justify-center">
@@ -64,7 +64,7 @@ export default function Videos() {
             onClick={loadMoreVideos}
             className="px-6 py-2 bg-gray-300 rounded-md hover:bg-gray-400"
           >
-            Load More
+            تحميل المزيد
           </button>
         )}
       </div>

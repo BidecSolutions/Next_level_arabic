@@ -44,7 +44,7 @@ console.log("info", info);
         <div className="relative md:w-[40%] flex justify-end">
           <img
             src={`${Image_URL}${info?.owner_image || ""}`}
-            alt={info?.owner_image_alt || "Owner"}
+            alt={info?.owner_image_alt || "مالك"}
             className="w-[100%] h-64 md:w-[400px] md:h-[100%] object-cover md:rounded-br-[100px]"
             onError={(e) => {
               e.currentTarget.src = Image_NotFound;
@@ -55,13 +55,13 @@ console.log("info", info);
         {/* Right Side - Content */}
         <div className="flex flex-col justify-center text-center md:text-start gap-4 md:pl-8 md:w-[40%] md:h-[100%]">
           <h2 className="text-2xl font-newsLetter md:text-[48px] macbook:text-[55px] md:pb-4 text-[#8F8F8F] leading-10">
-            {info?.name || "Owner Name"}
+            {info?.name || "اسم المالك"}
           </h2>
 
           <p
             className="text-[#555555] w-full break-words md:text-[15px] font-montserrat macbook:text-[35px] macbook:leading-[35px] text-sm md:leading-[26px]"
             dangerouslySetInnerHTML={{
-              __html: info?.description || "No description available.",
+              __html: info?.description || "لا يوجد وصف متاح",
             }}
           ></p>
 
@@ -71,7 +71,7 @@ console.log("info", info);
               href={`/agent/abdul-ahad-siddiq`}
               className="flex items-center font-montserrat macbook:text-[18px] gap-2 px-6 py-2 bg-[#A39D9D] text-white hover:text-gray-600 hover:bg-gray-300 rounded-md"
             >
-              View Profile
+              عرض الملف الشخصي
             </Link>
 
             {/* Email Button */}
@@ -92,7 +92,7 @@ console.log("info", info);
                     ? info.mobile_no
                     : "+971552588870"
                   ).replace(/[\s-]+/g, ""),
-                  "Hello, I want to connect!"
+                  "مرحبًا، أريد الاتصال!"
                 )
               }
               className="flex items-center gap-2 px-2 py-2 border border-[#A39D9D] rounded-md"

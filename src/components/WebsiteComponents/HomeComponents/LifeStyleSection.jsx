@@ -49,7 +49,7 @@ useEffect(() => {
   return (
     <div className="w-full my-12 md:my-20 flex md:justify-center flex-col items-center">
       <h3 className="text-center font-newsLetter font-semibold uppercase text-[#8F8F8F] macbook:text-[48px] text-[18px] md:text-[34px] md:w-full mb-8">
-        NAVIGATE PROPERTIES BY TYPE
+        التنقل بين الخصائص حسب النوع
       </h3>
 
       {/* Tabs */}
@@ -73,7 +73,7 @@ useEffect(() => {
 
       {properties?.length === 0 ? (
         <p className="text-center text-[16px] md:text-[20px] mt-6 font-montserrat w-full flex justify-center text-gray-500">
-          No Property available at this moment
+          لا يوجد عقار متاح في هذه اللحظة
         </p>
       ) : (
         <>
@@ -108,7 +108,7 @@ useEffect(() => {
                   </h3>
                   <div className="text-gray-500 text-[11px] flex flex-col items-center mb-4">
                     <p className="text-[9px] font-montserrat md:text-[15px]">
-                      Starting From
+                      ابتداء من
                     </p>
                     <p className="flex gap-1 text-[9px] font-montserrat md:text-[18px] font-bold text-[#8F8F8F]">
                       {property?.starting_price}{" "}
@@ -139,7 +139,7 @@ useEffect(() => {
                     }
                     className="w-[100px] md:w-[202px] text-[11px] my-1 py-1 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F]"
                   >
-                    View more detail
+                    عرض المزيد من التفاصيل
                   </button>
                 </div>
               </div>
@@ -175,7 +175,7 @@ useEffect(() => {
                         {property?.property_name.substring(0, 20)}
                       </h3>
                       <p className="text-[16px] text-[#8F8F8F]">
-                        Starting From
+                        ابتداء من
                       </p>
                       <p className="flex gap-1 text-[14px] font-bold text-[#8F8F8F] mb-2">
                         {property?.starting_price}{" "}
@@ -206,7 +206,7 @@ useEffect(() => {
                       }
                       className="w-[275px] text-[10px] my-1 py-1 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F]"
                     >
-                      View more detail
+                      عرض المزيد من التفاصيل
                     </button>
                   </div>
                 </SwiperSlide>
@@ -221,7 +221,7 @@ useEffect(() => {
         {properties?.length > 0 && (
           <Link href="/off-plan">
             <button className="block font-montserrat text-[12px] md:text-[16px] px-4 py-2 bg-[#8F8F8F] text-white rounded-[8px] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F]">
-              See All Properties
+              شاهد جميع العقارات
             </button>
           </Link>
         )}

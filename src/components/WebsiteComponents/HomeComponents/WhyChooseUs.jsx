@@ -10,23 +10,23 @@ const WhyChooseUs = () => {
     {
       id: 1,
       icon: "/home/house.png",
-      title: "Unmatched Digital Presence",
+      title: "حضور رقمي لا مثيل له",
       description:
-        "We at Next Level have put a lot of effort into maintaining an unmatched digital presence, which helps us gain real-time market insights and provide unparalleled client service.",
+        "لقد بذلنا في Next Level الكثير من الجهد للحفاظ على حضور رقمي لا مثيل له، مما يساعدنا على اكتساب رؤى السوق في الوقت الفعلي وتقديم خدمة عملاء لا مثيل لها.",
     },
     {
       id: 2,
       icon: "/home/agent.png",
-      title: "Personalized Service",
+      title: "خدمة شخصية",
       description:
-        "With Next Level Real Estate, customers aren’t just another transaction. Dedicated agents take the time to understand each client’s unique needs, preferences, and aspirations, ensuring tailor-made solutions that align with personal goals.",
+        "مع نيكست ليفل للعقارات، لا يقتصر عملاؤنا على مجرد معاملة عادية. وكلاء متخصصون يخصصون الوقت الكافي لفهم احتياجات كل عميل وتفضيلاته وتطلعاته الفريدة، مما يضمن حلولاً مصممة خصيصاً لتتناسب مع أهدافه الشخصية.",
     },
     {
       id: 3,
       icon: "/home/hand.png",
-      title: "Secure Investment",
+      title: "الاستثمار الآمن",
       description:
-        "Next Level Real Estate is one of the most trusted and reliable real estate companies in the Middle East when it comes to property investment. Meet your lifelong goals with a secure investment at Next Level Properties.",
+        "شركة نكست ليفل العقارية من أكثر شركات العقارات ثقةً واعتماديةً في الشرق الأوسط فيما يتعلق بالاستثمار العقاري. حقق أهدافك العقارية باستثمار آمن مع نكست ليفل العقارية.",
     },
   ];
 
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       {/* Section Heading */}
       <div className="flex md:items-center md:w-[70%] macbook:w-[60%] md:mb-16 flex-col mb-8 md:flex-row justify-between">
         <h2 className="text-[17px] md:w-[90%] font-newsLetter text-center md:text-start md:text-[30px] macbook:text-[40px] font-semibold mb-4">
-          Why You Choose Next-Level Real Estate?
+          لماذا تختار شركة نيكست ليفل العقارية؟
         </h2>
         {/* Inquiry Button */}
         <div className="text-center">
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
             onClick={() => setIsModalOpen(true)}
             className="px-6 py-2 font-montserrat bg-[#8F8F8F] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] text-white macbook:text-[16px] rounded-[6.5px]"
           >
-            Inquiry
+            سؤال
           </button>
         </div>
       </div>

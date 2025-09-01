@@ -4,7 +4,7 @@ import { GoSearch } from "react-icons/go";
 import { Image_URL } from "@/config/constants";
 import ParseBody from "../HomeComponents/ParseBody";
 
-export const Banner = ({ data, searchTerm, setSearchTerm, handleSearch }) => {
+export const  Banner = ({ data, searchTerm, setSearchTerm, handleSearch }) => {
   return (
     <div className="flex justify-center text-white">
       <div
@@ -18,7 +18,7 @@ export const Banner = ({ data, searchTerm, setSearchTerm, handleSearch }) => {
         }}
       >
         <h1 className="text-2xl md:text-7xl macbook:text-8xl font-newsLetter">
-          {data?.banner_title || "Our Agents"}
+          {data?.banner_title || "وكلائنا"}
         </h1>
 
         <div className="text-sm md:text-lg font-montserrat">
@@ -32,7 +32,7 @@ export const Banner = ({ data, searchTerm, setSearchTerm, handleSearch }) => {
           <input
             type="text"
             className="p-3 border-2 border-[#8F8F8F] font-montserrat outline-none w-[220px] md:w-full text-black rounded-l-md"
-            placeholder="Search agents in Dubai"
+            placeholder="وكلاء البحث في دبي"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

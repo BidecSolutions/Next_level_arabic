@@ -9,8 +9,8 @@ const page = () => {
     return (
         <div>
             <Banner
-                heading="Career Opportunity"
-                breadcrumb="Home \ Career Opportunity"
+                heading="فرصة وظيفية"
+                breadcrumb="بيت \ فرصة وظيفية"
             />    <Intro />
             {/* <JobSection/> */}
             <JobSection />

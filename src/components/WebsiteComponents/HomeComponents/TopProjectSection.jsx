@@ -81,13 +81,13 @@ const TopProjectSection = () => {
   return (
     <div className="min-w-full flex flex-col items-center my-12 md:my-20">
       <h3 className="text-center font-newsLetter text-[#8F8F8F] uppercase macbook:text-[48px] text-[18px] md:text-[34px] font-semibold my-4 md:mb-8">
-        Top Projects in Dubai
+        أفضل المشاريع في دبي
       </h3>
 
       {isLoading && projects.length === 0 ? (
-        <div className="text-gray-500">Loading top projects...</div>
+        <div className="text-gray-500">جاري تحميل المشاريع الأعلى تقييمًا</div>
       ) : projects.length === 0 ? (
-        <div className="text-gray-500">No top projects found.</div>
+        <div className="text-gray-500">لم يتم العثور على أفضل المشاريع</div>
       ) : (
         <div className="relative w-full flex flex-col items-center">
           {projects.map((item, index) => (
@@ -113,7 +113,7 @@ const TopProjectSection = () => {
               <div className="bg-white shadow-lg w-full md:w-[40%] rounded-[20px] px-8 pb-4 pt-0">
                 <div className="flex justify-between items-center mb-4">
                   <span className="bg-[#222222] font-montserrat mt-[10px] text-[30px] text-white text-xs font-bold px-3 py-1 rounded-[5px]">
-                    FEATURED
+                    مميز
                   </span>
                   <div className="text-white bg-[#222222] py-2">
                     <svg
@@ -134,13 +134,13 @@ const TopProjectSection = () => {
                 </div>
 
                 <h3 className="text-[22px] capitalize font-newsLetter md:text-[30px] font-semibold mb-2">
-                  {item.property_name || "Property Name"}
+                  {item.property_name || "اسم الملكيةe"}
                 </h3>
 
                 <div className="flex justify-between">
                   <div className="flex flex-col">
                     <p className="text-[#8F8F8F] font-montserrat text-[14px] macbook:text-[24px]">
-                      Starting From
+                      ابتداء من
                     </p>
                     <p className="flex gap-1 text-[#222222] text-[20px] font-montserrat macbook:text-[27px] font-bold mb-6">
                       {item.starting_price}
@@ -175,7 +175,7 @@ const TopProjectSection = () => {
                 <div className="md:my-[20px]">
                   <Link href={`/property/${item.slug}`}>
                     <button className="w-[150px] h-[40px] text-[16px] px-4 py-1 bg-[#222222] text-white hover:bg-transparent hover:text-black border hover:border-[#8F8F8F] rounded-[8px]">
-                      See Property
+                     انظر الملكية
                     </button>
                   </Link>
                 </div>

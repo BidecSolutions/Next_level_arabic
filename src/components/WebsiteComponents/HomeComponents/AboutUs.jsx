@@ -33,7 +33,7 @@ const AboutUs = () => {
         {/* Left Column */}
         <div className="lg:w-[50%] macbook:w-[50%]">
           <h3 className="text-[18px] font-newsLetter md:text-[34px] macbook:text-[60px] mb-4 macbook:mb-4 font-semibold text-[#8F8F8F]">
-            {about?.title || "Next Level Real Estate"}
+            {about?.title || "عقارات المستوى التالي"}
           </h3>
 
           {about?.description && about?.description.length > 500 ? (
@@ -53,7 +53,7 @@ const AboutUs = () => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-[#8F8F8F] font-montserrat text-sm hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -67,7 +67,7 @@ const AboutUs = () => {
               href="/about-us"
               className="px-4 py-2 w-[110px] mt-2 font-montserrat block md:hidden macbook:text-[19px] macbook:px-8 macbook:py-2 text-[13px] bg-[#616161B5] text-white rounded-[6px]"
             >
-              Read More
+              اقرأ المزيد
             </Link>
           </div>
 

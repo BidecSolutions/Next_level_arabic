@@ -20,9 +20,9 @@ const SubmitQuestion = () => {
   const validateInput = (field, value) => {
     let errorMessage = "";
     if (!value.trim()) {
-      errorMessage = "This field is required.";
+      errorMessage = "هذه الخانة مطلوبه.";
     } else if (field === "email" && !/^\S+@\S+\.\S+$/.test(value)) {
-      errorMessage = "Enter a valid email address.";
+      errorMessage = "أدخل عنوان بريد إلكتروني صالحًا.";
     }
     setErrors((prevErrors) => ({ ...prevErrors, [field]: errorMessage }));
   };
@@ -59,10 +59,10 @@ const SubmitQuestion = () => {
       <div className="flex flex-col items-center w-full">
         <div className="text-center mb-8">
           <p className="text-[#8F8F8F] font-newsLetter text-[26px] md:text-[36px] uppercase mb-2">
-            Submit Question
+            إرسال السؤال
           </p>
           <p className="text-[17px] font-montserrat md:text-[18px] text-[#555555]">
-            We’re here to help! Share your questions, and we’ll provide answers.
+           نحن هنا لمساعدتك! شارك أسئلتك، وسنقدم لك الإجابات.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const SubmitQuestion = () => {
               <input
                 type="text"
                 ref={nameRef}
-                placeholder="Your Name"
+                placeholder="اسمك"
                 className="border py-[12px] w-full font-montserrat border-[#0B0B0B] outline-none pl-[20px] rounded-[8px]"
                 onChange={(e) => validateInput("name", e.target.value)}
                 required
@@ -91,7 +91,7 @@ const SubmitQuestion = () => {
               <input
                 type="email"
                 ref={emailRef}
-                placeholder="Email Address"
+                placeholder="عنوان البريد الإلكتروني"
                 className="border py-[12px] w-full font-montserrat outline-none border-[#0B0B0B] pl-[20px] rounded-[8px]"
                 onChange={(e) => validateInput("email", e.target.value)}
                 required
@@ -106,7 +106,7 @@ const SubmitQuestion = () => {
 
           <textarea
             ref={messageRef}
-            placeholder="Message"
+            placeholder="رسالة"
             className="border font-montserrat outline-none py-[12px] pl-[20px] border-[#0B0B0B] rounded-[8px] w-full"
             onChange={(e) => validateInput("message", e.target.value)}
             required
@@ -121,7 +121,7 @@ const SubmitQuestion = () => {
             type="submit"
             className="bg-[#8F8F8F] font-montserrat w-full md:w-[180px] text-white py-2 px-6 rounded hover:bg-white hover:text-[#8F8F8F]"
           >
-            Send Message
+            أرسل رسالة
           </button>
         </form>
 
@@ -145,16 +145,16 @@ const SubmitQuestion = () => {
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4 font-montserrat">
-                Message Submitted Successfully!
+               تم إرسال الرسالة بنجاح!
               </h3>
               <p className="text-gray-600 font-montserrat">
-                Thank you for your time. We'll get back to you soon.
+                شكرًا لوقتك. سنتواصل معك قريبًا.
               </p>
               <button
                 className="mt-6 px-6 py-2 bg-[#A39D9D] text-white rounded-full font-montserrat"
                 onClick={() => setIsPopUpVisible(false)}
               >
-                OK
+                نعم
               </button>
             </div>
           </div>

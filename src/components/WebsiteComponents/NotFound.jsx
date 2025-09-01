@@ -12,7 +12,7 @@ export default function NotFound() {
           }}
         >
           <h1 className="text-2xl md:text-5xl text-center font-bold uppercase">
-            Oops! This Page Got Away
+            عذرًا! هذه الصفحة أفلتت
           </h1>
         </div>
       </div>
@@ -26,15 +26,12 @@ export default function NotFound() {
           priority
         />
         <p className="w-full lg:w-1/2 text-center text-2xl px-6 lg:px-0 py-2">
-          It looks like the property or page you're looking for has moved or no
-          longer exists. But don’t worry, we’ve got plenty of amazing options
-          for you to explore!
-        </p>
+          يبدو أن العقار أو الصفحة التي تبحث عنها قد تم نقلها أو لم تعد موجودة. لكن لا تقلق، لدينا الكثير من الخيارات الرائعة لتستكشفها  </p>
         <Link
           href="/"
           className="text-white bg-[#8F8F8F] rounded-md py-3 px-4"
         >
-          Go to Homepage
+         اذهب إلى الصفحة الرئيسية
         </Link>
       </div>
     </div>

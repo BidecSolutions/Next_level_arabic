@@ -2,163 +2,131 @@ import { Banner } from '@/components/WebsiteComponents/Career/Banner'
 import React from 'react'
 
 const page = () => {
-    return (
-        <div>
-            <Banner
-                heading=" Privacy Policy"
-                // breadcrumb="Home \ Career Opportunity"
-            /> 
-            
+  return (
+    <div>
+      <Banner
+        heading="سياسة الخصوصية"
+        // breadcrumb="الرئيسية \ فرص العمل"
+      />
+
       <div className="container mx-auto px-4 lg:px-16 py-[10rem]">
         <div className="bg-white rounded-lg p-8 space-y-6">
-          {/* Introduction Section */}
+          {/* مقدمة */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Introduction
+              المقدمة
             </h2>
-            <p className="text-gray-600 font-montserrat  ">
-              Welcome to Next Level. We value your privacy and are committed to
-              protecting your personal information. This privacy policy will
-              explain how we manage your personal data, your privacy rights, and
-              how the law safeguards you.
+            <p className="text-gray-600 font-montserrat">
+              أهلاً بكم في نيكست ليفل. نحن نقدّر خصوصيتكم ونلتزم بحماية معلوماتكم
+              الشخصية. توضح سياسة الخصوصية هذه كيفية إدارتنا لبياناتكم الشخصية،
+              وحقوقكم المتعلقة بالخصوصية، وكيفية حمايتكم بموجب القانون.
             </p>
           </section>
 
-          {/* Information We Collect Section */}
+          {/* المعلومات التي نجمعها */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Information We Collect
+              المعلومات التي نجمعها
             </h2>
-            <p className="text-gray-600 font-montserrat  ">
-              When you browse our website or inquire about properties, we may
-              collect the following information:
+            <p className="text-gray-600 font-montserrat">
+              عند تصفح موقعنا أو الاستفسار عن العقارات، قد نقوم بجمع المعلومات التالية:
             </p>
             <ul className="list-disc pl-6 font-montserrat space-y-2 text-gray-600">
-              <li>
-                Personal Information: Name, email address, phone number, and
-                mailing address.
-              </li>
-              <li>
-                Property Preferences: Information about the type, location, and
-                budget for properties you are interested in.
-              </li>
-              <li>
-                Communication Data: Details about your inquiries, messages, and
-                interactions with us.
-              </li>
-              <li>
-                Technical Data: IP address, browser type, and website usage data
-                to improve our services.
-              </li>
+              <li>المعلومات الشخصية: الاسم، عنوان البريد الإلكتروني، رقم الهاتف، والعنوان البريدي.</li>
+              <li>تفضيلات العقارات: معلومات حول نوع العقار، الموقع، والميزانية التي تهمكم.</li>
+              <li>بيانات التواصل: تفاصيل استفساراتكم ورسائلكم وتفاعلاتكم معنا.</li>
+              <li>البيانات التقنية: عنوان الـ IP، نوع المتصفح، وبيانات استخدام الموقع لتحسين خدماتنا.</li>
             </ul>
           </section>
 
-          {/* How We Use Your Information Section */}
+          {/* كيفية استخدام معلوماتكم */}
           <section>
             <h2 className="text-2xl font-semibold font-montserrat mb-4 text-gray-700">
-              How We Use Your Information
+              كيفية استخدام معلوماتكم
             </h2>
-            <p className="text-gray-600 font-montserrat  ">
-              We use your personal data to offer, maintain, and enhance our real
-              estate services. This includes:
+            <p className="text-gray-600 font-montserrat">
+              نستخدم بياناتكم الشخصية لتقديم خدماتنا العقارية والحفاظ عليها وتحسينها، بما في ذلك:
             </p>
             <ul className="list-disc pl-6 font-montserrat space-y-2 text-gray-600">
-              <li>Helping you find properties that meet your requirements.</li>
-              <li>
-                Providing information on available properties and scheduling
-                viewings.
-              </li>
-              <li>
-                Communicating with you about your inquiries and assisting with
-                the purchase or rental process.
-              </li>
-              <li>
-                Personalizing your experience on our website to show you
-                relevant property listings.
-              </li>
+              <li>مساعدتكم في العثور على العقارات التي تناسب احتياجاتكم.</li>
+              <li>تزويدكم بمعلومات عن العقارات المتاحة وجدولة المواعيد.</li>
+              <li>التواصل معكم بخصوص استفساراتكم ودعمكم في عمليات الشراء أو الإيجار.</li>
+              <li>تخصيص تجربتكم على موقعنا لعرض قوائم عقارات أكثر ملاءمة لكم.</li>
             </ul>
           </section>
 
-          {/* Sharing Your Information Section */}
+          {/* مشاركة معلوماتكم */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Sharing Your Information
+              مشاركة معلوماتكم
             </h2>
-            <p className="text-gray-600 font-montserrat   ">
-              We may share your personal data with third parties to facilitate
-              our services, including:
+            <p className="text-gray-600 font-montserrat">
+              قد نشارك بياناتكم الشخصية مع أطراف ثالثة لتسهيل خدماتنا، بما في ذلك:
             </p>
             <ul className="list-disc pl-6 font-montserrat space-y-2 text-gray-600">
-              <li>
-                Real estate agents and brokers to assist with property viewings
-                and transactions.
-              </li>
-              <li>Service providers for website analytics and improvements.</li>
+              <li>وكلاء وسماسرة العقارات للمساعدة في المعاينات والصفقات.</li>
+              <li>مزودو الخدمات مثل تحليلات الموقع وتحسيناته.</li>
             </ul>
-            <p className="text-gray-600">
-              We do not sell your personal information to third parties.
+            <p className="text-gray-600 font-montserrat">
+              نحن لا نبيع معلوماتكم الشخصية لأطراف ثالثة.
             </p>
           </section>
 
-          {/* Your Rights Section */}
+          {/* حقوقكم */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Your Rights
+              حقوقكم
             </h2>
-            <p className="text-gray-600 font-montserrat  ">
-              You have the following rights regarding your personal information:
+            <p className="text-gray-600 font-montserrat">
+              لديكم الحقوق التالية فيما يتعلق بمعلوماتكم الشخصية:
             </p>
             <ul className="list-disc font-montserrat pl-6 space-y-2 text-gray-600">
-              <li>Right to access your personal data.</li>
-              <li>Right to request corrections to inaccurate data.</li>
-              <li>Right to request deletion of your personal data.</li>
-              <li>Right to object to or limit our use of your data.</li>
+              <li>الحق في الوصول إلى بياناتكم الشخصية.</li>
+              <li>الحق في طلب تصحيح البيانات غير الدقيقة.</li>
+              <li>الحق في طلب حذف بياناتكم الشخصية.</li>
+              <li>الحق في الاعتراض على استخدام بياناتكم أو تقييده.</li>
             </ul>
           </section>
 
-          {/* Data Security Section */}
+          {/* أمان البيانات */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Data Security
+              أمان البيانات
             </h2>
-            <p className="text-gray-600  font-montserrat ">
-              We employ reasonable security measures to protect your personal
-              data from unauthorized access, disclosure, or loss. However, no
-              method of internet transmission is entirely secure, and we cannot
-              guarantee absolute security.
+            <p className="text-gray-600 font-montserrat">
+              نستخدم إجراءات أمان معقولة لحماية بياناتكم الشخصية من الوصول أو الكشف
+              أو الفقدان غير المصرح به. ومع ذلك، لا توجد وسيلة نقل عبر الإنترنت
+              آمنة تمامًا، ولا يمكننا ضمان أمان مطلق.
             </p>
           </section>
 
-          {/* Changes to This Policy Section */}
+          {/* التغييرات على هذه السياسة */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Changes to This Policy
+              التغييرات على هذه السياسة
             </h2>
-            <p className="text-gray-600  font-montserrat ">
-              We may occasionally update this privacy policy to reflect changes
-              in our practices or legal requirements. We recommend checking this
-              page periodically for updates.
+            <p className="text-gray-600 font-montserrat">
+              قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في ممارساتنا أو المتطلبات القانونية. نوصي بمراجعة هذه الصفحة بشكل دوري للاطلاع على التحديثات.
             </p>
           </section>
 
-          {/* Contact Us Section */}
+          {/* تواصل معنا */}
           <section>
             <h2 className="text-2xl font-montserrat font-semibold mb-4 text-gray-700">
-              Contact Us
+              تواصل معنا
             </h2>
-            <p className="text-gray-600 font-montserrat ">
-              If you have any questions about this privacy policy or our privacy
-              practices, please contact us at:
+            <p className="text-gray-600 font-montserrat">
+              إذا كان لديكم أي استفسارات بخصوص سياسة الخصوصية هذه أو ممارساتنا، يرجى التواصل معنا عبر:
             </p>
-            <p className="text-gray-600 font-montserrat  ">
-              <strong>Email:</strong> media@nextlevelrealestate.ae <br />
-              <strong>Phone:</strong> +97144542828
+            <p className="text-gray-600 font-montserrat">
+              <strong>البريد الإلكتروني:</strong> media@nextlevelrealestate.ae <br />
+              <strong>الهاتف:</strong> ‎+97144542828
             </p>
           </section>
         </div>
       </div>
     </div>
-    )
+  )
 }
 
 export default page

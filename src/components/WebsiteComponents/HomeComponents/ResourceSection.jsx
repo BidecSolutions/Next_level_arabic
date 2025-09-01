@@ -55,7 +55,7 @@ useEffect(() => {
       {/* Heading and Tabs */}
       <div className="flex flex-col md:flex-row justify-evenly w-full items-center mb-8">
         <h3 className="macbook:text-[48px] font-newsLetter text-[18px] md:text-[34px] text-[#A39D9D] font-semibold">
-          YOUR ONE-STOP RESOURCE GUIDE`s
+          دليل الموارد الشامل الخاص بك
         </h3>
         <div className="hidden md:flex items-center space-x-2">
           {categories.length > 0 ? (
@@ -73,7 +73,7 @@ useEffect(() => {
               </button>
             ))
           ) : (
-            <p className="my-96 font-newsLetter">Loading categories...</p>
+            <p className="my-96 font-newsLetter">جارٍ تحميل الفئات</p>
           )}
         </div>
       </div>
@@ -84,7 +84,7 @@ useEffect(() => {
           <p className="h-[550px]"></p>
         ) : blogs.length === 0 ? (
           <p className="text-center text-gray-500 font-newsLetter">
-            No Blogs available
+            لا توجد مدونات متاحة
           </p>
         ) : isMobile ? (
           <Swiper
@@ -126,10 +126,10 @@ useEffect(() => {
                       }}
                     />
                     <button className="px-6 py-2 font-newsLetter text-[10px] md:text-[16px] mb-2 bg-[#8F8F8F] text-white rounded-[6.5px] md:mb-2">
-                      CONTINUE READING
+                     مواصلة القراءة
                     </button>
                     <p className="text-sm text-gray-500 mt-2 font-newsLetter">
-                      BY NEXT LEVEL
+                     بالمستوى التالي
                     </p>
                   </div>
                 </div>
@@ -172,10 +172,10 @@ useEffect(() => {
                       href={`/${blog.slug}`}
                       className="px-6 py-2 font-montserrat text-[10px] md:text-[16px] bg-[#8F8F8F] text-white rounded-[6.5px] mb-2"
                     >
-                      CONTINUE READING
+                      مواصلة القراءة
                     </Link>
                     <p className="text-sm text-[#8F8F8F] mt-2 font-newsLetter">
-                      BY NEXT LEVEL
+                      بالمستوى التالي
                     </p>
                   </div>
                 </div>

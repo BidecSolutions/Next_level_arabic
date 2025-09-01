@@ -40,12 +40,12 @@ useEffect(() => {
       <h4
         className="md:text-5xl macbook:text-[55px] font-newsLetter text-2xl text-gray-500 py-8"
         dangerouslySetInnerHTML={{
-          __html: heading ? heading : "Frequently Asked Questions",
+          __html: heading ? heading : "الأسئلة الشائعة",
         }}
       />
       {faqs.length === 0 && (
         <h4 className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Faqs available
+         لا توجد أسئلة شائعة متاحة
         </h4>
       )}
       {faqs?.slice(0, 3).map((faq, index) => (

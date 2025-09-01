@@ -43,7 +43,7 @@ const DepartmentSection = ({ searchTerm }) => {
     <div className="flex flex-col py-16 md:py-12">
       {searchTerm.trim() !== "" && allFilteredAgents.length === 0 ? (
         <div className="w-full text-center min-h-52 text-[#8F8F8F] text-[24px] mt-28">
-          No agents were found matching the name{" "}
+          لم يتم العثور على أي وكلاء يطابقون الاسم{" "}
           <span className="font-semibold md:ml-2">{searchTerm}</span>
         </div>
       ) : (
@@ -74,7 +74,7 @@ const DepartmentSection = ({ searchTerm }) => {
                   >
                     <img
                       src={`${Image_URL}${agent.profile_image}`}
-                      alt={agent.profile_image_alt || "Agent"}
+                      alt={agent.profile_image_alt || "عامل"}
                       className="md:w-[45%] rounded-[10px] object-cover"
                       onError={(e) => {
                         e.currentTarget.src = Image_NotFound;
@@ -83,10 +83,10 @@ const DepartmentSection = ({ searchTerm }) => {
                     <div className="flex justify-center w-[100%] md:w-[55%] h-[100%] items-center pt-[1.4rem]">
                       <div className="absolute h-[310px] font-montserrat bottom-[60px] z-10 md:static w-[90%] text-center md:text-start justify-center flex flex-col items-center md:items-start md:w-[100%] pl-[20px] pt-[20px] p-4 md:p-8 rounded-[10px] md:rounded-[0px] md:rounded-br-[10px] md:rounded-tr-[10px] md:h-[90%] bg-[#8F8F8F]">
                         <p className="text-[22px] md:mb-2 md:text-[20px] text-white">
-                          {agent?.name || "Agent Name"}
+                          {agent?.name || "اسم الوكيل"}
                         </p>
                         <p className="text-white mb-2 font-thin font-montserrat">
-                          {dept.name || "Employee"}
+                          {dept.name || "موظف"}
                         </p>
                         <div
                           className="text-white text-[10px] md:text-[12px] mb-2 w-[90%]"
@@ -119,7 +119,7 @@ const DepartmentSection = ({ searchTerm }) => {
                             href={`/agent/${agent.slug}`}
                             className="px-4 py-2 md:py-4 text-[11px] bg-white text-[#8F8F8F] rounded-md"
                           >
-                            View Agent
+                            عرض الوكيل
                           </Link>
                           <a
                             href={`https://wa.me/${(agent.whatsapp_no || "+971552588870").replace(/[\s-]+/g, "")}`}
@@ -142,7 +142,7 @@ const DepartmentSection = ({ searchTerm }) => {
                     onClick={loadMore}
                     className="mt-8 py-2 px-4 border-2 border-[#8F8F8F] bg-[#8F8F8F] text-white rounded hover:text-[#8F8F8F] hover:bg-transparent text-center"
                   >
-                    Load More
+                    تحميل المزيد
                   </button>
                 </div>
               )}

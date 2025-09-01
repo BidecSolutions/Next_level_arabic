@@ -33,99 +33,75 @@ const NewSection = () => {
         {/* Right Column - Text */}
         <div className="lg:w-[50%] macbook:w-[50%]">
           <h3 className="text-[18px] font-newsLetter md:text-[28px] macbook:text-[60px] font-semibold text-[#8F8F8F]">
-            Your Trusted Dubai Real Estate Agency for Market Insights & Investment Opportunities
+            وكالتك العقارية الموثوقة في دبي للحصول على رؤى السوق وفرص الاستثمار
           </h3>
 
           <div
-            className={`${
-              isExpanded
-                ? "h-[250px] overflow-y-auto transition-all duration-300"
-                : "h-[250px] overflow-hidden"
-            }`}
+            className={`${isExpanded
+              ? "h-[250px] overflow-y-auto transition-all duration-300"
+              : "h-[250px] overflow-hidden"
+              }`}
           >
             <div className="space-y-4 text-[#555] font-montserrat text-sm md:text-base leading-relaxed">
               <p>
-                Dubai’s property market is among the world’s most vibrant,
-                attracting investors and homebuyers with its innovation,
-                luxury lifestyle, and world-class infrastructure. The right
-                real estate partner can make all the difference. We keep you
-                ahead with regular market updates, off-plan opportunities, and
-                expert guidance for both locals and overseas investors.
+                يُعد سوق العقارات في دبي من أكثر أسواق العالم حيويةً، إذ يجذب المستثمرين ومشتري المنازل بفضل ابتكاراته، وأسلوب حياته الفاخر، وبنيته التحتية عالمية المستوى. الشريك العقاري المناسب يُحدث فرقًا كبيرًا. نُبقيكم على اطلاع دائم بأحدث مستجدات السوق، ونُقدم لكم فرصًا للشراء على الخارطة، ونُقدم لكم إرشادات الخبراء للمستثمرين المحليين والأجانب.
               </p>
 
               <h3 className="text-md font-semibold text-[#8F8F8F]">
-                Why You Should Invest in Dubai Real Estate
+                لماذا يجب عليك الاستثمار في عقارات دبي
               </h3>
               <p>
-                Dubai’s real estate market presents a wealth of opportunities
-                for investors, thanks to its high rental yields, tax-free
-                environment, and strong demand for luxury and off-plan
-                properties. With a growing economy, world-class infrastructure,
-                and expat-friendly ownership laws, the city continues to attract
-                global investors seeking stable, profitable returns. Whether
-                you’re a seasoned investor or looking to diversify your portfolio,
-                Dubai’s real estate sector offers unmatched potential. Partnering
-                with trusted real estate brokers in Dubai, like Next Level Real
-                Estate, ensures that you make informed decisions in this dynamic
-                market, unlocking the full value of your investment.
+                يقدم سوق العقارات في دبي فرصًا واعدة للمستثمرين، بفضل عوائد الإيجار المرتفعة، والإعفاء الضريبي، والطلب القوي على العقارات الفاخرة والعقارات قيد الإنشاء. بفضل اقتصادها المتنامي، وبنيتها التحتية عالمية المستوى، وقوانين التملك المريحة للوافدين، تواصل المدينة جذب المستثمرين العالميين الباحثين عن عوائد مستقرة ومربحة. سواء كنت مستثمرًا متمرسًا أو تتطلع إلى تنويع محفظتك الاستثمارية، فإن قطاع العقارات في دبي يوفر إمكانات لا مثيل لها. الشراكة مع وسطاء عقاريين موثوقين في دبي، مثل شركة نكست ليفل العقارية، تضمن لك اتخاذ قرارات مدروسة في هذا السوق الحيوي، مما يُحقق لك أقصى قيمة لاستثمارك.
               </p>
 
-              <h3 className="text-md font-semibold text-[#8F8F8F]">FAQs</h3>
+              <h3 className="text-md font-semibold text-[#8F8F8F]">الأسئلة الشائعة</h3>
 
               <p>
                 <strong>
-                  How do I verify if a real estate agent or brokerage in Dubai is licensed and trustworthy?
+                  كيف يمكنني التأكد من أن الوكيل العقاري أو الوساطة في دبي مرخصة وجديرة بالثقة؟
                 </strong>
                 <br />
-                All agents are registered with the Dubai Land Department (DLD) and RERA. We encourage clients
-                to ask for an agent’s license number and check their credentials through the DLD’s official portal.
+                جميع الوكلاء مسجلون لدى دائرة الأراضي والأملاك في دبي (DLD) ومؤسسة التنظيم العقاري (RERA). نشجع عملاءنا على طلب رقم رخصة الوكيل والتحقق من بياناته عبر البوابة الرسمية لدائرة الأراضي والأملاك.
               </p>
 
               <p>
                 <strong>
-                  What are the benefits of working with a real estate company instead of independent agents?
+                  ما هي فوائد العمل مع شركة عقارية بدلاً من الوكلاء المستقلين؟
                 </strong>
                 <br />
-                Partnering with an established real estate company in Dubai like ours means you gain access to
-                a network of vetted properties, legal support, up-to-date market data, and comprehensive after-sales
-                services that independent agents might not offer.
+                إن الشراكة مع شركة عقارية راسخة في دبي مثل شركتنا تعني أنك ستتمكن من الوصول إلى شبكة من العقارات الموثوقة، والدعم القانوني، وبيانات السوق المحدثة، وخدمات ما بعد البيع الشاملة التي قد لا يقدمها الوكلاء المستقلون.
               </p>
 
               <p>
                 <strong>
-                  How can I assess the ROI and potential growth of my property in Dubai?
+                  كيف يمكنني تقييم العائد على الاستثمار والنمو المحتمل لعقاري في دبي؟
                 </strong>
                 <br />
-                Our team offers in-depth market analysis, rental yield reports, and forecasts on upcoming developments,
-                helping you make informed decisions to maximize your returns.
+                يقدم فريقنا تحليلات متعمقة للسوق، وتقارير عن عوائد الإيجار، وتوقعات للتطورات القادمة، مما يساعدك على اتخاذ قرارات مدروسة لتحقيق أقصى قدر من العوائد.
               </p>
 
               <p>
                 <strong>
-                  Do you provide support for corporate clients or bulk property purchases?
+                 هل تقدمون الدعم للعملاء من الشركات أو عمليات شراء العقارات بالجملة؟
                 </strong>
                 <br />
-                Yes, we offer dedicated corporate real estate services, including portfolio management, site acquisition,
-                and tailored solutions for bulk or multi-unit investments.
+                نعم، نقدم خدمات عقارية مخصصة للشركات، بما في ذلك إدارة المحافظ الاستثمارية، وشراء المواقع، وحلول مصممة خصيصًا للاستثمارات الجماعية أو متعددة الوحدات.
               </p>
 
               <p>
                 <strong>
-                  Can you assist with relocation and community guidance for newcomers to Dubai?
+                  هل يمكنك المساعدة في نقل وإرشاد الوافدين الجدد إلى دبي؟
                 </strong>
                 <br />
-                Of course! Our relocation specialists not only help with finding homes but also offer advice on schools,
-                healthcare, and amenities in different communities to ensure you feel at home in Dubai.
+                بالتأكيد! لا يقتصر عمل متخصصي النقل لدينا على مساعدتك في العثور على منزل فحسب، بل يقدمون أيضًا نصائح حول المدارس والرعاية الصحية والمرافق في مختلف المناطق لضمان شعورك بالراحة في دبي.
               </p>
 
               <p>
                 <strong>
-                  What real estate services do Next Level Real Estate offer?
+                  ما هي الخدمات العقارية التي تقدمها شركة نيكست ليفل العقارية؟
                 </strong>
                 <br />
-                Next Level Real Estate offers a full suite of services including property buying, selling, leasing, and
-                management. We also provide expert investment consulting, market analysis, legal and financial assistance,
-                and relocation services, ensuring a seamless real estate experience for our clients.
+                تقدم شركة نيكست ليفل للعقارات باقة متكاملة من الخدمات، تشمل شراء وبيع وتأجير وإدارة العقارات. كما نقدم استشارات استثمارية متخصصة، وتحليلات للسوق، ومساعدة قانونية ومالية، وخدمات نقل، لضمان تجربة عقارية سلسة لعملائنا.
               </p>
             </div>
           </div>
@@ -135,7 +111,7 @@ const NewSection = () => {
             onClick={() => setIsExpanded(!isExpanded)}
             className="mt-2 text-[#8F8F8F] font-montserrat text-sm hover:underline"
           >
-            {isExpanded ? "Read Less" : "Read More"}
+            {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
           </button>
         </div>
       </div>
