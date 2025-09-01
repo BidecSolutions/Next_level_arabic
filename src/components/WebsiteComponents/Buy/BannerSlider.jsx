@@ -66,7 +66,7 @@ const BannerSlider = ({ area, property_type, page, breadcrumb1 }) => {
         setFProperties(filteredProperties);
       } catch (error) {
         console.log("Area Detail Banner Section Error", error);
-        toast.error("Failed to load properties");
+        toast.error("فشل تحميل الخصائص");
       } finally {
         setLoading(false);
       }
@@ -159,7 +159,7 @@ return (
       {loading ? (
         <div className="flex items-center font-montserrat justify-center h-[34rem] md:h-[600px] w-full bg-gray-800 rounded-bl-[50px] rounded-br-[50px] md:rounded-bl-[90px] md:rounded-br-[90px]">
           {/* Loading placeholder */}
-          <p>Loading...</p>
+          <p>تحميل</p>
         </div>
       ) : (
         <Swiper
@@ -176,7 +176,7 @@ return (
         >
           {(FProperties?.length > 0
             ? FProperties
-            : [{ image_path: "./Areas/banner.png", heading: "Default Heading" }]
+            : [{ image_path: "./Areas/banner.png", heading: "العنوان الافتراضي" }]
           ).map((banner, index) => {
             const media = banner?.meadias?.[0]; // Get the first media object
             const mainImage = media?.main_image
@@ -197,7 +197,7 @@ return (
                   }}
                 >
                   <h2 className="text-2xl font-newsLetter md:text-[35px] xl:text-[25px] text-center font-semibold uppercase">
-                    {banner?.property_name || "Default Heading"}
+                    {banner?.property_name || "العنوان الافتراضي"}
                   </h2>
                   <div className="flex gap-[30px] justify-center flex-wrap md:flex-nowrap mt-8">
                     <div className="flex items-center gap-[5px]">
@@ -211,13 +211,13 @@ return (
                       />
                       <div>
                         <h3 className="text-[12px] font-montserrat md:text-[18px] font-semibold">
-                          Starting Price
+                          سعر البداية
                         </h3>
                         {/* <h4 className="font-montserrat text-[8px] md:text-[12px]">
                           On Request
                         </h4> */}
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.starting_price ? <span className="flex gap-1"><img src='/dirham_white.PNG' className="w-3 h-2.5 mt-0.5 md:mt-1"/> {banner?.starting_price}  </span>: "On Request"}
+                        {banner?.starting_price ? <span className="flex gap-1"><img src='/dirham_white.PNG' className="w-3 h-2.5 mt-0.5 md:mt-1"/> {banner?.starting_price}  </span>: "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -229,13 +229,13 @@ return (
                       />
                       <div>
                         <h3 className="text-[12px] font-montserrat md:text-[18px] font-semibold">
-                          Payment Plan
+                          خطة الدفع
                         </h3>
                         {/* <h4 className="font-montserrat text-[8px] md:text-[12px]">
                           On Request
                         </h4> */}
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.installment_plan === 1 ? `${banner?.first_installment} - ${banner?.second_installment} - ${banner?.hand_over}` : "On Request"}
+                        {banner?.installment_plan === 1 ? `${banner?.first_installment} - ${banner?.second_installment} - ${banner?.hand_over}` : "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -247,13 +247,13 @@ return (
                       />
                       <div>
                         <h3 className="text-[12px] font-montserrat md:text-[18px] font-semibold">
-                          HandOver
+                          تسليم
                         </h3>
                         {/* <h4 className="font-montserrat text-[8px] md:text-[12px]">
                           On Request
                         </h4> */}
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.build_year ? banner?.build_year : "On Request"}
+                        {banner?.build_year ? banner?.build_year : "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -269,14 +269,14 @@ return (
                       download
                       className="md:p-4 p-2 font-montserrat text-[12px] md:text-[16px] py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:border-[1px] border-[#8F8F8F] hover:text-white text-center hover:bg-transparent"
                     > */}
-                      Download Brochure
+                      تحميل الكتيب
                       {/* </a> */}
                     </button>
                     <button className="md:p-4 p-2 font-montserrat md:text-[16px] text-[12px] flex items-center gap-[10px] py-2 text-white rounded-[5px] border-[1px] border-white">
                       <IoCloudDownloadOutline className="text-[20px]" />
                       <Link href={`/property/${banner.slug}`}>
                         {" "}
-                        Get More Info{" "}
+                        احصل على مزيد من المعلومات{" "}
                       </Link>
                     </button>
                   </div>

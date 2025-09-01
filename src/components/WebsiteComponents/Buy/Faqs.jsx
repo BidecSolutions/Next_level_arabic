@@ -26,12 +26,12 @@ export default function Faqs({ faq_details }) {
   return (
     <div className="flex justify-center macbook:w-full md:w-[60%] gap-4 flex-col bg-transparent text-white">
       <h3 className="md:text-5xl macbook:text-[55px] font-newsLetter text-2xl text-gray-500 py-8">
-        Frequently asked questions
+       الأسئلة الشائعة
       </h3>
 
       {faqs.length === 0 && (
         <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Faqs available
+         لا توجد أسئلة شائعة متاحة
         </p>
       )}
 

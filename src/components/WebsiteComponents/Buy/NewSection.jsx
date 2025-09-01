@@ -42,7 +42,7 @@ export const NewSection = ({image, heading, description, page}) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -55,7 +55,7 @@ export const NewSection = ({image, heading, description, page}) => {
           </div>
           <button className="p-2 px-4 macbook:py-4 mt-4  macbook:text-[20px]  rounded-md text-md text-white bg-[#A39D9D] hover:bg-transparent hover:text-[#A39D9D] border hover:border-[#A39D9D] w-fit flex justify-center items-center gap-2"
           onClick={() => setIsModalOpen(true)}>
-           Let's Talk Real Estate 
+           دعونا نتحدث عن العقارات 
           </button>
         </div>
 

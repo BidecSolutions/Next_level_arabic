@@ -230,7 +230,7 @@ const LatestProject = ({ heading, area, property_type }) => {
   return (
     <div className=" py-10 md:py-24 ">
       <h1 className="uppercase text-center font-newsLetter text-[#8F8F8F] macbook:text-[48px] text-[17px] md:w-full md:text-[34px] font-semibold mb-8">
-        {heading ? heading : "Latest Projects"}
+        {heading ? heading : "أحدث المشاريع"}
       </h1>
       {/* Tab Section */}
       <div className="flex justify-center mb-6 space-x-2">
@@ -262,12 +262,12 @@ const LatestProject = ({ heading, area, property_type }) => {
           <div className="flex flex-wrap items-start md:items-center  md:justify-start gap-[15px] md:gap-[30px] ">
             <div className="flex flex-col justify-center w-[100px] md:w-[150px] ">
               <label className="text-[#8F8F8F] font-montserrat text-[10px] md:text-[17px] font-medium">
-                Search Property
+                بحث الملكية
               </label>
               <input
                 type="text"
                 className="py-2 px-1 rounded-md text-gray-500 font-montserrat text-[8px] md:text-[10px] w-[100px] md:w-[180px] focus:outline-none"
-                placeholder="Search by Property"
+                placeholder="البحث عن طريق الملكية"
                 value={filter.searchProperty}
                 onChange={(e) =>
                   setFilter((prev) => ({
@@ -288,14 +288,14 @@ const LatestProject = ({ heading, area, property_type }) => {
                 }}
               >
                 <label className="text-[#8F8F8F] font-montserrat text-[12px] md:text-[17px] font-medium">
-                  Location
+                  موقع
                 </label>
                 <div className="md:mt-1">
                   <RiArrowDropDownLine className="text-md md:text-2xl" />
                 </div>
               </div>
               <p className="text-[8px] md:text-[12px] font-montserrat text-[#8F8F8F] pb-2 py-2">
-                {filter.selectedLocation?.name || "Select a location"}
+                {filter.selectedLocation?.name || "حدد الموقع"}
               </p>
               {/* Dropdown Menu */}
               {isOpenLocation && (
@@ -329,14 +329,14 @@ const LatestProject = ({ heading, area, property_type }) => {
                 }}
               >
                 <label className="text-[#8F8F8F] font-montserrat text-[10px] md:text-[17px] font-medium">
-                  Property Type
+                  نوع العقار
                 </label>
                 <div className="md:mt-1">
                   <RiArrowDropDownLine className="text-md md:text-2xl" />
                 </div>
               </div>
               <p className="text-[8px] md:text-[12px] text-[#8F8F8F] font-montserrat pb-2 py-2">
-                {filter?.selectedProperty?.name || "Select a Property Type"}
+                {filter?.selectedProperty?.name || "اختر نوع العقار"}
               </p>
               {/* Dropdown Menu */}
 
@@ -344,7 +344,7 @@ const LatestProject = ({ heading, area, property_type }) => {
                 <div className="absolute z-10 top-12 mt-2 w-[180px] bg-white border border-gray-300 rounded-md shadow-lg">
                   {pType.length === 0 ? (
                     <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-                      No Type available
+                      لا يوجد نوع متاح
                     </p>
                   ) : (
                     ""
@@ -375,7 +375,7 @@ const LatestProject = ({ heading, area, property_type }) => {
               onClick={handleSubmit}
             >
               <GoSearch className="mr-2" size={20} />
-              Search
+              يبحث
             </button>
 
             {/* Advanced Search Button */}
@@ -383,7 +383,7 @@ const LatestProject = ({ heading, area, property_type }) => {
               className="border border-gray-300 font-montserrat text-gray-500 px-4 py-2 rounded-md"
               onClick={() => setIsModalOpen(true)}
             >
-              Advanced Search
+              بحث متقدم
             </button>
           </div>
         </div>
@@ -412,7 +412,7 @@ const LatestProject = ({ heading, area, property_type }) => {
         {/* Property Cards */}
         {properties.length === 0 ? (
           <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-            No Property available
+            لا يوجد عقار متاح
           </p>
         ) : (
           ""
@@ -485,7 +485,7 @@ const LatestProject = ({ heading, area, property_type }) => {
                   </h3>
                   <div className="text-gray-500 text-[11px] flex flex-col items-center mb-2 md:mb-4">
                     <p className="text-[16px] font-montserrat md:text-[15px] macbook:text[25px]">
-                      Starting From
+                      ابتداء من
                     </p>
                     <p className="flex gap-1 text-[14px] text-center font-montserrat md:text-[18px] macbook:text[30px] font-bold text-[#8F8F8F]">
                       <img src="/dirham.PNG" className="w-4 h-3.5 mt-0.5 md:mt-1.5" />{" "}
@@ -526,7 +526,7 @@ const LatestProject = ({ heading, area, property_type }) => {
                       });
                     }}
                   >
-                    View more detail
+                  عرض المزيد من التفاصيل
                   </button>
                 </div>
               </div>
@@ -541,7 +541,7 @@ const LatestProject = ({ heading, area, property_type }) => {
               onClick={handleLoadMore}
               className="px-6 py-2 bg-[#8F8F8F] text-white rounded-md hover:bg-transparent hover:text-[#8F8F8F] border border-[#8F8F8F]"
             >
-              Load More
+            تحميل المزيد
             </button>
           </div>
         )}
