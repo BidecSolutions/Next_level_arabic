@@ -37,14 +37,14 @@ export default function Banner({ initialSearchTerm = "", data }) {
         }}
       >
         <h1 className="text-2xl md:text-7xl macbook:text-8xl font-newsLetter">
-          {data?.banner_title || "Our Communities"}
+          {data?.banner_title || "مجتمعاتنا"}
         </h1>
 
         <div className="absolute p-4 -bottom-6 md:bottom-0 w-[300px] md:w-1/2 h-16 bg-white rounded-lg flex justify-center items-center">
           <input
             type="text"
             className="p-3 border-2 text-[11px] md:text-[15px] font-montserrat border-[#8F8F8F] outline-none w-[220px] md:w-full text-black rounded-l-md"
-            placeholder="Search Communities in Dubai"
+            placeholder="ابحث عن المجتمعات في دبي"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

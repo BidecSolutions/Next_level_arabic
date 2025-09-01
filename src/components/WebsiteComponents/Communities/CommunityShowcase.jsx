@@ -71,7 +71,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
             <div className="flex gap-[20px] macbook:gap-[40px] mb-4">
               <div>
                 <p className="font-semibold font-montserrat macbook:text-[22px] text-[#8F8F8F] text-[12px] md:text-[16px]">
-                  Starting Sizes
+                  أحجام البداية
                 </p>
                 <p className="text-[#8F8F8F] font-montserrat text-[10px] macbook:text-[19px]">
                   {property.starting_size}
@@ -79,7 +79,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
               </div>
               <div>
                 <p className="font-semibold font-montserrat text-[#8F8F8F] macbook:text-[22px] text-[14px] md:text-[16px]">
-                  Starting Price
+                  سعر البداية
                 </p>
                 <p className="flex gap-1 text-[#8F8F8F] font-montserrat text-[10px] macbook:text-[19px]">
                   {property.starting_price}{" "}
@@ -88,7 +88,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
               </div>
               <div>
                 <p className="font-semibold font-montserrat macbook:text-[22px] text-[#8F8F8F] text-[14px] md:text-[16px]">
-                  Beds
+                  سرير
                 </p>
                 <p className="text-[#8F8F8F] font-montserrat text-[10px] macbook:text-[19px]">
                   {property.beds}
@@ -99,7 +99,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
             {/* Features */}
             <div className="w-[100%] flex flex-col items-center md:items-start">
               <h4 className="font-semibold w-full font-montserrat text-[#8F8F8F] text-[18px] mb-2 macbook:text-[28px]">
-                Key Features
+                الميزات الرئيسية
               </h4>
               {property.key_features?.length > 0 ? (
                 property.key_features.map((item, index) => (
@@ -115,7 +115,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
                 ))
               ) : (
                 <p className="text-[#8F8F8F] font-newsLetter text-[15px]">
-                  No features available.
+                 لا توجد ميزات متاحة.
                 </p>
               )}
             </div>
@@ -126,7 +126,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
                 className="bg-[#8F8F8F] font-newsLetter text-white px-8 py-2 rounded-md text-[10px] md:text-[13px] macbook:text-[20px]"
                 onClick={() => setIsModalOpen(true)}
               >
-                Inquiry Now
+               الاستفسار الآن
               </button>
    <Link
   href={`/community/${property.slug}`}
@@ -143,7 +143,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
                       ? property.whatsapp_no
                       : "+971552588870"
                     ).replace(/[\s-]+/g, ""),
-                    "Hello, I want to connect!"
+                    "مرحبًا، أريد الاتصال!"
                   )
                 }
               >
@@ -161,7 +161,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
             onClick={loadMore}
             className="border border-[#8F8F8F] font-newsLetter text-[#8F8F8F] px-8 py-2 rounded-md"
           >
-            Load More
+            تحميل المزيد
           </button>
         </div>
       )}

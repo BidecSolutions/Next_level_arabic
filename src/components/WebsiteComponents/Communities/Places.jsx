@@ -44,7 +44,7 @@ const Places = ({ about, page }) => {
               className="h-[300px] w-[250px] md:w-[450px] md:h-[500px] object-cover macbook:w-[700px] macbook:h-[750px] rounded-br-[75px] md:rounded-br-[150px]"
             />
           ) : (
-            <p className="font-montserrat">No image available</p>
+            <p className="font-montserrat">لا توجد صورة متاحة</p>
           )}
         </div>
 
@@ -70,7 +70,7 @@ const Places = ({ about, page }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="text-gray-500 mt-2 underline cursor-pointer text-[14px]"
               >
-                {isExpanded ? "Show Less" : "Show More"}
+                {isExpanded ? "عرض أقل" : "عرض المزيد"}
               </p>
             )}
           </div>

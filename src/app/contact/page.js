@@ -28,7 +28,7 @@ export default function ContactUs() {
     try {
       const result = await sendContactDetails(formData);
       if (result.status === "success") {
-        setResponseMessage("Message Delivered Successfully");
+        setResponseMessage("تم تسليم الرسالة بنجاح");
         setFormData({
           name: "",
           email: "",
@@ -38,7 +38,7 @@ export default function ContactUs() {
         });
       }
     } catch {
-      setResponseMessage("Failed to send message. Please try again.");
+      setResponseMessage("فشل إرسال الرسالة. يُرجى المحاولة مرة أخرى.");
     }
     setTimeout(() => setResponseMessage(""), 2000);
   };
@@ -53,9 +53,9 @@ export default function ContactUs() {
             style={{ backgroundImage: "url('/Areas/banner.png')" }}
           >
             <h1 className="text-2xl md:text-5xl font-newsLetter font-bold">
-              Contact Us
+              اتصل بنا
             </h1>
-            <p className="text-lg md:text-xl font-montserrat">Home \ Contact Us</p>
+            <p className="text-lg md:text-xl font-montserrat">بيت \ اتصل بنا</p>
           </div>
         </div>
 
@@ -63,17 +63,16 @@ export default function ContactUs() {
         <div className="absolute z-10 top-[80%] w-full flex flex-col lg:flex-row justify-center items-stretch p-5">
           {/* Get in Touch */}
           <div className="w-full md:w-1/3 text-white p-8 rounded-l-3xl md:rounded-l-3xl bg-[#555555] shadow-xl flex flex-col justify-center min-h-[500px]">
-            <h3 className="text-3xl font-bold mb-4">GET IN TOUCH</h3>
+            <h3 className="text-3xl font-bold mb-4">تواصل معنا</h3>
             <p className="mb-8">
-              Have questions or need assistance? We're here to help! Reach out
-              to us, and we'll get back to you as soon as possible.
+             هل لديك أسئلة أو تحتاج إلى مساعدة؟ نحن هنا لمساعدتك! تواصل معنا، وسنرد عليك في أقرب وقت ممكن.
             </p>
             <div className="flex items-center mb-6">
               <div className="border p-1 mr-4 rounded-md">
                 <TfiEmail className="w-6 h-6" />
               </div>
               <div>
-                <p className="font-bold">Email Address</p>
+                <p className="font-bold">عنوان البريد الإلكتروني</p>
                 <p>media@nextlevelrealestate.ae</p>
               </div>
             </div>
@@ -82,7 +81,7 @@ export default function ContactUs() {
                 <LuPhoneCall className="w-6 h-6" />
               </div>
               <div>
-                <p className="font-bold">Phone Number</p>
+                <p className="font-bold">رقم التليفون</p>
                 <p>+(971) 4-454-2828</p>
               </div>
             </div>
@@ -91,9 +90,9 @@ export default function ContactUs() {
                 <IoLocationSharp className="w-6 h-6" />
               </div>
               <div>
-                <p className="font-bold">Office Address</p>
+                <p className="font-bold">عنوان المكتب</p>
                 <p>
-                  1505, Opal Tower Burj Khalifa Boulevard - Business Bay - Dubai.
+                  1505، برج أوبال، برج خليفة بوليفارد - الخليج التجاري - دبي.
                 </p>
               </div>
             </div>
@@ -101,7 +100,7 @@ export default function ContactUs() {
 
           {/* Form */}
           <div className="w-full md:w-1/3 bg-white p-8 rounded-r-3xl md:rounded-r-3xl shadow-xl min-h-[500px] flex flex-col justify-center">
-            <h3 className="text-3xl font-bold mb-4 text-[#8F8F8F]">CONTACT US</h3>
+            <h3 className="text-3xl font-bold mb-4 text-[#8F8F8F]">اتصل بنا</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex gap-2">
                 <input
@@ -109,7 +108,7 @@ export default function ContactUs() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name"
+                  placeholder="اسمك"
                   className="w-1/2 p-3 border rounded-lg"
                 />
                 <input
@@ -117,7 +116,7 @@ export default function ContactUs() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email address"
+                  placeholder="عنوان البريد الإلكتروني"
                   className="w-1/2 p-3 border rounded-lg"
                 />
               </div>
@@ -128,7 +127,7 @@ export default function ContactUs() {
                   maxLength="15"
                   value={formData.mobile_no}
                   onChange={handleChange}
-                  placeholder="Phone"
+                  placeholder="هاتف"
                   className="w-1/2 p-3 border rounded-lg"
                 />
                 <input
@@ -136,7 +135,7 @@ export default function ContactUs() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Subject"
+                  placeholder="موضوع"
                   className="w-1/2 p-3 border rounded-lg"
                 />
               </div>
@@ -144,7 +143,7 @@ export default function ContactUs() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Message"
+                placeholder="رسالة"
                 className="w-full p-3 border rounded-lg"
                 rows="4"
               />
@@ -152,7 +151,7 @@ export default function ContactUs() {
                 type="submit"
                 className="h-10 bg-[#8F8F8F] text-white px-4 rounded-lg"
               >
-                Send Message
+                أرسل رسالة
               </button>
               {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
             </form>

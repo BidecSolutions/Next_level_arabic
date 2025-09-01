@@ -417,7 +417,7 @@ const PropertyDetails = ({ data }) => {
           <div className="flex gap-[20px] macbook:gap-[40px] mb-4 ">
             <div>
               <p className="font-semibold font-montserrat macbook:text-[22px] text-[#8F8F8F] text-[12px] md:text-[15px] ">
-                Starting Sizes
+                أحجام البداية
               </p>
               <p className="text-[#8F8F8F] font-montserrat text-[10px] md:text-[13px] macbook:text-[19px] text-center md:text-start">
                 {data?.starting_size}
@@ -425,7 +425,7 @@ const PropertyDetails = ({ data }) => {
             </div>
             <div>
               <p className="font-semibold font-montserrat macbook:text-[22px] text-[#8F8F8F] text-[12px] md:text-[15px]">
-                Starting Price 
+                سعر البداية
               </p>
               <p className="flex gap-1 text-[#8F8F8F] font-montserrat text-[10px] md:text-[13px] macbook:text-[19px] text-center md:text-start">
                 <img src='/dirham.PNG' className="w-3 h-2.5 mt-0.5 md:mt-1"/> {data?.starting_price} 
@@ -433,7 +433,7 @@ const PropertyDetails = ({ data }) => {
             </div>
             <div>
             <p className="font-semibold font-montserrat macbook:text-[22px] text-[#8F8F8F] text-[12px] md:text-[15px]">
-                Bedrooms
+                غرف نوم
               </p>
               <p className="text-[#8F8F8F] text-[10px] md:text-[13px] macbook:text-[19px] text-center md:text-start">
                 {data?.beds}
@@ -442,7 +442,7 @@ const PropertyDetails = ({ data }) => {
           </div>
           <div className="w-[100%] flex flex-col items-center text-center md:items-start md:text-start ">
             <h4 className="font-bold font-montserrat w-full  text-[#8F8F8F] text-[18px] mb-2 macbook:text-[28px] ">
-              Key Features{" "}
+              الميزات الرئيسية{" "}
             </h4>
             {Array.isArray(feature) && feature.length > 0 ? (
               feature.map((item, index) => (
@@ -458,7 +458,7 @@ const PropertyDetails = ({ data }) => {
               ))
             ) : (
               <p className="text-[#8F8F8F] font-montserrat text-[15px]">
-                No features available.
+                لا توجد ميزات متاحة.
               </p>
             )}
           </div>
@@ -466,7 +466,7 @@ const PropertyDetails = ({ data }) => {
           <div className="mt-6 flex gap-2">
             <button className="bg-[#8F8F8F] text-white font-montserrat px-8 py-2 rounded-md text-[10px]   macbook:text-[20px] "
             onClick={() => setIsModalOpen(true)}>
-              Inquiry Now 
+              الاستفسار الآن 
             </button>
             {/* <button
               className="border border-[#8F8F8F] font-montserrat text-[#8F8F8F] px-8 py-2 rounded-md text-[10px]   macbook:text-[20px]"

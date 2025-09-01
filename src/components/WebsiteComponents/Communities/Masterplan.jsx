@@ -22,7 +22,7 @@ const Masterplan = ({ data }) => {
 
   const description =
     data?.master_plan_description ||
-    "ar Properties is founded by Mohamed Alabbar - a UAE-based leading developer in 1997...";
+    "تأسست شركة ar Properties على يد محمد العبار - وهو مطور عقاري رائد مقره الإمارات العربية المتحدة في عام 1997...";
 
   return (
     // <div className="flex justify-center md:flex-row flex-col-reverse w-[100%] py-10 md:py-24">
@@ -122,7 +122,7 @@ const Masterplan = ({ data }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="text-gray-500 mt-2 underline  text-center md:text-start cursor-pointer text-[14px]"
               >
-                {isExpanded ? "Show Less" : "Show More"}
+                {isExpanded ? "عرض أقل" : "عرض المزيد"}
               </p>
             )}
           </div>

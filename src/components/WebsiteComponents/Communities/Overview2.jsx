@@ -31,7 +31,7 @@ const Overview2 = ({ heading, description, img1, img2, img3, page }) => {
           <h2 className="text-[30px] md:leading-[32px] text-[#A39D9D] font-newsLetter text-center md:text-start macbook:text-[75px]">
             {heading
               ? heading
-              : "Discover Diverse Communities Across Dubai and the UAE"}
+              : "اكتشف مجتمعات متنوعة في جميع أنحاء دبي والإمارات العربية المتحدة"}
           </h2>
 
           {description && description?.length > 500 ? (
@@ -51,7 +51,7 @@ const Overview2 = ({ heading, description, img1, img2, img3, page }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -64,7 +64,7 @@ const Overview2 = ({ heading, description, img1, img2, img3, page }) => {
             className="p-2 font-montserrat px-4 rounded-md text-md text-white bg-[#A39D9D] macbook:text-[30px] macbook:px-8 flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Register your interest
+           سجل اهتمامك
           </button>
         </div>
       </div>

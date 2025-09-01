@@ -19,7 +19,7 @@ const WhyInvestSection = ({ data }) => {
       style={{ backgroundImage: `url(/community/bg.png)` }}
     >
      <h2 className="text-center font-newsLetter text-[18px] md:text-[24px] font-semibold mb-12 uppercase  macbook:text-[44px] ">
-        {data ? data?.why_invest_heading : " WHY INVEST ? "}
+        {data ? data?.why_invest_heading : " لماذا الاستثمار؟ "}
       </h2>
       <div className="grid  grid-cols-2 lg:grid-cols-4 gap-x-32 gap-1 gap-y-4 px-2 md:gap-8 md:px-8    ">
         {Array.isArray(invest) && invest?.length > 0 ? (
@@ -43,7 +43,7 @@ const WhyInvestSection = ({ data }) => {
             </div>
           ))
         ) : (
-          <p>No features available.</p> // Optionally handle the empty array case
+          <p>لا توجد ميزات متاحة.</p> // Optionally handle the empty array case
         )}
       </div>
     </div>

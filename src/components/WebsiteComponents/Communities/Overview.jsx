@@ -38,7 +38,7 @@ const Overview = ({
           <h2 className="text-3xl md:text-[30px] md:leading-[32px] text-[#A39D9D] font-newsLetter text-center md:text-start macbook:text-[75px]">
             {heading
               ? heading
-              : "Top UAE Real Estate Developers: Premier Properties for Discerning Buyers"}
+              : "أفضل مطوري العقارات في الإمارات العربية المتحدة: عقارات مميزة للمشترين المميزين"}
           </h2>
 
           {description && description?.length > 500 ? (
@@ -51,14 +51,14 @@ const Overview = ({
                 }`}
               >
                 <div className="text-sm text-gray-700 font-montserrat">
-                  <ParseBody body={description ? description : "hello"} />
+                  <ParseBody body={description ? description : "مرحبًا"} />
                 </div>
               </div>
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -71,7 +71,7 @@ const Overview = ({
             className="p-2 px-4 font-montserrat font-newsLetter rounded-md text-md text-white bg-[#A39D9D] macbook:text-[30px] macbook:px-8 flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Inquire Now
+            استفسر الآن
           </button>
         </div>
 
