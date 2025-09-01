@@ -29,7 +29,7 @@ const OwnerOverview = ({ ownerDetails }) => {
             {` ${
               ownerDetails?.overview_section_heading
                 ? ownerDetails?.overview_section_heading
-                : "Overview"
+                : "ملخص"
             }   `}
           </h3>
 
@@ -61,7 +61,7 @@ const OwnerOverview = ({ ownerDetails }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (

@@ -21,7 +21,7 @@ const RecommendedBlogSlider = ({ recommededBlogs }) => {
     <div className="py-8">
       <div className="flex w-full items-center relative mb-6">
         <h2 className="text-xl font-bold text-gray-800 flex-grow">
-          You Might Also Like
+          قد يعجبك أيضاً
         </h2>
         {/* Navigation Buttons */}
         <div className="flex gap-2">
@@ -101,7 +101,7 @@ const RecommendedBlogSlider = ({ recommededBlogs }) => {
                       href={`/${blog.slug}`}
                       className="w-[100px] md:w-[142px] text-center flex justify-center text-[11px] macbook:text-[18px] my-1 py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-gray-500"
                     >
-                      Continue Reading
+                      مواصلة القراءة
                     </Link>
                   </div>
                 </div>

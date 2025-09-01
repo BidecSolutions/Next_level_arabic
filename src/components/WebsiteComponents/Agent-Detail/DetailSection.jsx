@@ -217,7 +217,7 @@ const DetailSection = ({ data }) => {
     const isValid = isValidPhoneNumber(fullPhone, code);
 
     if (!isValid) {
-      toast.error("Invalid phone number.");
+      toast.error("رقم الهاتف غير صالح.");
       return;
     }
 
@@ -230,18 +230,18 @@ const DetailSection = ({ data }) => {
       const res = await sendInquiry(payload);
 
       if (res.success) {
-        setFeedback("Inquiry sent successfully!");
-        toast.success("Inquiry sent successfully!");
+        setFeedback("تم إرسال الاستفسار بنجاح!");
+        toast.success("تم إرسال الاستفسار بنجاح!");
         setFormData({ full_name: "", phone: "", email: "", message: "" });
         setTimeout(() => setFeedback(""), 2000);
       } else {
-        setFeedback("Error sending inquiry. Please try again.");
-        toast.error(res.error || "Error sending inquiry.");
+        setFeedback("حدث خطأ أثناء إرسال الاستفسار. يُرجى المحاولة مرة أخرى.");
+        toast.error(res.error || "خطأ في إرسال الاستفسار.");
         setTimeout(() => setFeedback(""), 2000);
       }
     } catch (error) {
-      setFeedback("Unexpected error occurred.");
-      toast.error("Unexpected error occurred.");
+      setFeedback("حدث خطأ غير متوقع.");
+      toast.error("حدث خطأ غير متوقع.");
       setTimeout(() => setFeedback(""), 2000);
     }
   };
@@ -319,7 +319,7 @@ const DetailSection = ({ data }) => {
 
           {/* Overview */}
           <div className="mt-10">
-            <h2 className="text-2xl font-semibold text-[#6B6B6B]">Overview</h2>
+            <h2 className="text-2xl font-semibold text-[#6B6B6B]">ملخص</h2>
             <p
               className="text-[#6B6B6B] mt-4"
               dangerouslySetInnerHTML={{ __html: data?.description }}

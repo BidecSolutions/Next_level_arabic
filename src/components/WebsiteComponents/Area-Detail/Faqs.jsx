@@ -36,12 +36,12 @@ const Faqs = ({ faqs, heading }) => {
   return (
     <div className="flex justify-center w-full md:w-[60%] gap-4 flex-col bg-transparent text-white">
       <h4 className="md:text-5xl macbook:text-[55px] font-newsLetter text-2xl text-gray-500 py-8">
-        {heading || "Frequently asked questions"}
+        {heading || "الأسئلة الشائعة"}
       </h4>
 
       {parsedFaqs.length === 0 && (
         <p className="text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Faqs available
+          لا توجد أسئلة شائعة متاحة
         </p>
       )}
 

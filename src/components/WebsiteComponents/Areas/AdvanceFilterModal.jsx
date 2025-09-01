@@ -120,12 +120,12 @@ useEffect(() => {
         <div className="grid grid-cols-2 gap-4 overflow-hidden">
           {/* Developer */}
           <div>
-            <label className="block text-gray-600 mb-1">Developer</label>
+            <label className="block text-gray-600 mb-1">المطور</label>
             {hide === "developer" ? (
               <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100 overflow-hidden">
                 {selectedDeveloper
                   ? developers.find((d) => d.id === selectedDeveloper)?.name
-                  : "LIST OF DEVELOPER"}
+                  : "قائمة المطورين"}
               </div>
             ) : (
               <select
@@ -133,7 +133,7 @@ useEffect(() => {
                 value={selectedDeveloper}
                 onChange={(e) => setSelectedDeveloper(e.target.value)}
               >
-                <option value="">LIST OF DEVELOPER</option>
+                <option value="">قائمة المطورين</option>
                 {developers.map((dev) => (
                   <option key={dev.id} value={dev.id}>
                     {dev.name}
@@ -145,12 +145,12 @@ useEffect(() => {
 
           {/* Area */}
           <div>
-            <label className="block text-gray-600 mb-1">Areas</label>
+            <label className="block text-gray-600 mb-1">المناطق</label>
             {hide === "area" ? (
               <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100 overflow-hidden">
                 {selectedArea
                   ? area.find((a) => a.id === selectedArea)?.name
-                  : "LIST OF AREAS"}
+                  : "قائمة المناطق"}
               </div>
             ) : (
               <select
@@ -158,7 +158,7 @@ useEffect(() => {
                 value={selectedArea}
                 onChange={(e) => setSelectedArea(e.target.value)}
               >
-                <option value="">LIST OF AREAS</option>
+                <option value="">قائمة المناطق</option>
                 {area.map((ar) => (
                   <option key={ar.id} value={ar.id}>
                     {ar.name}
@@ -170,12 +170,12 @@ useEffect(() => {
 
           {/* Community */}
           <div>
-            <label className="block text-gray-600 mb-1">Community</label>
+            <label className="block text-gray-600 mb-1">مجتمع</label>
             {hide === "community" ? (
               <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100 overflow-hidden">
                 {selectedCommunity
                   ? community.find((c) => c.id === selectedCommunity)?.name
-                  : "LIST OF COMMUNITY"}
+                  : "قائمة المجتمع"}
               </div>
             ) : (
               <select
@@ -183,7 +183,7 @@ useEffect(() => {
                 value={selectedCommunity}
                 onChange={(e) => setSelectedCommunity(e.target.value)}
               >
-                <option value="">LIST OF COMMUNITY</option>
+                <option value="">قائمة المجتمع</option>
                 {community.map((com) => (
                   <option key={com.id} value={com.id}>
                     {com.name}
@@ -196,13 +196,13 @@ useEffect(() => {
           {/* Amenities */}
           {!show && (
             <div>
-              <label className="block text-gray-600 mb-1">Amenities</label>
+              <label className="block text-gray-600 mb-1">وسائل الراحة</label>
               <select
                 className="w-full border border-gray-300 rounded p-2"
                 value={selectedAmenities}
                 onChange={(e) => setSelectedAmenities(e.target.value)}
               >
-                <option value="">LIST OF AMENITIES</option>
+                <option value="">قائمة المرافق</option>
                 {amenities.map((am) => (
                   <option key={am.id} value={am.id}>
                     {am.name}
@@ -216,7 +216,7 @@ useEffect(() => {
         {/* Price Range */}
         <div className="mt-6 grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-gray-600 mb-1">Low to High</label>
+            <label className="block text-gray-600 mb-1">منخفض إلى مرتفع</label>
             <div className="flex justify-start gap-5 py-3">
               <h1 className="text-[#555] text-xs">AED {minPrice}</h1>-
               <h1 className="text-[#555] text-xs">AED {maxPrice}</h1>
@@ -260,7 +260,7 @@ useEffect(() => {
                 onClose();
               }}
             >
-              Advanced Search
+              بحث متقدم
             </button>
           </div>
         </div>

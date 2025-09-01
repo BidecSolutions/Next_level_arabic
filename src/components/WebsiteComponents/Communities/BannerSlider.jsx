@@ -172,7 +172,7 @@ const handleSubmit = async (e) => {
     : null;
 
   if (!captchaValue) {
-    alert(" Please Verify the Captcha");
+    alert(" يرجى التحقق من الكابتشا");
     return;
   }
 
@@ -180,7 +180,7 @@ const handleSubmit = async (e) => {
   const isValid = isValidPhoneNumber(fullPhone, code);
 
   if (!isValid) {
-    toast.error("Invalid phone number for selected country.");
+    toast.error("رقم الهاتف غير صالح للبلد المحدد.");
     return;
   }
   setLoading(true);
@@ -208,7 +208,7 @@ const handleSubmit = async (e) => {
       link.target = "_blank";
       link.click();
     } else {
-      alert("Brochure PDF is not available now. It will be sent soon.");
+      alert("كتيب PDF غير متوفر حاليًا. سيتم إرساله قريبًا.");
     }
 
     setIsModalOpen(false);
@@ -230,7 +230,7 @@ const handleSubmit = async (e) => {
     <div className="flex justify-center text-white">
       {loading ? (
         <div className="flex items-center font-montserrat justify-center h-[34rem] md:h-[600px] w-full bg-gray-800 rounded-bl-[50px] rounded-br-[50px] md:rounded-bl-[90px] md:rounded-br-[90px]">
-          <p>Loading...</p>
+          <p>تحميل</p>
         </div>
       ) : (
         <Swiper
@@ -247,7 +247,7 @@ const handleSubmit = async (e) => {
         >
           {(FProperties?.length > 0
             ? FProperties
-            : [{ image_path: fallbackBanner, heading: "Project Coming Soon" }]
+            : [{ image_path: fallbackBanner, heading: "المشروع قريبا" }]
           ).map((banner, index) => {
             const media = banner?.meadias?.[0];
             const mainImage = media?.main_image
@@ -266,7 +266,7 @@ const handleSubmit = async (e) => {
                 >
                  
                   <h2 className="text-[18px] text-center   font-newsLetter md:text-[35px] xl:text-[25px] font-semibold uppercase">
-                    {banner?.property_name || "Project Coming Soon"}
+                    {banner?.property_name || "المشروع قريبا"}
                   </h2>
                    <div className="flex gap-[30px] justify-center flex-wrap md:flex-nowrap mt-8">
                     <div className="flex items-center gap-[5px]">
@@ -280,13 +280,13 @@ const handleSubmit = async (e) => {
                       />
                       <div>
                         <p className="text-[15px] font-montserrat md:text-[18px] font-semibold">
-                          Starting Price
+                         سعر البداية
                         </p>
                         {/* <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
                         {banner?.starting_price ? banner?.starting_price : "On Request"}
                         </h4> */}
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.starting_price ? <span className="flex gap-1"> <img src='/dirham_white.PNG' className="w-3 h-2.5 mt-0.5 md:mt-1"/> {banner?.starting_price}  </span>: "On Request"}
+                        {banner?.starting_price ? <span className="flex gap-1"> <img src='/dirham_white.PNG' className="w-3 h-2.5 mt-0.5 md:mt-1"/> {banner?.starting_price}  </span>: "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -298,10 +298,10 @@ const handleSubmit = async (e) => {
                       />
                       <div>
                         <p className="text-[15px] font-montserrat md:text-[18px] font-semibold">
-                          Payment Plan
+                          خطة الدفع
                         </p>
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.installment_plan === 1 ? `${banner?.first_installment} - ${banner?.second_installment} - ${banner?.hand_over}` : "On Request"}
+                        {banner?.installment_plan === 1 ? `${banner?.first_installment} - ${banner?.second_installment} - ${banner?.hand_over}` : "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -313,10 +313,10 @@ const handleSubmit = async (e) => {
                       />
                       <div>
                         <p className="text-[15px] font-montserrat md:text-[18px] font-semibold">
-                          HandOver
+                          تسليم
                         </p>
                         <h4 className="font-montserrat text-[9px] md:text-[13px]  ">
-                        {banner?.build_year ? banner?.build_year : "On Request"}
+                        {banner?.build_year ? banner?.build_year : "عند الطلب"}
                         </h4>
                       </div>
                     </div>
@@ -328,7 +328,7 @@ const handleSubmit = async (e) => {
                       onClick={() => handleOpenModal(banner)}
                       className="md:p-4 p-2 font-montserrat md:text-[16px] text-[12px] flex items-center gap-[10px] py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:border-[1px] border-[#8F8F8F] hover:text[#8F8F8F] hover:bg-transparent"
                     >
-                      Download Brochure
+                      تحميل الكتيب
                     </button>
                     <button className="md:px-4 p-2 py-2  font-montserrat md:text-[16px] text-[12px] flex items-center gap-[10px]  text-white rounded-[5px] border-[1px] border-white">
 
@@ -336,7 +336,7 @@ const handleSubmit = async (e) => {
                       href={`/property/${banner?.slug}`}
                       // className="md:px-4 p-2 py-2 text-[12px] md:text-[16px] flex items-center gap-[10px] text-white rounded-[5px] border border-white"
                     >
-                      Get More Info
+                     احصل على مزيد من المعلومات
                     </Link>
                                         </button>
 

@@ -39,7 +39,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
     const captchaValue = recaptcha.current ? recaptcha.current.getValue() : null;
 
     if (!captchaValue) {
-      alert("Please Verify the Captcha");
+      alert("يرجى التحقق من الكابتشا");
       return;
     }
 
@@ -47,7 +47,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
     const isValid = isValidPhoneNumber(fullPhone);
 
     if (!isValid) {
-      toast.error("Invalid phone number for selected country.");
+      toast.error("رقم الهاتف غير صالح للبلد المحدد.");
       return;
     }
 
@@ -74,7 +74,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
       });
 
       onClose();
-      toast.success("Form submitted successfully!");
+      toast.success("تم إرسال النموذج بنجاح!");
       recaptcha.current.reset();
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -85,7 +85,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
           .join("\n");
         alert(errorMessages);
       } else {
-        alert("Network error or server is down. Please try again later.");
+        alert("خطأ في الشبكة أو الخادم معطل. يُرجى المحاولة لاحقًا.");
       }
     } finally {
       setLoading(false);
@@ -111,7 +111,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
           &times;
         </button>
         <h2 className="text-[17px] md:text-2xl text-black font-newsLetter font-semibold mb-4">
-          Download Brochure
+          تحميل الكتيب
         </h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
@@ -119,7 +119,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Full Name"
+            placeholder="الاسم الكامل"
             className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
             required
           />
@@ -128,7 +128,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Email Address"
+            placeholder="عنوان البريد الإلكتروني"
             className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
             required
           />
@@ -164,7 +164,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
             name="description"
             value={formData.description}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder="رسالة"
             rows={1}
             className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600 resize-none"
           />
@@ -177,7 +177,7 @@ function BrochureRegisterForm({ isOpen, onClose, page }) {
             className="bg-[#8F8F8F] text-center flex items-center justify-center w-full font-montserrat text-white py-3 macbook:text-[18px] px-4 rounded-lg hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] transition"
             disabled={loading}
           >
-            {loading ? "Submitting..." : "Submit"}
+            {loading ? "تقديم" : "يُقدِّم"}
           </button>
         </form>
       </div>

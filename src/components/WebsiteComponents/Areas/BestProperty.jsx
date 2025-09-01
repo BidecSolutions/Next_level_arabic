@@ -406,7 +406,7 @@ export const BestProperty = ({ heading }) => {
         <div className="flex justify-center py-10 md:py-20 w-full">
             <div className="w-full macbook:w-[100%]">
                 <h2 className="text-center font-newsLetter text-[#8F8F8F] uppercase text-xl font-normal md:text-2xl my-14">
-                    {heading || "Best Property Sale in Dubai"}
+                    {heading || "أفضل مبيعات العقارات في دبي"}
                 </h2>
 
                 <div
@@ -422,12 +422,12 @@ export const BestProperty = ({ heading }) => {
                                 {/* Search Input */}
                                 <div className="flex flex-col w-[100px] md:w-[150px]">
                                     <label className="text-[#8F8F8F] text-[10px] md:text-[17px] font-medium">
-                                        Search Property
+                                        بحث الملكية
                                     </label>
                                     <input
                                         type="text"
                                         className="py-2 px-1 rounded-md text-gray-500 text-[8px] md:text-[10px] w-[100px] md:w-[180px] focus:outline-none"
-                                        placeholder="Search by Property"
+                                        placeholder="البحث عن طريق الملكية"
                                         value={filter.searchProperty}
                                         onChange={(e) =>
                                             setFilter((prev) => ({
@@ -448,12 +448,12 @@ export const BestProperty = ({ heading }) => {
                                         }}
                                     >
                                         <label className="text-[#8F8F8F] text-[12px] md:text-[17px] font-medium">
-                                            Location
+                                            موقع
                                         </label>
                                         <RiArrowDropDownLine className="md:mt-1 text-md md:text-2xl" />
                                     </div>
                                     <p className="text-[8px] md:text-[12px] text-[#8F8F8F] py-2">
-                                        {filter.selectedLocation?.name || "Select a location"}
+                                        {filter.selectedLocation?.name || "حدد الموقع"}
                                     </p>
                                     {isOpenLocation && (
                                         <ul className="absolute z-10 top-12 mt-2 w-[180px] bg-white border rounded-md shadow-lg text-xs max-h-40 overflow-y-auto">
@@ -480,12 +480,12 @@ export const BestProperty = ({ heading }) => {
                                         }}
                                     >
                                         <label className="text-[#8F8F8F] text-[10px] md:text-[17px] font-medium">
-                                            Property Type
+                                            نوع العقار
                                         </label>
                                         <RiArrowDropDownLine className="md:mt-1 text-md md:text-2xl" />
                                     </div>
                                     <p className="text-[8px] md:text-[12px] text-[#8F8F8F] py-2">
-                                        {filter.selectedProperty?.name || "Select a Property Type"}
+                                        {filter.selectedProperty?.name || "اختر نوع العقار"}
                                     </p>
                                     {isOpenProperty && (
                                         <ul className="absolute z-10 top-12 mt-2 w-[180px] bg-white border rounded-md shadow-lg text-xs max-h-40 overflow-y-auto">
@@ -509,13 +509,13 @@ export const BestProperty = ({ heading }) => {
                                         onClick={handleSubmit}
                                     >
                                         <GoSearch className="mr-2" size={20} />
-                                        Search
+                                        يبحث
                                     </button>
                                     <button
                                         className="border border-gray-300 text-[12px] md:text-[15px] text-gray-500 px-4 py-2 rounded-md"
                                         onClick={() => setIsModalOpen(true)}
                                     >
-                                        Advanced Search
+                                        بحث متقدم
                                     </button>
                                 </div>
                             </div>
@@ -573,7 +573,7 @@ export const BestProperty = ({ heading }) => {
                                                         onClick={() => router.push(`/property/${property.slug}`)}
                                                         className="w-[200px] text-[11px] my-1 py-1 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-transparent border hover:border-[#8F8F8F] hover:text-[#8F8F8F]"
                                                     >
-                                                        View more detail
+                                                        عرض المزيد من التفاصيل
                                                     </button>
                                                 </div>
                                             </div>
@@ -582,7 +582,7 @@ export const BestProperty = ({ heading }) => {
                                 </Swiper>
                             ) : (
                                 <div className="flex justify-center items-center h-[200px] rounded-lg">
-                                    <p className="text-white font-montserrat md:text-[36px]">No property found</p>
+                                    <p className="text-white font-montserrat md:text-[36px]">لم يتم العثور على الممتلكات</p>
                                 </div>
                             )}
                         </div>

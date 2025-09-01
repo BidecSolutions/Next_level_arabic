@@ -103,19 +103,19 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
       if (!formData.full_name.trim()) {
-      alert("Name is required");
+      alert("الاسم مطلوب");
       return;
     }
     if (!formData.phone.trim()) {
-      alert("Phone number is required");
+      alert("رقم الهاتف مطلوب");
       return;
     }
     if (!formData.email.trim()) {
-      alert("Email is required");
+      alert("البريد الإلكتروني مطلوب");
       return;
     }
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      alert("Invalid email format");
+      alert("تنسيق البريد الإلكتروني غير صالح");
       return;
     }
 
@@ -123,7 +123,7 @@ const handleSubmit = async (e) => {
     const isValid = isValidPhoneNumber(fullPhone, code);
 
     if (!isValid) {
-      toast.error("Invalid phone number for selected country.");
+      toast.error("رقم الهاتف غير صالح للبلد المحدد.");
       return;
     }
 
@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
   setLoading(false);
 
   if (result.success) {
-    toast.success("Inquiry sent successfully!");
+    toast.success("تم إرسال الاستفسار بنجاح!");
     setFormData({
       full_name: "",
       phone: "",
@@ -151,23 +151,23 @@ const handleSubmit = async (e) => {
     <div className="flex justify-end py-10 md:py-24 macbook:w-[390px]">
       <div className="py-8 px-4 border-2 macbook:w-full border-gray-400 rounded-lg">
         <p className="text-2xl font-newsLetter macbook:text-[28px] mb-4 text-gray-500">
-          Ask Your Valuable Questions
+          اطرح أسئلتك القيمة
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-2 my-2">
           <label className="text-md font-montserrat text-gray-500 macbook:text-[24px]">
-            Full Name
+            الاسم الكامل
           </label>
           <input
             type="text"
             name="full_name"
             value={formData.full_name}
             onChange={handleChange}
-            placeholder="Enter Full Name"
+            placeholder="أدخل الاسم الكامل"
             className="w-full font-montserrat p-2 border-[1px] macbook:text-[18px] border-[#8F8F8F] rounded-md focus:outline-none"
           />
 
           <label className="text-md font-montserrat text-[#8F8F8F] macbook:text-[24px]">
-            Your Phone
+            رقم هاتفك
           </label>
           <div className="w-full flex items-start gap-1">
          <PhoneInput
@@ -198,26 +198,26 @@ const handleSubmit = async (e) => {
           </div>
 
           <label className="text-md text-[#8F8F8F] font-montserrat macbook:text-[24px]">
-            Email Address
+            عنوان البريد الإلكتروني
           </label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter Email Address"
+            placeholder="أدخل عنوان البريد الإلكتروني"
             className="w-full p-2 border-[1px] border-[#8F8F8F] font-montserrat rounded-md macbook:text-[18px] focus:outline-none"
           />
 
           <label className="text-md text-[#8F8F8F] font-montserrat macbook:text-[24px]">
-            Message
+           رسالة
           </label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             className="w-full p-2 border-[1px] macbook:text-[18px] border-[#8F8F8F] font-montserrat rounded-md focus:outline-none h-24 resize-none"
-            placeholder="Enter Message"
+            placeholder="أدخل الرسالة"
           />
 
           <button
@@ -225,7 +225,7 @@ const handleSubmit = async (e) => {
             className="px-4 w-full py-2 font-montserrat bg-[#8F8F8F] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] text-white rounded-md mt-4"
             disabled={loading}
           >
-            {loading ? "Submitting..." : "Inquiry"}
+            {loading ? "تقديم" : "سؤال"}
           </button>
           {feedback && (
             <p className="mt-2 text-center text-[#8F8F8F] font-montserrat">

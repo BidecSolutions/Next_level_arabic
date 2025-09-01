@@ -34,7 +34,7 @@ const AreaSpecialization = () => {
     <div className="flex w-full flex-col items-center">
       <div>
         <h3 className="md:text-[40px] font-newsLetter py-10 text-[#8F8F8F] font-medium macbook:text-[60px]">
-          Areas of Specialization
+          مجالات التخصص
         </h3>
       </div>
 
@@ -60,7 +60,7 @@ const AreaSpecialization = () => {
 
               <div className="text-[#8F8F8F] text-[11px] flex flex-col mb-1 md:mb-4">
                 <p className="text-[10px] font-montserrat md:text-md text-[#8F8F8F]">
-                  Starting From{" "}
+                  ابتداء من{" "}
                   <span className="flex gap-1 text-[12px] font-montserrat font-normal md:text-[16px] md:font-bold">
                     <img src="/dirham.PNG" className="w-3.5 h-3.5 mt-1" />
                     {Number(property?.startingPrice)}
@@ -73,7 +73,7 @@ const AreaSpecialization = () => {
                   href={`/area/${property?.slug}`}
                   className="w-full text-center py-1 px-1 font-montserrat text-[7px] md:p-4 md:text-[12px] md:py-2 border-[#8F8F8F] rounded-[5px] hover:border-[1px] hover:bg-[#8F8F8F] border text-[#8F8F8F] hover:text-white"
                 >
-                  View Details
+                  عرض التفاصيل
                 </Link>
               </div>
             </div>
@@ -87,7 +87,7 @@ const AreaSpecialization = () => {
             onClick={loadMore}
             className="mt-8 py-2 px-4 border-2 font-montserrat border-[#8F8F8F] bg-[#8F8F8F] text-white rounded hover:text-[#8F8F8F] hover:bg-transparent text-center"
           >
-            Load More
+            تحميل المزيد
           </button>
         </div>
       )}

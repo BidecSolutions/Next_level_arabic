@@ -75,12 +75,12 @@ console.log(community, "community", developers, "developers", amenities, "amenit
         </button>
         <div className="grid grid-cols-2 gap-4 overflow-hidden">
           <div>
-            <label className="block text-gray-600 mb-1">Developer</label>
+            <label className="block text-gray-600 mb-1">المطور</label>
                      {hide === "developer" ? (
   <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100  overflow-hidden">
     {selectedDeveloper
       ? developers.find((ar) => ar.id === selectedDeveloper)?.name
-      : "LIST OF DEVELOPER"}
+      : "قائمة المطورين"}
   </div>
 ) : (
   <select
@@ -88,7 +88,7 @@ console.log(community, "community", developers, "developers", amenities, "amenit
     value={selectedDeveloper}
     onChange={(e) => setSelectedDeveloper(e.target.value)}
   >
-    <option value="">LIST OF DEVELOPER</option>
+    <option value="">قائمة المطورين</option>
     {Array.isArray(area) &&
       developers.map((ar) => (
         <option key={ar.id} value={ar.id}>
@@ -102,12 +102,12 @@ console.log(community, "community", developers, "developers", amenities, "amenit
 
 
           <div>
-            <label className="block text-gray-600 mb-1">Areas</label>
+            <label className="block text-gray-600 mb-1">المناطق</label>
             {hide === "area" ? (
   <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100  overflow-hidden">
     {selectedArea
       ? area.find((ar) => ar.id === selectedArea)?.name
-      : "LIST OF AREAS"}
+      : "قائمة المناطق"}
   </div>
 ) : (
   <select
@@ -128,12 +128,12 @@ console.log(community, "community", developers, "developers", amenities, "amenit
           </div>
 
           <div>
-            <label className="block text-gray-600 mb-1">Community</label>
+            <label className="block text-gray-600 mb-1">مجتمع</label>
             {hide === "community" ? (
   <div className="w-full border h-10 border-gray-300 rounded p-2 bg-gray-100 overflow-hidden">
     {selectedCommunity
       ? community.find((ar) => ar.id === selectedCommunity)?.name
-      : "LIST OF COMMUNITY"}
+      : "قائمة المجتمع"}
   </div>
 ) : (
   <select
@@ -141,7 +141,7 @@ console.log(community, "community", developers, "developers", amenities, "amenit
     value={selectedCommunity}
     onChange={(e) => setSelectedCommunity(e.target.value)}
   >
-    <option value="">LIST OF COMMUNITY</option>
+    <option value="">قائمة المجتمع</option>
     {Array.isArray(area) &&
       community.map((com) => (
         <option key={com.id} value={com.id}>
@@ -153,13 +153,13 @@ console.log(community, "community", developers, "developers", amenities, "amenit
           </div>
 
          {!show &&  <div>
-            <label className="block text-gray-600 mb-1">Amenities</label>
+            <label className="block text-gray-600 mb-1">وسائل الراحة</label>
             <select
               className="w-full border border-gray-300 rounded p-2"
               value={selectedAmenities}
               onChange={(e) => setSelectedAmenities(e.target.value)}
             >
-              <option value="">LIST OF AMENITIES</option>
+              <option value="">قائمة المرافق</option>
               {Array.isArray(amenities) &&
                 amenities.map((com) => (
                   <option key={com.id} value={com.id}>
@@ -173,7 +173,7 @@ console.log(community, "community", developers, "developers", amenities, "amenit
 
         <div className="mt-6 grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-gray-600 mb-1">Low to High</label>
+            <label className="block text-gray-600 mb-1">منخفض إلى مرتفع</label>
             <div className="flex justify-start gap-[20px] py-3">
               <h1 className="text-[#555555] text-[12px] ">AED {minPrice}</h1> -
               <h1 className="text-[#555555]  text-[12px]  ">AED {maxPrice}</h1>
@@ -201,8 +201,8 @@ console.log(community, "community", developers, "developers", amenities, "amenit
               <div
                 className="absolute top-0 h-[2px] bg-[#555555] rounded"
                 style={{
-                  left: `${((minPrice - min) / (max - min)) * 100}%`,
-                  right: `${100 - ((maxPrice - min) / (max - min)) * 100}%`,
+                  غادر: `${((minPrice - min) / (max - min)) * 100}%`,
+                  يمين: `${100 - ((maxPrice - min) / (max - min)) * 100}%`,
                 }}
               ></div>
             </div>
@@ -211,7 +211,7 @@ console.log(community, "community", developers, "developers", amenities, "amenit
           <button
               className="border h-fit md:w-52 md:ml-20 text-sm md:text-md border-gray-300 bg-[#8F8F8F] hover:bg-transparent font-montserrat text-white hover:text-gray-500 px-4 py-2 rounded-md"
             onClick={() => { handleSubmit(); onClose(); }}>
-              Advanced Search
+              بحث متقدم
             </button>
           </div>
         </div>
@@ -372,7 +372,7 @@ console.log(developerId, "developerId", communityId, "community")
   return (
     <div className=" py-10 md:py-16 ">
       <h1 className="uppercase text-center font-newsLetter text-[#8F8F8F] macbook:text-[48px] text-[17px] md:w-full md:text-[34px] font-semibold mb-8">
-        {heading ? heading : "Latest OFF PLan Properties"}
+        {heading ? heading : "أحدث العقارات قيد الإنشاء"}
       </h1>
       <div className="flex justify-center mb-6 space-x-2">
         {pStatus.slice(0, 1).map((tab) => (
@@ -401,12 +401,12 @@ console.log(developerId, "developerId", communityId, "community")
           <div className="flex flex-wrap items-start md:items-center  md:justify-start gap-[15px] md:gap-[30px] ">
             <div className="flex flex-col justify-center w-[100px] md:w-[150px] ">
               <label className="text-[#8F8F8F] font-montserrat text-[10px] md:text-[17px] font-medium">
-                Search Property
+                بحث الملكية
               </label>
               <input
                 type="text"
                 className="py-2 px-1 rounded-md text-gray-500 font-montserrat text-[8px]  md:text-[12px] w-[100px] md:w-[180px] focus:outline-none"
-                placeholder="Search by Property"
+                placeholder="البحث عن طريق الملكية"
                 value={filter.searchProperty}
                 onChange={(e) =>
                   setFilter((prev) => ({
@@ -427,14 +427,14 @@ console.log(developerId, "developerId", communityId, "community")
                 }}
               >
                 <label className="text-[#8F8F8F] font-montserrat text-[12px] md:text-[17px] font-medium">
-                  Location
+                  موقع
                 </label>
                 <div className="md:mt-1">
                   <RiArrowDropDownLine className="text-md md:text-2xl" />
                 </div>
               </div>
               <p className="text-[8px] md:text-[12px] font-montserrat text-[#8F8F8F] pb-2 py-2">
-                {filter.selectedLocation?.name || "Select a location"}
+                {filter.selectedLocation?.name || "حدد الموقع"}
               </p>
               {/* Dropdown Menu */}
               {(isOpenLocation && !areaId) && (
@@ -468,14 +468,14 @@ console.log(developerId, "developerId", communityId, "community")
                 }}
               >
                 <label className="text-[#8F8F8F] font-montserrat text-[10px] md:text-[17px] font-medium">
-                  Property Type
+                  نوع العقار
                 </label>
                 <div className="md:mt-1">
                   <RiArrowDropDownLine className="text-md md:text-2xl" />
                 </div>
               </div>
               <p className="text-[8px] md:text-[12px] text-[#8F8F8F] font-montserrat pb-2 py-2">
-                {filter.selectedProperty?.name || "Select a Property Type"}
+                {filter.selectedProperty?.name || "اختر نوع العقار"}
               </p>
               {/* Dropdown Menu */}
 
@@ -483,7 +483,7 @@ console.log(developerId, "developerId", communityId, "community")
                 <div className="absolute z-10 top-12 mt-2 w-[180px] bg-white border border-gray-300 rounded-md shadow-lg">
                   {pType.length === 0 ? (
                     <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-                      No Type available
+                      لا يوجد نوع متاح
                     </p>
                   ) : (
                     ""
@@ -522,7 +522,7 @@ console.log(developerId, "developerId", communityId, "community")
               className="border border-gray-300 font-montserrat text-gray-500 px-4 py-2 rounded-md"
               onClick={() => setIsModalOpen(true)}
             >
-              Advanced Search
+              بحث متقدم
             </button>
           </div>
         </div>
@@ -550,7 +550,7 @@ console.log(developerId, "developerId", communityId, "community")
         {/* Property Cards */}
         {properties.length === 0 ? (
           <p className="text-center text-[25px] mt-10 md:mt-0 font-montserrat w-full flex justify-center text-gray-500">
-            No Property available
+            لا يوجد عقار متاح
           </p>
         ) : (
           ""
@@ -638,7 +638,7 @@ console.log(developerId, "developerId", communityId, "community")
                   </h3>
                   <div className="text-gray-500 text-[11px] flex flex-col items-center mb-2 md:mb-4">
                     <p className="text-[16px] font-montserrat md:text-[15px] macbook:text[25px]">
-                      Starting From
+                      ابتداء من
                     </p>
                     <p className="flex gap-1 text-[14px] text-center font-montserrat md:text-[18px] macbook:text[30px] font-bold text-[#8F8F8F]">
                       <img
@@ -682,7 +682,7 @@ console.log(developerId, "developerId", communityId, "community")
                       });
                     }}
                   >
-                    View more detail
+                   عرض المزيد من التفاصيل
                   </button>
                 </div>
               </div>
@@ -695,7 +695,7 @@ console.log(developerId, "developerId", communityId, "community")
               onClick={handleLoadMore}
               className="px-6 py-2 bg-[#8F8F8F] text-white rounded-md hover:bg-transparent hover:text-[#8F8F8F] border border-[#8F8F8F]"
             >
-              Load More
+              تحميل المزيد
             </button>
           </div>
         )}

@@ -22,7 +22,7 @@ export const Banner = ({ searchTerm, setSearchTerm, handleSearch, page }) => {
         }}
       >
         <h1 className="text-2xl md:text-5xl text-center font-newsLetter">
-          {page?.banner_heading || "Top Real Estate Areas in Dubai & The UAE"}
+          {page?.banner_heading || "أفضل المناطق العقارية في دبي والإمارات العربية المتحدة"}
         </h1>
 
         {page?.banner_description ? (
@@ -31,7 +31,7 @@ export const Banner = ({ searchTerm, setSearchTerm, handleSearch, page }) => {
           </div>
         ) : (
           <p className="text-lg md:text-xl font-montserrat">
-            Home \ All areas in Dubai
+            بيت \ جميع المناطق في دبي
           </p>
         )}
 
@@ -42,7 +42,7 @@ export const Banner = ({ searchTerm, setSearchTerm, handleSearch, page }) => {
           <input
             type="text"
             className="p-3 border-2 font-montserrat border-[#8F8F8F] outline-none w-[220px] md:w-full text-black rounded-l-md"
-            placeholder="Search areas in Dubai"
+            placeholder="مناطق البحث في دبي"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

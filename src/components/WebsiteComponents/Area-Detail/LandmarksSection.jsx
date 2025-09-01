@@ -28,7 +28,7 @@ const LandmarksSection = ({ stayConnectedDetail = [], stayConnectedImage = "", s
         <h3 className="text-xl font-newsLetter text-[#8F8F8F] md:text-[25px] macbook:text-[40px] text-center md:text-start md:w-[50%] uppercase mb-6 leading-10">
           {stayConnectedTitle
             ? stayConnectedTitle
-            : "Stay Connected to Dubai Landmarks"}
+            : "ابقَ على اتصال بمعالم دبي"}
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:w-[50%] text-gray-700">

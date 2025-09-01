@@ -150,7 +150,7 @@ const BlogDetailClient = ({blog, tags, recommendedBlogs}) => {
 
             <div>
               <h2 className="text-lg font-normal md:text-[20px] font-montserrat text-[#8F8F8F] mb-4">
-                Categories
+                فئات
               </h2>
               {error ? (
                 <div className="text-[#8F8F8F] font-montserrat">{error}</div>
@@ -179,7 +179,7 @@ const BlogDetailClient = ({blog, tags, recommendedBlogs}) => {
 
             <div>
               <h2 className="text-lg font-normal md:text-[23px] font-montserrat text-[#8F8F8F] mb-4">
-                Popular Tags
+                العلامات الشعبية
               </h2>
               <div className="flex flex-wrap gap-[10px] gap-y-[30px] items-center">
                 {Array.isArray(tags) && tags.length > 0 ? (
@@ -191,14 +191,14 @@ const BlogDetailClient = ({blog, tags, recommendedBlogs}) => {
                     </div>
                   ))
                 ) : (
-                  <p>No tags available</p>
+                  <p>لا توجد علامات متاحة</p>
                 )}
               </div>
             </div>
 
             <div className="mt-10 flex flex-col items-start">
               <h2 className="text-lg font-normal md:text-[23px] font-montserrat text-[#8F8F8F] mb-4">
-                Follow Us
+                تابعنا
               </h2>
               <div className="flex space-x-4">
                 <a
@@ -247,7 +247,7 @@ const BlogDetailClient = ({blog, tags, recommendedBlogs}) => {
 
           <div className="md:w-[65%] md:p-8">
             <h1 className="text-4xl font-newsLetter font-bold mb-6">
-              {blog?.blog_title || "Lorem Ipsum is simply dummy text"}
+              {blog?.blog_title || "لوريم إيبسوم هو ببساطة نص وهمي"}
             </h1>
 
             <div className="w-full md:w-[90%] jodit-editor">
@@ -260,7 +260,7 @@ const BlogDetailClient = ({blog, tags, recommendedBlogs}) => {
 
           <div className="flex flex-col items-center md:w-[15%]">
             <h2 className="text-lg font-normal md:text-[20px] font-montserrat text-[#8F8F8F] mb-4">
-              Feature Properties
+              خصائص الميزة
             </h2>
 
             <Swiper

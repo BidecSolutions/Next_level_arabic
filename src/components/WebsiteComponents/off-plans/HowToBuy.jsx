@@ -13,11 +13,7 @@ export const HowToBuy = ({ howToBuyData, page, pageName }) => {
 
   const description =
     page?.description ||
-    `Explore every corner of Dubai with our extensive real estate listings across all areas. From the bustling downtown districts to
-the tranquil coastal enclaves, we provide insights into the diverse properties available throughout Dubai. Whether you are
-looking to invest in a modern apartment, a family villa, or commercial real estate, our area-specific guides detail the advantages
-of each location, including local amenities, transport links, and community features. Each listing is designed to offer prospective
-homeowners and investors the information needed to make well-informed decisions in Dubai's dynamic property market.`;
+    `استكشف كل ركن من أركان دبي مع قوائمنا العقارية الشاملة في جميع المناطق. من أحياء وسط المدينة النابضة بالحياة إلى المناطق الساحلية الهادئة، نقدم لك نظرة ثاقبة على العقارات المتنوعة المتاحة في جميع أنحاء دبي. سواء كنت تتطلع إلى الاستثمار في شقة عصرية، أو فيلا عائلية، أو عقار تجاري، فإن أدلة كل منطقة لدينا تُفصّل مزايا كل موقع، بما في ذلك المرافق المحلية، وخطوط النقل، وميزات المجتمع. صُممت كل قائمة لتزويد مالكي المنازل والمستثمرين المحتملين بالمعلومات اللازمة لاتخاذ قرارات مدروسة في سوق العقارات الديناميكي في دبي.`;
 
   return (
     <div className="flex justify-center w-full py-10 macbook:py-48">
@@ -37,7 +33,7 @@ homeowners and investors the information needed to make well-informed decisions 
 
         <div className="md:w-[40%] lg:w-[45%] macbook:w-[50%] flex flex-col items-center md:items-start gap-3">
           <h3 className="text-3xl md:text-5xl font-newsLetter macbook:text-[60px] text-[#A39D9D] text-center md:text-start">
-            {howToBuyData?.heading || "Buying Off Plan Properties in Dubai"}
+            {howToBuyData?.heading || "شراء عقارات قيد الإنشاء في دبي"}
           </h3>
 
           {howToBuyData?.description &&
@@ -59,7 +55,7 @@ homeowners and investors the information needed to make well-informed decisions 
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -72,7 +68,7 @@ homeowners and investors the information needed to make well-informed decisions 
             onClick={() => setIsModalOpen(true)}
             className="p-2 px-4 macbook:py-4 font-montserrat macbook:text-[20px] rounded-md text-md text-white bg-[#A39D9D] hover:bg-transparent hover:text-[#A39D9D] border hover:border-[#A39D9D] w-fit flex justify-center items-center gap-2"
           >
-            Get Free Areas Guide
+            احصل على دليل المناطق مجانًا
           </button>
         </div>
       </div>

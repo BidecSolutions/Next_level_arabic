@@ -22,14 +22,10 @@ const StaticCards = () => {
               alt="Market Insight Icon"
             />
             <h1 className="lg:text-2xl macbook:text-[40px] font-newsLetter macbook:leading-[50px] text-[#555555] text-[14px]">
-              Market Insight and Trends
+             رؤى السوق والاتجاهات
             </h1>
             <p className="lg:text-md text-[10px] text-[#555555] font-montserrat macbook:text-[30px]">
-              Abdul's exceptional ability to forecast and capitalize on real
-              estate trends has positioned Next Level Real Estate as a market
-              leader in Dubai. His strategies are informed by deep market
-              analysis and a forward-thinking approach that anticipates future
-              movements.
+              بفضل قدرة عبدول الاستثنائية على التنبؤ باتجاهات السوق العقارية والاستفادة منها، أصبحت شركة نيكست ليفل للعقارات رائدةً في سوق دبي. وتستند استراتيجياته إلى تحليل معمق للسوق ونهج استشرافي يستبق التغيرات المستقبلية.
             </p>
           </div>
         </div>
@@ -48,14 +44,10 @@ const StaticCards = () => {
               alt="Strategic Growth Icon"
             />
             <h1 className="lg:text-2xl font-montserrat macbook:text-[40px] macbook:leading-[50px] text-[#555555] sm:text-xl text-md">
-              Strategic Business Growth
+             نمو الأعمال الاستراتيجية
             </h1>
             <p className="lg:text-md text-[10px] font-montserrat text-[#555555] macbook:text-[30px]">
-              Under Abdul's stewardship, Next Level Real Estate has seen
-              exponential growth, expanding both its portfolio and market
-              presence. His strategic initiatives focus on sustainable business
-              practices and leveraging technological advancements to enhance
-              operational efficiency.
+              تحت قيادة عبدول، شهدت شركة نيكست ليفل العقارية نموًا هائلًا، حيث توسّعت محفظتها الاستثمارية وحضورها في السوق. تُركّز مبادراته الاستراتيجية على ممارسات الأعمال المستدامة والاستفادة من التطورات التكنولوجية لتعزيز الكفاءة التشغيلية.
             </p>
           </div>
         </div>
@@ -74,14 +66,10 @@ const StaticCards = () => {
               alt="Client Satisfaction Icon"
             />
             <h1 className="lg:text-2xl font-montserrat macbook:text-[40px] macbook:leading-[50px] text-[#555555] sm:text-xl text-md">
-              Commitment to Client Satisfaction
+              الالتزام برضا العملاء
             </h1>
             <p className="lg:text-md text-[10px] font-montserrat text-[#555555] macbook:text-[30px]">
-              Abdul prioritizes client satisfaction above all, ensuring that
-              each transaction is handled with utmost professionalism and
-              transparency. His approach has cultivated a strong client base and
-              a reputation for reliability in the competitive Dubai real estate
-              market.
+             يُولي عبدول رضا العملاء الأولوية القصوى، ويضمن إتمام كل معاملة بأعلى درجات الاحترافية والشفافية. وقد ساهم نهجه في بناء قاعدة عملاء قوية وسمعة طيبة في سوق العقارات التنافسي بدبي.
             </p>
           </div>
         </div>
@@ -101,12 +89,10 @@ const StaticCards = () => {
             alt="Dubai Property Market Icon"
           />
           <h1 className="lg:text-2xl font-montserrat macbook:text-[40px] macbook:leading-[50px] text-[#555555] sm:text-xl text-md">
-            Deep knowledge of Dubai’s Property Market
+            معرفة عميقة بسوق العقارات في دبي
           </h1>
           <p className="lg:text-md font-montserrat text-[#555555] text-[10px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
+            لوريم إيبسوم هو ببساطة نص شكلي (أي شكل غير واضح) يُستخدم في صناعة الطباعة والتنضيد. وقد كان لوريم إيبسوم النص الشكلي القياسي لهذه الصناعة على الإطلاق.
           </p>
         </div>
       </div>

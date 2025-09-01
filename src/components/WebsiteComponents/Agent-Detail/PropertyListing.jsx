@@ -71,12 +71,12 @@ const PropertyListing = ({ agentId }) => {
       {isFilterMenuOpen && (
         <div className="fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg z-50 p-4 overflow-y-auto lg:hidden">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold text-gray-700">Filters</h2>
+            <h2 className="text-lg font-semibold text-gray-700">المرشحات</h2>
             <button onClick={toggleFilterMenu}>
               <RxCross2 />
             </button>
           </div>
-          <h2 className="text-lg font-semibold mb-2">Select Price Range</h2>
+          <h2 className="text-lg font-semibold mb-2">حدد نطاق السعر</h2>
           <PriceRangeFilter />
         </div>
       )}
@@ -87,7 +87,7 @@ const PropertyListing = ({ agentId }) => {
           {/* Left Column */}
           <div className="py-4 w-full flex flex-col gap-2 items-center rounded-lg">
             <div className="hidden md:flex flex-col gap-[20px] w-full">
-              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">Select Price Range</h2>
+              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">حدد نطاق السعر</h2>
               <PriceRangeFilter
                 setMinPrice={setMinPrice}
                 setMaxPrice={setMaxPrice}
@@ -97,7 +97,7 @@ const PropertyListing = ({ agentId }) => {
                 max={max}
               />
 
-              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">Status of Property</h2>
+              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">حالة الملكية</h2>
               <div className="flex flex-col gap-[10px] p-4 border border-[#555555] rounded-[10px]">
                 {propertyStatuses.map((status) => (
                   <div key={status.id} className="flex justify-between items-center">
@@ -118,12 +118,12 @@ const PropertyListing = ({ agentId }) => {
               className="block md:hidden w-[100px] bg-[#8F8F8F] text-white rounded-[5px]"
               onClick={toggleFilterMenu}
             >
-              Filter
+             فلتر
             </button>
 
             {/* Featured */}
             <div className="w-full">
-              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">Featured Properties</h2>
+              <h2 className="text-[24px] font-semibold text-[#6B6B6B]">خصائص مميزة</h2>
               <FeatureProperties agentDetails={ agentId} />
             </div>
           </div>
@@ -131,7 +131,7 @@ const PropertyListing = ({ agentId }) => {
           {/* Right Column */}
           <div className="col-span-3">
             <h2 className="text-[18px] font-semibold text-[#6B6B6B]">
-              Search Result's: <span>{properties.length} Listings</span>
+             نتائج البحث: <span>{properties.length} القوائم</span>
             </h2>
 
             <select
@@ -139,9 +139,9 @@ const PropertyListing = ({ agentId }) => {
               onChange={(e) => setSortBy(Number(e.target.value))}
               className="p-2 rounded-md"
             >
-              <option value={null}>Sort By: All</option>
-              <option value={2}>Des to Asc</option>
-              <option value={1}>Asc to Des</option>
+              <option value={null}>فرز حسب: الكل</option>
+              <option value={2}>ديس إلى تصاعدي</option>
+              <option value={1}>تصاعدي إلى ديس</option>
             </select>
 
             {/* Property Cards */}
@@ -180,7 +180,7 @@ const PropertyListing = ({ agentId }) => {
                     </h3>
                     <div className="text-gray-500 text-[11px] flex flex-col items-center mb-2 md:mb-4">
                       <p className="text-[16px] md:text-[15px] macbook:text[25px]  ">
-                      Starting From
+                      ابتداء منStarting From
                       </p>
                       <p className="flex gap-1 text-[14px] md:text-[14px] macbook:text[30px] font-bold text-[#8F8F8F]">
                          <img src='/dirham.PNG' className="w-3 h-3 mt-1"/> {property?.starting_price}
@@ -195,7 +195,7 @@ const PropertyListing = ({ agentId }) => {
                           className="w-[8.9px] md:w-[16px]  macbook:w[25px]  "
                         />
                         <span className="text-[10px] md:text-xs  macbook:text[28px] ">
-                          Beds {property?.no_of_bathrooms}
+                          سرير {property?.no_of_bathrooms}
                         </span>
                       </div>
                       <div className="flex items-center ml-[5px] gap-2">
@@ -211,7 +211,7 @@ const PropertyListing = ({ agentId }) => {
                     </div>
                     <Link href={`/property/${property?.slug}`}>
                       <button className="w-[200px] md:w-[202px] text-[11px] macbook:text[18px] my-1 py-1 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-gray-500">
-                        View more detail
+                        عرض المزيد من التفاصيل
                       </button>
                     </Link>
                   </div>
@@ -226,7 +226,7 @@ const PropertyListing = ({ agentId }) => {
                   onClick={handleLoadMore}
                   className="px-4 py-2 bg-[#8F8F8F] text-white rounded-[5px]"
                 >
-                  Load More
+                  تحميل المزيد
                 </button>
               </div>
             )}

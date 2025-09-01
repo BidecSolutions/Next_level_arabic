@@ -75,7 +75,7 @@ export const AreaList = ({ searchTerm }) => {
                                 </h3>
                                 <div className="text-[#8F8F8F] mb-2 text-[11px] flex flex-col md:mb-4">
                                     <p className="text-[8px] font-montserrat md:text-[11px] text-[#8F8F8F]">
-                                        Price From
+                                        السعر من
                                         <span className="flex gap-1 ml-1 text-[11px] md:text-[16px] font-bold">
                                             AED {Math.floor(property.startingPrice)}{" "}
                                             <img
@@ -92,7 +92,7 @@ export const AreaList = ({ searchTerm }) => {
                                         href={`/area/${property.slug}`}
                                         className="w-full md:p-4 font-montserrat text-[7px] md:text-[12px] py-1 md:py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:border-[1px] border-[#8F8F8F] hover:text-[#8F8F8F] hover:bg-transparent text-center"
                                     >
-                                        View Details
+                                        عرض التفاصيل
                                     </Link>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export const AreaList = ({ searchTerm }) => {
                     ))
                 ) : (
                     <div className="text-center font-montserrat text-gray-500 text-lg w-full py-10">
-                        No areas available
+                        لا توجد مناطق متاحة
                     </div>
                 )}
             </div>
@@ -111,7 +111,7 @@ export const AreaList = ({ searchTerm }) => {
                         onClick={loadMore}
                         className="mt-8 py-2 px-4 border-2 border-[#8F8F8F] bg-[#8F8F8F] text-white rounded hover:text-[#8F8F8F] hover:bg-transparent text-center"
                     >
-                        Load More
+                        تحميل المزيد
                     </button>
                 </div>
             )}

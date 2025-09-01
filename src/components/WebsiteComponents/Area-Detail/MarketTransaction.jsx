@@ -10,7 +10,7 @@ const MarketTransaction = ({ data }) => {
   return (
     <div className="flex items-center flex-col py-10 md:py-20">
       <h3 className="text-center text-[#8F8F8F] font-newsLetter macbook:text-[48px] text-2xl md:text-3xl w-[296px] md:w-full font-semibold mb-4">
-        {data?.market_transaction_title || "Market Transactions"}
+        {data?.market_transaction_title || "معاملات السوق"}
       </h3>
 
       <p
@@ -29,21 +29,21 @@ const MarketTransaction = ({ data }) => {
         {/* Sales Value */}
         <MetricCard
           value={data?.mt_sv_value}
-          title={data?.mt_sv_title || "Sales Value(AED)"}
+          title={data?.mt_sv_title || "قيمة المبيعات (درهم إماراتي)"}
           changeText={data?.mt_sv_text}
         />
 
         {/* Sales Transaction */}
         <MetricCard
           value={data?.mt_st_value}
-          title={data?.mt_st_title || "Sales Value(AED)"}
+          title={data?.mt_st_title || "قيمة المبيعات (درهم إماراتي)"}
           changeText={data?.mt_st_text}
         />
 
         {/* PPSQFT Value */}
         <MetricCard
           value={data?.mt_ppsqft_value}
-          title={data?.mt_ppsqft_title || "Sales Value(AED)"}
+          title={data?.mt_ppsqft_title || "قيمة المبيعات (درهم إماراتي)"}
           changeText={data?.mt_ppsqft_text}
         />
       </div>
@@ -51,7 +51,7 @@ const MarketTransaction = ({ data }) => {
   );
 };
 
-const MetricCard = ({ value = "0", title, changeText = "YoY change" }) => {
+const MetricCard = ({ value = "0", title, changeText = "تغيير سنوي" }) => {
   const numericChange = parseFloat(String(changeText).replace(/[^0-9.-]/g, ""));
   const isPositive = numericChange > 0;
 

@@ -35,14 +35,14 @@ const AreaSpecialization = ({ heading, data }) => {
     <div className="flex flex-col items-center my-20">
       <div>
         <h3 className="text-2xl md:text-[40px] text-[#8F8F8F] font-newsLetter">
-          {heading ? heading : "Areas of Specialization"}
+          {heading ? heading : "مجالات التخصص"}
         </h3>
       </div>
 
       <div className="pt-12 md:pt-20 md:p-24 flex flex-wrap justify-center items-center gap-4">
         {properties.length === 0 && !loading && (
           <div className="text-center text-xl font-montserrat">
-            No Areas found
+            لم يتم العثور على مناطق
           </div>
         )}
 
@@ -73,7 +73,7 @@ const AreaSpecialization = ({ heading, data }) => {
 
               <div className="flex justify-center gap-1">
                 <button className="w-full md:p-4 font-montserrat text-[7px] md:text-[12px] py-1 md:py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:border-[1px] border-[#8F8F8F] hover:text-[#8F8F8F] hover:bg-transparent">
-<Link href={`/area/${property.slug}`}>View Details</Link>
+<Link href={`/area/${property.slug}`}>عرض التفاصيل</Link>
                 </button>
               </div>
             </div>
@@ -85,8 +85,7 @@ const AreaSpecialization = ({ heading, data }) => {
             <button
               onClick={loadMore}
               className="mt-8 py-2 px-4 border-2 border-[#8F8F8F] bg-[#8F8F8F] text-white rounded hover:text-[#8F8F8F] hover:bg-transparent"
-            >
-              Load More
+            >تحميل المزيد
             </button>
           </div>
         )}

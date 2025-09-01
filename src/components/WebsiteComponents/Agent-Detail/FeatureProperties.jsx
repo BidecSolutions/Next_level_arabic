@@ -68,7 +68,7 @@ const FeatureProperties = ({ agentDetails }) => {
           </h3>
           <div className="  text-[11px] flex items-center gap-2  mb-1 md:mb-2">
             <p className="text-[12px] md:text-[15px] text-[#6B6B6B] macbook:text-[20px]  ">
-            Starting From
+           ابتداء من
             </p>
             <p className="flex gap-1 text-[10px] md:text-[16px] macbook:text-[22px] font-bold text-[#8F8F8F]">
               <img src='/dirham.PNG' className="w-3 h-3 mt-1.5"/> {property[0]?.starting_price} 
@@ -83,7 +83,7 @@ const FeatureProperties = ({ agentDetails }) => {
             href={`/property/${property[0]?.slug}`}
           >
             <button className="w-[100px] md:w-[252px] text-[10px] macbook:text-[18px] py-[2px]  md:py-1 macbook:py-2 bg-[#8F8F8F] text-white rounded-[5px] hover:bg-gray-500">
-              See detail
+              انظر التفاصيل
             </button>
           </Link>
         </div>

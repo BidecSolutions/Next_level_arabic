@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   const isValid = isValidPhoneNumber(fullPhone, code);
 
   if (!isValid) {
-    toast.error("Invalid phone number for selected country.");
+    toast.error("رقم الهاتف غير صالح للبلد المحدد.");
     return;
   }
   setLoading(true);
@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
   try {
     await formsApi.submitInquiryForm(formData);  // yahan payload pass kar rahe hain
 
-    toast.success("Form submitted successfully!");
+    toast.success("تم إرسال النموذج بنجاح!");
     setFormData({
       name: "",
       email: "",
@@ -111,7 +111,7 @@ const handleSubmit = async (e) => {
         .join("\n");
       alert(errorMessages);
     } else {
-      alert("Network error or server is down. Please try again later.");
+      alert("خطأ في الشبكة أو الخادم معطل. يُرجى المحاولة لاحقًا.");
     }
   }
   setLoading(false);
@@ -130,7 +130,7 @@ const handleSubmit = async (e) => {
       <div className="flex flex-col w-full md:w-1/3 macbook:w-[30%]">
         <p className="text-[20px] font-newsLetter text-center md:text-start md:text-[30px] macbook:text-[40px] macbook:leading-[45px] font-light text-gray-500">
           {page?.guide_section_heading ||
-            "Let Our Specialist Help You Find the Perfect Off-Plan Property."}
+            "دع متخصصنا يساعدك في العثور على العقار المثالي خارج الخطة."}
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-[20px] mt-8">
           <input
@@ -138,7 +138,7 @@ const handleSubmit = async (e) => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Your Name"
+            placeholder="اسمك"
             className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
             required
           />
@@ -147,7 +147,7 @@ const handleSubmit = async (e) => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Email Address"
+            placeholder="عنوان البريد الإلكتروني"
             className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
             required
           />
@@ -183,7 +183,7 @@ const handleSubmit = async (e) => {
             className="bg-[#8F8F8F] w-[250px] font-montserrat text-white py-3 macbook:text-[18px] px-4 rounded-lg hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] transition"
             disabled={loading}
           >
-            {loading ? "Submitting..." : "Click For a Free Call"}
+            {loading ? "تقديم" : "انقر هنا لإجراء مكالمة مجانية"}
           </button>
         </form>
       </div>
@@ -202,10 +202,10 @@ const handleSubmit = async (e) => {
         {/* Info Card */}
         <div className="absolute bottom-[-150px] md:bottom-[-30px] md:right-[-20px] macbook:right-40 w-64 md:w-96 bg-white p-4 rounded-lg shadow-lg">
           <p className="font-bold text-gray-700 font-montserrat">
-            {page?.guide_section_name || "Salwa Arfaoui"}
+            {page?.guide_section_name || "سلوى عرفاوي"}
           </p>
           <p className="text-sm text-gray-500 font-montserrat">
-            Senior Sales Advisor Of Next Level Real Estate
+            مستشار مبيعات أول في شركة نيكست ليفل للعقارات
           </p>
           <div className="flex items-center space-x-2 mt-2">
             <svg
@@ -246,7 +246,7 @@ const handleSubmit = async (e) => {
               dangerouslySetInnerHTML={{
                 __html:
                   page?.guide_section_address ||
-                  "1505, Opal Tower Burj Khalifa Boulevard – Business Bay – Dubai.",
+                  "1505، برج أوبال، برج خليفة بوليفارد – الخليج التجاري – دبي.",
               }}
             />
           </div>

@@ -57,7 +57,7 @@ const OwnerBanner = ({ ownerDetails }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-start text-white text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -70,7 +70,7 @@ const OwnerBanner = ({ ownerDetails }) => {
           <div className="flex flex-row sm:justify-start justify-center gap-3 pt-3">
             <a href="tel:+97144542828">
               <button className="bg-white font-montserrat rounded text-black px-6 py-2 macbook:text-[25px]">
-                Call Now
+                اتصل الآن
               </button>
             </a>
             {ownerDetails?.email && (
@@ -86,7 +86,7 @@ const OwnerBanner = ({ ownerDetails }) => {
                 onClick={() =>
                   handleWhatsAppClick(
                     ownerDetails.mobile_no,
-                    "Hello, I want to connect!"
+                    "مرحبًا، أريد الاتصال!"
                   )
                 }
                 className="border border-white rounded text-white p-1.5 px-2"

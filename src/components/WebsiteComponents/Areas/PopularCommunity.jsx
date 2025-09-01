@@ -150,19 +150,19 @@ export default function PopularCommunity({ heading, description }) {
   return (
     <div className="flex flex-col w-full items-center py-10 md:py-24">
       <h2 className="text-3xl text-[#8F8F8F] macbook:text-[48px] text-center mb-2 font-newsLetter">
-        {heading || "POPULAR COMMUNITIES IN DUBAI`s"}
+        {heading || "المجتمعات الشعبية في دبي"}
       </h2>
       <div className="text-center w-[90%] md:w-[80%] text-gray-700 macbook:text-[28px] mb-16">
         {description ? (
           <ParseBody body={description} />
         ) : (
-          "Next Level Real Estate was established in 2013 and has been the driving force behind some of the greatest"
+          "تأسست شركة Next Level Real Estate في عام 2013 وكانت القوة الدافعة وراء بعض أعظم"
         )}
       </div>
 
       {areas.length === 0 && (
         <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Areas available
+          لا توجد مناطق متاحة
         </p>
       )}
 
@@ -233,7 +233,7 @@ export default function PopularCommunity({ heading, description }) {
           href="/areas/"
           className="px-6 py-2 font-montserrat bg-[#8F8F8F] text-white hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] macbook:text-[16px] rounded-[6.5px]"
         >
-          View All Areas
+         عرض جميع المناطق
         </Link>
       </div>
     </div>

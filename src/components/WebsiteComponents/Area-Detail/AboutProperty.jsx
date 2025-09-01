@@ -10,7 +10,7 @@ const AboutProperty = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
 
-  const defaultHeading = "About the Farmhouses Villas in DAMAC Hill 2";
+  const defaultHeading = "نبذة عن فلل المزرعة في داماك هيل 2";
 
   return (
     <div className="flex flex-col md:flex-row gap-8 justify-center items-center md:gap-16 mb-20 mt-20 md:mb-44 md:mt-32">
@@ -38,7 +38,7 @@ const AboutProperty = ({ data }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-sm font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -51,7 +51,7 @@ const AboutProperty = ({ data }) => {
             onClick={() => setIsModalOpen(true)}
             className="p-2 mt-8 font-montserrat px-4 macbook:py-4 macbook:text-[20px] rounded-md text-md text-white bg-[#A39D9D] w-fit flex justify-center items-center gap-2"
           >
-            Get More Info
+            احصل على مزيد من المعلومات
           </button>
         </div>
 
