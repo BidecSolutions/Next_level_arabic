@@ -142,7 +142,7 @@ const fetchBlogs = async (page = 1, category = null, tag = null) => {
     <div className="relative pb-10">
       {/* <CustomSeo id={12} /> */}
       <Banner
-        title="Check Out the Latest Dubai Real Estate Blogs & Insights"
+        title="اطلع على أحدث المدونات والرؤى العقارية في دبي"
         image="/Areas/banner.png"
         status={false}
       />
@@ -232,7 +232,7 @@ const fetchBlogs = async (page = 1, category = null, tag = null) => {
               ))
           ) : (
             <div className="text-center font-montserrat w-full">
-              No blogs found for {selectedTag}
+              لم يتم العثور على مدونات لـ {selectedTag}
             </div>
           )}
         </div>
@@ -245,7 +245,7 @@ const fetchBlogs = async (page = 1, category = null, tag = null) => {
             onClick={handleLoadMore}
             className="bg-[#8F8F8F] text-white py-2 px-6 rounded-full w-fit flex justify-center items-center"
           >
-            Load More
+            تحميل المزيد
           </button>
         )}
       </div>

@@ -85,7 +85,7 @@ export default function BlogSidebar({
         setTags(tagData);
       } catch (err) {
         console.error("Error loading sidebar data:", err);
-        setError("Failed to load sidebar data");
+        setError("فشل تحميل بيانات الشريط الجانبي");
       }
     };
     loadData();
@@ -95,7 +95,7 @@ export default function BlogSidebar({
   const handleWhatsAppClick = (message) => {
     const phoneNumber = "+971552588870";
     message =
-      message || "Hello, I would like to inquire about your services.";
+      message || "مرحباً، أود الاستفسار عن خدماتكم";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
@@ -118,7 +118,7 @@ export default function BlogSidebar({
       <div className="flex md:items-center rounded-lg mb-2 md:mb-6 border border-[#A39D9D]">
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="يبحث"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="bg-transparent p-2 font-montserrat text-[#8F8F8F] md:pl-4 md:text-[17px] focus:outline-none flex-grow"
@@ -134,7 +134,7 @@ export default function BlogSidebar({
       {/* Categories */}
       <div>
         <h2 className="text-lg md:text-[23px] font-montserrat text-[#8F8F8F] mb-4">
-          Categories
+         فئات
         </h2>
         {error ? (
           <div className="text-[#8F8F8F] font-montserrat">{error}</div>
@@ -166,7 +166,7 @@ export default function BlogSidebar({
       {/* Recent Posts */}
       <div className="mb-2 md:mb-6 py-4 md:py-1 rounded-lg">
         <h2 className="text-lg md:text-[23px] font-montserrat text-[#8F8F8F] mb-4">
-          Recent Posts
+         المشاركات الأخيرة
         </h2>
         {error ? (
           <div className="text-[#8F8F8F] font-montserrat">{error}</div>
@@ -202,14 +202,14 @@ export default function BlogSidebar({
         }`}
       >
         <h2 className="text-lg md:text-[20px] font-montserrat text-[#8F8F8F] mb-4">
-          Popular Tags
+          العلامات الشعبية
         </h2>
         {selectedTag && (
           <button
             onClick={onClearCategory}
             className="bg-gray-200 text-gray-700 px-2 py-2 text-[12px] rounded-lg flex items-center space-x-2 mb-4"
           >
-            <RxCross2 /> <span className="font-montserrat">Clear</span>
+            <RxCross2 /> <span className="font-montserrat">واضح</span>
           </button>
         )}
         <div className="flex flex-wrap gap-[10px] gap-y-[30px] items-center">
@@ -226,7 +226,7 @@ export default function BlogSidebar({
       {/* Social */}
       <div className="py-4 md:py-1 mt-10 flex flex-col items-start">
         <h2 className="text-lg md:text-[23px] font-montserrat text-[#8F8F8F] mb-4">
-          Follow Us
+          تابعنا
         </h2>
         <div className="flex space-x-4">
           <a href="https://www.facebook.com/nextleveldubai" target="_blank">

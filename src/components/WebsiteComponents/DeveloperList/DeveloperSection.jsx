@@ -50,16 +50,14 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
     <div className="px4 py-12 w-full">
       <div className="flex flex-col items-center">
         <h2 className="text-[#8F8F8F] text-center md:text-start font-newsLetter font-medium text-[30px] macbook:text-[40px] mb-2">
-          {heading || "UAE Top Real Estate Developers"}
+          {heading || "أفضل مطوري العقارات في الإمارات العربية المتحدة"}
         </h2>
         <div className="w-[90%] text-center">
           {description ? (
             <ParseBody body={description} />
           ) : (
             <p className="text-center font-montserrat text-[15px] md:text-[17px] macbook:text-[24px] text-[#555555]">
-              Discover UAE elite real estate developers, known for iconic
-              projects and innovative designs that redefine luxury living and
-              modern landscapes.
+             اكتشف نخبة مطوري العقارات في الإمارات العربية المتحدة، والمعروفين بمشاريعهم المميزة وتصاميمهم المبتكرة التي تعيد تعريف مفهوم المعيشة الفاخرة والمناظر الطبيعية العصرية.
             </p>
           )}
         </div>
@@ -94,7 +92,7 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
             href={`/developer/${developer.slug}`}
             className="px-6 font-montserrat w-[150px] macbook:text-[14px] py-2 bg-[#8F8F8F] text-white rounded-[6.5px] inline-block text-center"
           >
-            Explore More
+           اكتشف المزيد
           </Link>
             </div>
 
@@ -125,7 +123,7 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
                                 ? JSON.parse(property.meadias[0].main_image)[0]
                                 : ""
                             }`}
-                            alt={property?.title || "Property Image"}
+                            alt={property?.title || "صورة الملكية"}
                             className="macbook:h-96 macbook:w-[1000px] w-[600px] h-60 sm:h-64 md:h-72 object-cover rounded-[15px]"
                             onError={(e) => {
                               e.currentTarget.src = Image_NotFound;
@@ -160,13 +158,13 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
                                       src="/dirham_white.PNG"
                                       className="w-3 h-2.5 md:h-3 mt-0.5 md:mt-1"
                                     />
-                                    {property?.starting_price || "N/A"}
+                                    {property?.starting_price || "لا يوجد"}
                                   </span>
                                 </div>
                               </div>
                               <Link href={`/property/${property.slug}`}>
                                 <button className="px-2 py-1 md:px-4 text-[10px] md:text-[14px] md:py-2 bg-[#8F8F8F] text-white rounded-md">
-                                  View Details
+                                  عرض التفاصيل
                                 </button>
                               </Link>
                             </div>
@@ -185,7 +183,7 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
                       />
                       <div className="absolute gap-[4px] inset-0 text-white p-4 flex flex-col justify-end">
                         <h3 className="text-[16px] capitalize font-montserrat md:text-[28px] macbook:text-[32px] font-bold">
-                          No Property Found
+                          لم يتم العثور على عقار
                         </h3>
                       </div>
                     </div>
@@ -197,7 +195,7 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
         ))
       ) : (
         <p className="text-[14px] text-center md:text-start mt-2 font-montserrat">
-          No Developers available
+          لا يوجد مطورين متاحين
         </p>
       )}
 
@@ -207,7 +205,7 @@ export default function DeveloperSection({ searchTerm, heading, description, dev
             onClick={loadMore}
             className="mt-8 py-2 px-4 border-2 border-[#8F8F8F] bg-[#8F8F8F] text-white rounded hover:text-[#8F8F8F] hover:bg-transparent text-center"
           >
-            Load More
+            تحميل المزيد
           </button>
         </div>
       )}

@@ -18,7 +18,7 @@ const MarketTransaction = ({ data }) => {
         dangerouslySetInnerHTML={{
           __html:
             data?.market_transaction_description ||
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque purus, rutrum in orci eu, euismod bibendum leo. Suspendisse vehicula a nulla vel tempor."
+            "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Proin neque pureus، rutrum in orci eu، euismod bibendum leo. قم بتعليق السيارة بدون توقف أو مؤقتًا."
               .split(" ")
               .slice(0, 50)
               .join(" ") + "...",

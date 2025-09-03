@@ -35,8 +35,8 @@ const WhyChooseUs = () => {
   return (
     <div className="flex flex-col items-center max-w-full my-12 md:my-20">
       {/* Section Heading */}
-      <div className="flex md:items-center md:w-[70%] macbook:w-[60%] md:mb-16 flex-col mb-8 md:flex-row justify-between">
-        <h2 className="text-[17px] md:w-[90%] font-newsLetter text-center md:text-start md:text-[30px] macbook:text-[40px] font-semibold mb-4">
+      <div className="flex md:items-center md:w-[70%] macbook:w-[60%] md:mb-16 flex-col mb-8 md:flex-row-reverse justify-between">
+        <h2 className="text-[17px] md:w-[90%] font-newsLetter text-center md:text-right md:text-[30px] macbook:text-[40px] font-semibold mb-4">
           لماذا تختار شركة نيكست ليفل العقارية؟
         </h2>
         {/* Inquiry Button */}

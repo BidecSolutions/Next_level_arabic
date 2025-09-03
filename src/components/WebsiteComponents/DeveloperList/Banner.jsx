@@ -22,7 +22,7 @@ export default function Banner({ searchTerm, setSearchTerm, handleSearch, page }
         <h1 className="text-2xl md:text-5xl text-center font-newsLetter">
           {page?.banner_heading
             ? page.banner_heading
-            : "Top Real Estate Developers in Dubai & The UAE"}
+            : "أفضل مطوري العقارات في دبي والإمارات العربية المتحدة"}
         </h1>
 
         <div
@@ -32,7 +32,7 @@ export default function Banner({ searchTerm, setSearchTerm, handleSearch, page }
           <input
             type="text"
             className="p-3 border-2 text-[12px] md:text-[14px] font-montserrat border-[#8F8F8F] outline-none w-[220px] md:w-full text-black rounded-l-md"
-            placeholder="Search developers in Dubai"
+            placeholder="بحث المطورين في دبي"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

@@ -64,7 +64,7 @@ useEffect(() => {
                       )[0]}`
                     : "/home/p2.png"
                 }
-                alt={property?.property_name || "Property Image"}
+                alt={property?.property_name || "صورة الملكية"}
                 width={500}
                 height={500}
                 className="w-full h-[320px] md:h-[500px] macbook:h-[700px] object-cover"

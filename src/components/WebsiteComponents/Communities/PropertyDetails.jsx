@@ -488,7 +488,7 @@ const PropertyDetails = ({ data }) => {
                 onClick={() =>
                   handleWhatsAppClick(
                     (data.whatsapp_no ? data.whatsapp_no : "+971552588870").replace(/[\s-]+/g, ""),
-                    "Hello, I want to connect!"
+                    "مرحبًا، أريد الاتصال"
                   )
                 }
               />

@@ -53,10 +53,10 @@ useEffect(() => {
   return (
     <div className="flex flex-col items-center w-full my-12 md:my-20">
       {/* Heading and Tabs */}
-      <div className="flex flex-col md:flex-row justify-evenly w-full items-center mb-8">
-        <h3 className="macbook:text-[48px] font-newsLetter text-[18px] md:text-[34px] text-[#A39D9D] font-semibold">
+      <div className="flex flex-col md:flex-row-reverse justify-evenly w-full items-center mb-8">
+        <h3 className="macbook:text-[48px] font-newsLetter text-[18px] md:text-[34px] text-[#A39D9D] text-right font-semibold">
           دليل الموارد الشامل الخاص بك
-        </h3>
+        </h3> 
         <div className="hidden md:flex items-center space-x-2">
           {categories.length > 0 ? (
             categories.slice(0, 4).map((category) => (

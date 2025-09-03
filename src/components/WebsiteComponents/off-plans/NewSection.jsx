@@ -13,62 +13,56 @@ export const NewSection = ({ howToBuyData, pageName }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const description = `
-  <h2>ROI from Off-Plan Projects in Dubai</h2>
+  <h2>عائد الاستثمار من المشاريع قيد الإنشاء في دبي</h2>
   <p>
-    Investing in off-plan projects in Dubai continues to show strong potential for high ROI. 
-    Off-plan sales accounted for 55% of total transactions in the first half of 2024.
+    يواصل الاستثمار في مشاريع البيع على الخارطة في دبي إظهار إمكانات قوية لتحقيق عائد استثمار مرتفع. وقد شكلت مبيعات البيع على الخارطة 55% من إجمالي المعاملات في النصف الأول من عام 2024.
   </p>
   <p>
-    Investors have seen average returns of 25% to 35% upon project completion, 
-    driven by attractive pricing and flexible payment plans. Property values in prime locations 
-    have increased by up to 45% from pre-construction prices.
+    حقق المستثمرون عوائد تتراوح بين ٢٥٪ و٣٥٪ عند اكتمال المشروع، بفضل الأسعار الجذابة وخطط السداد المرنة. وارتفعت قيم العقارات في المواقع المميزة بنسبة تصل إلى ٤٥٪ مقارنةً بأسعار ما قبل الإنشاء.
   </p>
 
-  <h3>What to Expect in Dubai?</h3>
+  <h3>ماذا تتوقع في دبي؟</h3>
   <p>
-    Dubai offers a cosmopolitan lifestyle with modern and traditional influences. 
-    Residents enjoy world-class shopping, dining, and entertainment alongside 
-    top-tier healthcare and education facilities.
+   تُقدّم دبي أسلوب حياة عالمي يجمع بين الحداثة والتراث. ويستمتع السكان بتجربة تسوق ومطاعم وترفيه عالمية المستوى، إلى جانب مرافق رعاية صحية وتعليمية رفيعة المستوى.
   </p>
   <p>
-    The city's strategic position between East and West enhances its global appeal. 
-    Ongoing infrastructure projects continue to strengthen the real estate sector.
+موقع المدينة الاستراتيجي بين الشرق والغرب يعزز جاذبيتها العالمية. وتواصل مشاريع البنية التحتية الجارية تعزيز قطاع العقارات.
   </p>
 
-  <h3>Reasons for Investing in Dubai Off-Plan Properties</h3>
+  <h3>أسباب الاستثمار في عقارات دبي قيد الإنشاء</h3>
   <ul>
-    <li><strong>Higher ROI:</strong> Lower initial prices and strong appreciation potential (Colliers, 2024).</li>
-    <li><strong>Flexible Payment Plans:</strong> Developers offer structured plans for easier financing.</li>
-    <li><strong>Modern Amenities:</strong> New developments feature state-of-the-art facilities.</li>
+    <li><strong>عائد استثمار أعلى:</strong> انخفاض الأسعار الأولية وإمكانية ارتفاع القيمة بشكل كبير (كولييرز، 2024)</li>
+    <li><strong>خطط الدفع المرنة:</strong> يقدم المطورون خططًا منظمة لتسهيل التمويل</li>
+    <li><strong>وسائل الراحة الحديثة:</strong> تتميز التطورات الجديدة بمرافق حديثة</li>
   </ul>
 
-  <h3>Key Benefits of Buying Off-Plan Properties in Dubai</h3>
+  <h3>أهم فوائد شراء العقارات على الخريطة في دبي</h3>
   <ul>
-    <li><strong>Lower Purchase Price:</strong> Off-plan properties cost less than ready units.</li>
-    <li><strong>Customization:</strong> Buyers can personalize aspects of their property.</li>
-    <li><strong>High Capital Appreciation:</strong> Prices rise significantly upon completion.</li>
+    <li><strong>انخفاض سعر الشراء:</strong> تكلفة العقارات على المخطط أقل من الوحدات الجاهزة</li>
+    <li><strong>التخصيص:</strong> يمكن للمشترين تخصيص جوانب ممتلكاتهم</li>
+    <li><strong>ارتفاع قيمة رأس المال:</strong> ترتفع الأسعار بشكل كبير عند الانتهاء</li>
   </ul>
 
-  <h3>Prime Locations and Luxurious Amenities</h3>
+  <h3>مواقع مميزة ووسائل راحة فاخرة</h3>
   <p>
-    Dubai’s off-plan properties are in sought-after locations like Downtown Dubai, 
-    <a href="https://www.nextlevelrealestate.ae/area/business-bay/" target="_blank" rel="noreferrer" style="color: #1B66C9;">Business Bay</a>, and Palm Jumeirah. 
-    These developments include high-end features such as pools, gyms, parks, and 24/7 security. 
-    They provide a luxurious lifestyle with easy access to business and entertainment hubs.
+    تقع العقارات قيد الإنشاء في دبي في مواقع مرغوبة مثل وسط مدينة دبي،
+    <a href="https://www.nextlevelrealestate.ae/area/business-bay/" target="_blank" rel="noreferrer" style="color: #1B66C9;">الخليج التجاري</a>, ونخلة جميرا.
+تتميز هذه المشاريع بميزات راقية مثل المسابح والصالات الرياضية والحدائق، بالإضافة إلى خدمات الأمن على مدار الساعة.
+توفر نمط حياة فاخر مع سهولة الوصول إلى مراكز الأعمال والترفيه.
   </p>
 
-  <h3>Long-Term Value: Investment Growth in Dubai</h3>
+  <h3>القيمة طويلة الأجل: نمو الاستثمار في دبي</h3>
   <p>
-    Dubai's continuous economic growth and government-backed infrastructure projects 
-    enhance long-term real estate value. Property prices have shown resilience and steady 
-    appreciation over the past decade. The city remains a key investment hub with strong rental demand.
+   يُعزز النمو الاقتصادي المستمر في دبي ومشاريع البنية التحتية المدعومة حكوميًا قيمة العقارات على المدى الطويل. وقد أظهرت أسعار العقارات مرونةً وارتفاعًا مطردًا خلال العقد الماضي. ولا تزال المدينة مركزًا استثماريًا رئيسيًا، مع طلب قوي على الإيجار.
   </p>
 
-  <h3>Predicting Future Trends: What Buyers Should Know</h3>
+  <h3>التنبؤ بالاتجاهات المستقبلية: ما ينبغي للمشترين معرفته</h3>
   <p>
-    Dubai’s growing population and economic expansion will sustain demand for off-plan properties. 
-    Major projects, including Expo 2020 legacy developments, continue to drive price appreciation. 
-    Buyers should focus on well-located, reputable projects for maximum ROI.
+    سيحافظ النمو السكاني والتوسع الاقتصادي في دبي على الطلب على العقارات قيد الإنشاء.
+
+تواصل المشاريع الكبرى، بما فيها مشاريع إكسبو 2020، دفع أسعار العقارات إلى الارتفاع.
+
+ينبغي على المشترين التركيز على المشاريع ذات المواقع الجيدة والسمعة الطيبة لتحقيق أقصى عائد استثمار.
   </p>
 `;
 
@@ -97,7 +91,7 @@ export const NewSection = ({ howToBuyData, pageName }) => {
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="mt-2 text-gray-600 text-xs font-medium hover:underline"
                 >
-                  {isExpanded ? "Read Less" : "Read More"}
+                  {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
                 </button>
               </>
             ) : (
@@ -110,7 +104,7 @@ export const NewSection = ({ howToBuyData, pageName }) => {
             className="p-2 px-4 macbook:py-4 mt-4 macbook:text-[20px] rounded-md text-md text-white bg-[#A39D9D] hover:bg-transparent hover:text-[#A39D9D] border hover:border-[#A39D9D] w-fit flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Get Free Areas Guide
+            احصل على دليل المناطق مجانًا
           </button>
         </div>
 

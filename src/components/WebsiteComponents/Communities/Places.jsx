@@ -11,13 +11,13 @@ import { Image_NotFound, Image_URL } from "@/config/constants";
 
 const Places = ({ about, page }) => {
   let mainImage = ""; // Default empty string for image
-  let altText = "Image not available"; // Default alt text
+  let altText = "الصورة غير متوفرة"; // Default alt text
   const [isExpanded, setIsExpanded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const description =
     about?.about_section_description ||
-    "Emaar Properties is founded by Mohamed Alabbar - a UAE-based leading developer in 1997. With vast years of experience, the developer has set up six business segments and 60 active companies in several regions like The Middle East, North Africa, Asia, Europe and North.";
+    "تأسست شركة إعمار العقارية على يد محمد العبار، وهو مطور رائد مقره الإمارات العربية المتحدة، في عام 1997. وبفضل سنوات الخبرة الواسعة، أنشأ المطور ستة قطاعات أعمال و60 شركة نشطة في العديد من المناطق مثل الشرق الأوسط وشمال أفريقيا وآسيا وأوروبا وشمال.";
 
   // 🔹 Parse the about_section_images JSON string safely
   if (about?.about_section_images) {
@@ -80,7 +80,7 @@ const Places = ({ about, page }) => {
             className="p-2 px-4 font-montserrat rounded-md text-md text-white bg-[#A39D9D] macbook:text-[30px] macbook:px-8 flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Contact us
+            اتصل بنا
           </button>
         </div>
       </div>

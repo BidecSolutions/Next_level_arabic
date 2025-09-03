@@ -21,20 +21,20 @@ const ReasonsSection = ({developer}) => {
     <section className="  flex flex-col items-center macbook:gap-[30px] py-10 md:py-24 ">
       <div className="flex flex-col w-[90%] items-center gap-[6x] justify-center">
         <h3 className="text-center font-newsLetter text-[22px] md:text-[30px] macbook:text-[55px] font-semibold text-[#8F8F8F] macbook:mb-8">
-          REASONS TO INVEST WITH {developer?.name?.toUpperCase()} 
+          أسباب للاستثمار مع {developer?.name?.toUpperCase()} 
         </h3>
         <p
           className="text-center text-[12px] font-montserrat md:text-[13px] md:w-[65%] lg:w-[75%] macbook:text-[28px] text-[#8F8F8F] mt-2 mb-12"
           dangerouslySetInnerHTML={{
             __html:
               developer?.reason_to_invest_description ||
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque",
+              "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. بروين نيكي",
           }}
         ></p>
       </div>
       {reason.length === 0 ? (
         <p className="text-center text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No Reason available
+          لا يوجد سبب متاح
         </p>
       ) : (
         ""

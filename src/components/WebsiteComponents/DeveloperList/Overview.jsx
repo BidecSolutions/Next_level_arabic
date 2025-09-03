@@ -30,7 +30,7 @@ export default function Overview({ loading, developer, heading, description, img
         {/* Left Section */}
         <div className="md:w-[40%] macbook:w-[40%] gap-[40px] flex flex-col items-center md:items-start my-4">
           <h2 className="text-[30px] md:leading-[32px] text-[#A39D9D] font-newsLetter text-center md:text-start macbook:text-[75px]">
-            {heading || "Top UAE Real Estate Developers: Premier Properties for Discerning Buyers"}
+            {heading || "أفضل مطوري العقارات في الإمارات العربية المتحدة: عقارات مميزة للمشترين المميزين"}
           </h2>
 
           {description && description?.length > 500 ? (
@@ -51,7 +51,7 @@ export default function Overview({ loading, developer, heading, description, img
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (

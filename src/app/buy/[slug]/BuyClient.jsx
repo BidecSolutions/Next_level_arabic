@@ -43,7 +43,7 @@ console.log('buy', data);
       area={popular_search?.area?.id} 
       property_type={popular_search?.property_type_id} 
       page={top_heading_before_search_bar} 
-      breadcrumb1={`Buy / ${popular_search?.name}`}
+      breadcrumb1={`يشتري / ${popular_search?.name}`}
       />
     }
       <div className="px-4 md:px-20">

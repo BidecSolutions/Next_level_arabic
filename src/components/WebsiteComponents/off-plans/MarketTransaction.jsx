@@ -42,12 +42,12 @@ const MarketTransaction = ({ page }) => {
   return (
     <div className="flex flex-col items-center py-10 md:py-16 ">
       <h2 className="text-center font-newsLetter text-[#8F8F8F] macbook:text-[48px] text-3xl w-[296px] md:w-full md:text-[34px] font-semibold mb-8">
-        {data?.heading ? data.heading : "Market Transactions"}
+        {data?.heading ? data.heading : "معاملات السوق"}
       </h2>
       <p className="text-center text-[#8F8F8F] font-montserrat md:max-w-[44rem] macbook:max-w-[70%] macbook:text-[40px] mb-8">
         {data?.sub_heading
           ? data.sub_heading
-          : "Explore the latest off-plan property transactions in Dubai, showcasing emerging developments, price trends, and sales volume."}
+          : "اكتشف أحدث معاملات العقارات على الخريطة في دبي، مع عرض التطورات الناشئة، واتجاهات الأسعار، وحجم المبيعات."}
       </p>
 
       {data && (
@@ -59,7 +59,7 @@ const MarketTransaction = ({ page }) => {
             <p className="text-gray-400 mt-1  font-montserrat macbook:text-[35px]  ">
               {data?.sales_value_text_one
                 ? data.sales_value_text_one
-                : "Sales Value (AED)"}
+                : "قيمة المبيعات (درهم إماراتي)"}
             </p>
             <div className="flex items-center gap-1 mt-2">
               {parseFloat(
@@ -82,7 +82,7 @@ const MarketTransaction = ({ page }) => {
             <p className="text-gray-400 mt-1 font-montserrat macbook:text-[35px]  ">
               {data?.sales_transactions_text_one
                 ? data.sales_transactions_text_one
-                : "Sales Transactions (Volume)"}
+                : "معاملات المبيعات (الحجم)"}
             </p>
             <div className="flex items-center gap-1 mt-2">
               {parseFloat(
@@ -107,7 +107,7 @@ const MarketTransaction = ({ page }) => {
             <p className="text-gray-400 mt-1 macbook:text-[35px]  font-montserrat ">
               {data?.price_per_sqft_text_one
                 ? data.price_per_sqft_text_one
-                : "Price per sqft (AED)"}
+                : "السعر للقدم المربع (درهم إماراتي)"}
             </p>
             <div className="flex items-center gap-1 mt-2">
               {parseFloat(

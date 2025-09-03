@@ -8,7 +8,7 @@ const IntroSection = ({developer}) => {
 
   const description =
     developer?.description ||
-    "ar Properties is founded by Mohamed Alabbar - a UAE-based leading developer in 1997. With vast years of experience, the developer has set up six business segments and 60 active companies in several regions like The Middle East, North Africa, Asia, Europe and North";
+    "تأسست شركة ar Properties على يد محمد العبار - وهو مطور رائد مقره الإمارات العربية المتحدة - في عام 1997. مع سنوات واسعة من الخبرة، أنشأ المطور ستة قطاعات أعمال و60 شركة نشطة في العديد من المناطق مثل الشرق الأوسط وشمال إفريقيا وآسيا وأوروبا وشمال";
 
   return (
     <div className="flex justify-center w-[100%] md:py-24  ">
@@ -38,7 +38,7 @@ const IntroSection = ({developer}) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (

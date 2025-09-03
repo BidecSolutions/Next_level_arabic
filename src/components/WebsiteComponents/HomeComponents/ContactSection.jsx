@@ -94,14 +94,14 @@ const handleSubmit = async (e) => {
 
   const captchaValue = recaptcha.current ? recaptcha.current.getValue() : null;
   if (!captchaValue) {
-    alert("Please Verify the Captcha");
+    alert("يرجى التحقق من الكابتشا");
     return;
   }
 
   const fullPhone = `+${code}${formData.phone.replace(/\s+/g, "")}`;
   const isValid = isValidPhoneNumber(fullPhone, code);
   if (!isValid) {
-    toast.error("Invalid phone number for selected country.");
+    toast.error("رقم الهاتف غير صالح للبلد المحدد.");
     return;
   }
 
@@ -128,10 +128,10 @@ const handleSubmit = async (e) => {
       selectedOption: "",
     });
 
-    toast.success("Form submitted successfully!");
+    toast.success("تم إرسال النموذج بنجاح");
   } catch (error) {
     console.error("Error submitting form:", error);
-    toast.error("Error sending form. Please try again.");
+    toast.error("حدث خطأ أثناء إرسال النموذج. يُرجى المحاولة مرة أخرى");
   } finally {
     setLoading(false);
     handleCloseModal();
@@ -154,10 +154,10 @@ const handleSubmit = async (e) => {
           />
           <div className="absolute flex flex-col items-center text-center md:pb-4 top-[160px] md:top-24 macbook:top-[200px] md:right-1 macbook:left-[60%] bg-[#222222] h-[200px] w-[250px] md:h-[280px] macbook:h-[300px] md:w-[270px] macbook:w-[400px] text-white p-6 rounded-[20px]">
             <p className="text-[16px] font-newsLetter md:text-[34px] font-semibold mb-1">
-              CONTACT US
+              اتصل بنا
             </p>
             <p className="text-[12px] font-montserrat md:text-[17px] mb-4">
-              Next Level Real Estate
+              عقارات المستوى التالي
             </p>
             <div className="flex flex-col items-center md:items-start gap-[2px] md:gap-[15px] macbook:gap-[20px]">
               <a href="mailto:info@nextlevelrealestate.ae" className="text-[12px] md:text-sm macbook:text-[20px] mb-2 flex items-center gap-[6px] md:gap-[15px] hover:underline">
@@ -174,7 +174,7 @@ const handleSubmit = async (e) => {
               >
                 <FaLocationDot className="md:text-[17px]" />
                 <span>
-                  1505, Opal Tower Burj Khalifa <br /> Boulevard – Business Bay – Dubai.
+                  1505، برج أوبال، برج خليفة  <br /> بوليفارد – الخليج التجاري – دبي.
                 </span>
               </a>
             </div>
@@ -185,15 +185,15 @@ const handleSubmit = async (e) => {
         {form !== true && (
           <div className="md:ml-[110px] macbook:ml-[45px] md:w-[30%] flex flex-col items-center md:items-start">
             <p className="md:text-[30px] font-montserrat text-[20px] text-[#919090] md:mb-4">
-              Get A Free Consultation
+             احصل على استشارة مجانية
             </p>
             <p className="text-[#555555] font-montserrat text-center text-[14px] md:text-[26px] mb-4">
-              I am interested to!
+              أنا مهتم ب
               <br />
-              <span className="text-[12px] md:text-[18px]">Select One Option</span>
+              <span className="text-[12px] md:text-[18px]">حدد خيارًا واحدًا</span>
             </p>
             <div className="flex gap-2 md:gap-4 mb-6">
-              {["Buy", "Sale", "Rent"].map((option) => (
+              {["يشتري", "أُوكَازيُون", "إيجار"].map((option) => (
                 <label
                   key={option}
                   className={`flex flex-col items-center gap-[5px] md:w-[109px] w-[80px] h-[80px] md:h-[100px] bg-[#222222] p-4 rounded-lg ${
@@ -217,7 +217,7 @@ const handleSubmit = async (e) => {
               className="bg-[#8F8F8F] text-white hover:bg-transparent hover:text-[#8F8F8F] border py-2 px-6 rounded-[8px]"
               disabled={!formData.selectedOption}
             >
-              Next
+              التالي
             </button>
           </div>
         )}
@@ -228,7 +228,7 @@ const handleSubmit = async (e) => {
             <h2 className="md:text-[35px] text-[25px]   macbook:text-[48px] macbook:leading-[55px] md:leading-[40px] text-[#919090] md:mb-4 font-semibold uppercase">
               {page?.guide_section_heading
                 ? page?.guide_section_heading.substring(0, 20)
-                : "Get A Free Consultation"}
+                : "احصل على استشارة مجانية"}
             </h2>
             <div className="text-[#555555] text-center macbook:text-[40px] md:text-left text-[22px] md:text-[26px] mb-4">
               {page?.guide_section_description ? (
@@ -236,7 +236,7 @@ const handleSubmit = async (e) => {
                   body={page?.guide_section_description.substring(0, 50)}
                 />
               ) : (
-                "I am interested to!"
+                "أنا مهتم بذلك"
               )}
             </div>
 
@@ -250,7 +250,7 @@ const handleSubmit = async (e) => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Full Name"
+                placeholder="الاسم الكامل"
                 required
                 className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
               />
@@ -259,7 +259,7 @@ const handleSubmit = async (e) => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Your Email"
+                placeholder="البريد الإلكتروني الخاص بك"
                 required
                 className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
               />
@@ -276,7 +276,7 @@ const handleSubmit = async (e) => {
                   maxLength="15"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Phone"
+                  placeholder="هاتف"
                   required
                   className="w-full border-b-[0.5px] font-montserrat macbook:text-[22px] border-black outline-none py-2 text-gray-600"
                 />
@@ -287,7 +287,7 @@ const handleSubmit = async (e) => {
                 className="bg-[#A39D9D] text-white font-montserrat py-3 px-8 rounded-md mt-4 w-fit"
                 disabled={loading}
               >
-                {loading ? "Sending.." : "Send Message"}
+                {loading ? "إرسال" : "أرسل رسالة"}
               </button>
             </form>
           </div>
@@ -306,14 +306,14 @@ const handleSubmit = async (e) => {
               >
                 &times;
               </button>
-              <h2 className="text-[17px] md:text-2xl font-semibold mb-4">Register your interest</h2>
+              <h2 className="text-[17px] md:text-2xl font-semibold mb-4">سجل اهتمامك</h2>
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Full Name"
+                  placeholder="الاسم الكامل"
                   className="w-full border-b border-black py-2"
                   required
                 />
@@ -322,7 +322,7 @@ const handleSubmit = async (e) => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email Address"
+                  placeholder="عنوان البريد الإلكتروني"
                   className="w-full border-b border-black py-2"
                   required
                 />
@@ -337,7 +337,7 @@ const handleSubmit = async (e) => {
                     maxLength="15"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Phone"
+                    placeholder="هاتف"
                     className="w-full border-b border-black py-2"
                     required
                   />
@@ -346,7 +346,7 @@ const handleSubmit = async (e) => {
                   name="description"
                   value={formData.description}
                   onChange={handleChange}
-                  placeholder="Message"
+                  placeholder="رسالة"
                   rows={1}
                   className="w-full border-b border-black py-2 resize-none"
                 ></textarea>
@@ -356,7 +356,7 @@ const handleSubmit = async (e) => {
                   className="bg-[#8F8F8F] text-white py-3 px-4 rounded-lg hover:bg-transparent hover:text-[#8F8F8F] border"
                   disabled={loading}
                 >
-                  {loading ? "Submitting..." : "Submit"}
+                  {loading ? "تقديم" : "يُقدِّم"}
                 </button>
               </form>
             </div>

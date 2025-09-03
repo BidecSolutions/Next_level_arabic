@@ -175,7 +175,7 @@ const handleSubmit = async (e) => {
       subject: page,
     });
 
-    toast.success("Form Sent Successfully");
+    toast.success("تم إرسال النموذج بنجاح");
 
     setFormData({
       name: "",

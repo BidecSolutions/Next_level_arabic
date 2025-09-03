@@ -12,7 +12,7 @@ export const Overview = ({ developer }) => {
 
   const description =
     developer?.about_section_description ||
-    "ar Properties is founded by Mohamed Alabbar - a UAE-based leading developer in 1997. With vast years of experience, the developer has set up six business segments and 60 active companies in several regions like The Middle East, North Africa, Asia, Europe and North";
+    "تأسست شركة ar Properties على يد محمد العبار - وهو مطور رائد مقره الإمارات العربية المتحدة - في عام 1997. مع سنوات واسعة من الخبرة، أنشأ المطور ستة قطاعات أعمال و60 شركة نشطة في العديد من المناطق مثل الشرق الأوسط وشمال إفريقيا وآسيا وأوروبا وشمال";
 
   useEffect(() => {
     if (developer?.aboutSectionImages) {
@@ -34,7 +34,7 @@ export const Overview = ({ developer }) => {
         {/* LEFT SIDE: TEXT */}
         <div className="md:w-[40%] macbook:w-[40%] flex flex-col gap-5 items-center md:items-start my-4">
           <h2 className="text-[28px] md:text-5xl macbook:text-[75px] font-newsLetter text-[#A39D9D] text-center md:text-start">
-            {developer?.about_section_heading || "Lorem dolor"}
+            {developer?.about_section_heading || "لوريم دولور"}
           </h2>
 
           {description && description.length > 500 ? (
@@ -57,7 +57,7 @@ export const Overview = ({ developer }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -71,7 +71,7 @@ export const Overview = ({ developer }) => {
             className="p-2 px-4 macbook:px-8 font-montserrat rounded-md text-md macbook:text-[30px] text-white bg-[#A39D9D] flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Contact us
+            اتصل بنا
           </button>
         </div>
 

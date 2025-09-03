@@ -29,7 +29,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
       {propertiesData.length === 0 && (
         <div className="flex justify-center items-center h-[300px] w-full">
           <p className="text-[#8F8F8F] font-newsLetter text-[20px]">
-            No communities available.
+          لا توجد مجتمعات متاحة.
           </p>
         </div>
       )}
@@ -132,7 +132,7 @@ const CommunityShowcase = ({ propertiesData, images, features }) => {
   href={`/community/${property.slug}`}
   className="border border-[#8F8F8F] text-[#8F8F8F] px-8 py-2 rounded-md text-[10px] md:text-[13px] macbook:text-[20px] font-newsLetter"
 >
-  View more
+  عرض المزيد
 </Link>
 
               <button

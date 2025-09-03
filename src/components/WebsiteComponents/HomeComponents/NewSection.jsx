@@ -31,7 +31,7 @@ const NewSection = () => {
         </div>
 
         {/* Right Column - Text */}
-        <div className="lg:w-[50%] macbook:w-[50%]">
+        <div className="lg:w-[50%] macbook:w-[50%] text-right">
           <h3 className="text-[18px] font-newsLetter md:text-[28px] macbook:text-[60px] font-semibold text-[#8F8F8F]">
             وكالتك العقارية الموثوقة في دبي للحصول على رؤى السوق وفرص الاستثمار
           </h3>

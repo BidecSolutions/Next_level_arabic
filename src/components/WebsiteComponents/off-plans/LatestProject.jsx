@@ -514,7 +514,7 @@ console.log(developerId, "developerId", communityId, "community")
               onClick={handleSubmit}
             >
               <GoSearch className="mr-2" size={20} />
-              Search
+              يبحث
             </button>
 
             {/* Advanced Search Button */}
