@@ -122,7 +122,7 @@ const BannerSlider = ({ data, page }) => {
     <div className="flex justify-center text-white">
       {loading ? (
         <div className="flex items-center justify-center h-[34rem] w-full bg-gray-800 rounded-bl-[50px] rounded-br-[50px]">
-          <p>Loading...</p>
+          <p> تحميل</p>
         </div>
       ) : (
         <Swiper
@@ -157,7 +157,7 @@ const BannerSlider = ({ data, page }) => {
                   }}
                 >
                   <h2 className="text-xl font-semibold uppercase">
-                    {banner?.property_name || "Project Coming Soon"}
+                    {banner?.property_name || "المشروع قريبا"}
                   </h2>
 
                   <div className="flex justify-center gap-[30px] mt-8">
@@ -171,7 +171,7 @@ const BannerSlider = ({ data, page }) => {
                       href={`/property/${banner?.slug}`}
                       className="p-2 border border-white rounded"
                     >
-                      Get More Info
+                     احصل على مزيد من المعلومات
                     </Link>
                   </div>
                 </div>

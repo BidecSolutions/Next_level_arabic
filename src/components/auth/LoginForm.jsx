@@ -18,15 +18,15 @@ export default function LoginForm({ onSubmit, isLoading, resetError }) {
     const newErrors = {};
 
     if (!email) {
-      newErrors.email = "Email is required";
+      newErrors.email = "البريد الإلكتروني مطلوب";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      newErrors.email = "Please enter a valid email";
+      newErrors.email = "الرجاء إدخال بريد إلكتروني صالح";
     }
 
     if (!password) {
-      newErrors.password = "Password is required";
+      newErrors.password = "كلمة المرور مطلوبة";
     } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+      newErrors.password = "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل";
     }
 
     setErrors(newErrors);
@@ -48,7 +48,7 @@ export default function LoginForm({ onSubmit, isLoading, resetError }) {
           htmlFor="email"
           className="block mb-1 text-sm font-medium text-gray-700"
         >
-          {t("Email Address")}{" "}
+          {t("عنوان البريد الإلكتروني")}{" "}
         </label>
         <input
           type="email"
@@ -79,7 +79,7 @@ export default function LoginForm({ onSubmit, isLoading, resetError }) {
           htmlFor="password"
           className="block mb-1 text-sm font-medium text-gray-700"
         >
-          {t("Password")}
+          {t("كلمة المرور")}
         </label>
         <div className="relative">
           <input
@@ -143,10 +143,10 @@ export default function LoginForm({ onSubmit, isLoading, resetError }) {
         {isLoading ? (
           <span className="flex items-center justify-center">
             <Spinner className="animate-spin h-4 w-4 mr-2" />
-            {t("Signing in...")}{" "}
+            {t("تسجيل الدخول")}{" "}
           </span>
         ) : (
-          t("Sign In")
+          t("تسجيل الدخول")
         )}
       </button>
     </form>

@@ -10,27 +10,27 @@ export default function ChooseState({ pmId: pmIdProp, data }) {
   const landlordData = [
     {
       img: "/property/landlordIcon-1.png",
-      name: "Professionalism",
+      name: "الاحتراف",
     },
     {
       img: "/property/landlordIcon-2.png",
-      name: "To keep Properties in safe hands",
+      name: "للحفاظ على الممتلكات في أيدٍ أمينة",
     },
     {
       img: "/property/landlordIcon-3.png",
-      name: "To put the right price of Property",
+      name: "لتحديد السعر المناسب للعقار",
     },
     {
       img: "/property/landlordIcon-4.png",
-      name: "To put Tenant Screening",
+      name: "لوضع فحص المستأجرين",
     },
     {
       img: "/property/landlordIcon-5.png",
-      name: "Stress - free passive income",
+      name: "دخل سلبي خالٍ من التوتر",
     },
     {
       img: "/property/landlordIcon-6.png",
-      name: "Tenant Retention",
+      name: "الاحتفاظ بالمستأجر",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function ChooseState({ pmId: pmIdProp, data }) {
   return (
     <div className="w-full flex flex-col items-center justify-center my-24">
       <h4 className="font-newsLetter uppercase text-[22px] md:text-[34px] text-[#8F8F8F] text-center mb-6">
-        {data?.why_landlord_heading || "Why Choose Us?"}
+        {data?.why_landlord_heading || "لماذا تختارنا؟"}
       </h4>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 grid-flow-row py-5">
@@ -67,10 +67,10 @@ export default function ChooseState({ pmId: pmIdProp, data }) {
             <img
               className="w-8 md:w-12"
               src={landlordData?.[index]?.img || "/property/default.png"}
-              alt={service.name || service.title || "Default"}
+              alt={service.name || service.title || "تقصير"}
             />
             <p className="text-[#8F8F8F] font-montserrat text-[13px] md:text-xl">
-              {service.title || service.name || "Professionalism"}
+              {service.title || service.name || "الاحتراف"}
             </p>
           </div>
         ))}

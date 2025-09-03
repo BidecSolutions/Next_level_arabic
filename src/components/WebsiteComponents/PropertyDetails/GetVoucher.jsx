@@ -123,7 +123,7 @@ export default function GetVoucher({ property }) {
       <div className="md:w-[100%] macbook:w-[80%] flex justify-center md:justify-evenly flex-wrap-reverse gap-3 md:gap-[5px]">
         <div className="max-w-[400px] macbook:max-w-[50%] flex flex-col items-center md:items-start gap-[10px] md:gap-[15px] my-10">
           <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] text-center md:text-start font-newsLetter">
-            {property?.brochureHeading || "Property"}
+            {property?.brochureHeading || "ملكية"}
           </h2>
 
           <div className="text-[16px] macbook:text-[30px] text-[#555] text-center md:text-start font-montserrat">
@@ -144,7 +144,7 @@ export default function GetVoucher({ property }) {
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="mt-2 text-gray-600 text-xs font-medium hover:underline"
                 >
-                  {isExpanded ? "Read Less" : "Read More"}
+                  {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
                 </button>
               </>
             ) : (
@@ -160,7 +160,7 @@ export default function GetVoucher({ property }) {
           >
             <IoCloudDownloadOutline className="text-[18px] macbook:text-[40px]" />
             <span className="text-[14px] md:text-[12px] macbook:text-[20px]">
-              Download Free PDF Brochure
+              تنزيل كتيب PDF مجانًا
             </span>
           </button>
         </div>

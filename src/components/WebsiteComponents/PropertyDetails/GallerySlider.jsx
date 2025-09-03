@@ -13,7 +13,7 @@ import { Loader } from "@/components/WebsiteComponents/Loader";
 import { Image_NotFound, Image_URL } from "@/config/constants";
 
 const GallerySlider = ({ property }) => {
-  const [activeCategory, setActiveCategory] = useState("Interior");
+  const [activeCategory, setActiveCategory] = useState("الداخلية");
   const [media, setMedia] = useState(null);
   const [modalImage, setModalImage] = useState(null);
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -51,7 +51,7 @@ const GallerySlider = ({ property }) => {
   }));
 
   const sliderImages =
-    activeCategory === "Interior" ? mappedInteriorImages : mappedExteriorImages;
+    activeCategory === "الداخلية" ? mappedInteriorImages : mappedExteriorImages;
 
   const openModal = (imageSrc) => {
     setModalImage(imageSrc);
@@ -65,12 +65,12 @@ const GallerySlider = ({ property }) => {
   return (
     <div className="max-w-full overflow-x-hidden flex flex-col items-center justify-center text-center mb-8">
       <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] font-newsLetter">
-        PHOTO GALLERY
+        معرض الصور
       </h2>
 
       {/* Category Buttons */}
       <div className="flex justify-center gap-4 mb-6">
-        {["Interior", "Exterior"].map((category) => (
+        {["الداخلية", "الخارج"].map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}

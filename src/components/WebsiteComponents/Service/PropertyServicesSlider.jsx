@@ -10,14 +10,14 @@ import "./PropertyServicesSlider.css";
 
 export default function PropertyServicesSlider({ propData }) {
     // Fallback services
-    const services = [
-        { img: "property/landlordIcon-1.png", name: "Professionalism" },
-        { img: "property/landlordIcon-2.png", name: "To keep Properties in safe hands" },
-        { img: "property/landlordIcon-3.png", name: "To put the right price of Property" },
-        { img: "property/landlordIcon-4.png", name: "To put Tenant Screening" },
-        { img: "property/landlordIcon-5.png", name: "Stress - free passive income" },
-        { img: "property/landlordIcon-6.png", name: "Tenant Retention" },
-    ];
+ const services = [
+  { img: "property/landlordIcon-1.png", name: "الاحترافية" },
+  { img: "property/landlordIcon-2.png", name: "الحفاظ على العقارات في أيدٍ أمينة" },
+  { img: "property/landlordIcon-3.png", name: "تحديد السعر المناسب للعقار" },
+  { img: "property/landlordIcon-4.png", name: "إجراء فحص المستأجرين" },
+  { img: "property/landlordIcon-5.png", name: "دخل سلبي بدون عناء" },
+  { img: "property/landlordIcon-6.png", name: "الحفاظ على المستأجرين" },
+];
 
     // Use propData if provided, otherwise fallback to empty object
     const data = propData || {};
@@ -76,7 +76,7 @@ export default function PropertyServicesSlider({ propData }) {
             <h4 className="text-[#8F8F8F] text-center font-newsLetter text-[17px] md:text-[34px] mt-4 mb-6">
                 {data
                     ? data?.exclusive_list_heading
-                    : "  EXCLUSIVE LIST OF NLRE PROPERTY  MANAGEMENT SERVICES"}
+                    : "قائمة حصرية لخدمات إدارة الممتلكات من NLRE"}
             </h4>
 
             <div className="relative w-full max-w-full mt-4 h-[200px] overflow-hidden">

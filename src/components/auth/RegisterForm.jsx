@@ -127,33 +127,33 @@ export default function RegisterForm({ onSubmit, isLoading }) {
     const newErrors = {};
 
     if (!formData.first_name.trim())
-      newErrors.first_name = "First Name is required";
+      newErrors.first_name = "الاسم الأول مطلوب";
     if (!formData.last_name.trim())
-      newErrors.last_name = "Last Name is required";
+      newErrors.last_name = "الاسم الأخير مطلوب";
     if (!formData.email) {
-      newErrors.email = "Email is required";
+      newErrors.email = "البريد الإلكتروني مطلوب";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Invalid email format";
+      newErrors.email = "تنسيق البريد الإلكتروني غير صالح";
     }
     if (!formData.phone) {
-      newErrors.phone = "Phone is required";
+      newErrors.phone = "الهاتف مطلوب";
     } else if (!/^[0-9]{10,15}$/.test(formData.phone)) {
-      newErrors.phone = "Invalid phone number";
+      newErrors.phone = "رقم الهاتف غير صالح";
     }
     if (!formData.billing_address)
-      newErrors.billing_address = "Address is required";
-    if (!formData.country) newErrors.country = "Country is required";
-    if (!formData.city) newErrors.city = "City is required";
-    if (!formData.state) newErrors.state = "State is required";
+      newErrors.billing_address = "العنوان مطلوب";
+    if (!formData.country) newErrors.country = "البلد مطلوب";
+    if (!formData.city) newErrors.city = "المدينة مطلوبة";
+    if (!formData.state) newErrors.state = "الدولة مطلوبة";
 
 
     if (!formData.password) {
-      newErrors.password = "Password is required";
+      newErrors.password = "كلمة المرور مطلوبة";
     } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+      newErrors.password = "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل";
     }
     if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = "Passwords do not match";
+      newErrors.confirmPassword = "كلمات المرور غير متطابقة";
     }
 
     setErrors(newErrors);
@@ -165,48 +165,48 @@ export default function RegisterForm({ onSubmit, isLoading }) {
 
     switch (name) {
       case "first_name":
-        if (!value.trim()) error = "First Name is required";
+        if (!value.trim()) error = "الاسم الأول مطلوب";
         break;
       case "last_name":
-        if (!value.trim()) error = "Last Name is required";
+        if (!value.trim()) error = "الاسم الأخير مطلوب";
         break;
       case "email":
         if (!value) {
-          error = "Email is required";
+          error = "البريد الإلكتروني مطلوب";
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-          error = "Invalid email format";
+          error = "تنسيق البريد الإلكتروني غير صالح";
         }
         break;
       case "phone":
         if (!value) {
-          error = "Phone is required";
+          error = "الهاتف مطلوب";
         } else if (!/^\+?[0-9]{10,15}$/.test(value)) {
-          error = "Invalid phone number";
+          error = "رقم الهاتف غير صالح";
         }
         break;
       case "billing_address":
-        if (!value) error = "Address is required";
+        if (!value) error = "العنوان مطلوب";
         break;
       case "country":
-        if (!value) error = "Country is required";
+        if (!value) error = "البلد مطلوب";
         break;
         case "state":
-        if (!value) error = "State is required";
+        if (!value) error = "الدولة مطلوبة";
         break;
       case "city":
-        if (!value) error = "City is required";
+        if (!value) error = "المدينة مطلوبة";
         break;
 
       case "password":
         if (!value) {
-          error = "Password is required";
+          error = "كلمة المرور مطلوبة";
         } else if (value.length < 6) {
-          error = "Password must be at least 6 characters";
+          error = "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل";
         }
         break;
       case "confirmPassword":
         if (value !== formData.password) {
-          error = "Passwords do not match";
+          error = "كلمات المرور غير متطابقة";
         }
         break;
       default:
@@ -235,7 +235,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
       <div className="flex gap-4">
         <div className="w-1/2">
           <label className="block mb-1 text-sm font-medium">
-            {t("First Name")}
+            {t("الاسم الأول")}
           </label>
           <input
             type="text"
@@ -253,7 +253,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
         </div>
         <div className="w-1/2">
           <label className="block mb-1 text-sm font-medium">
-            {t("Last Name")}
+            {t("اسم العائلة")}
           </label>
           <input
             type="text"
@@ -273,7 +273,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
       <div className="flex gap-4">
         {/* Email Field */}
         <div className="w-1/2">
-          <label className="block mb-1 text-sm font-medium">{t("Email")}</label>
+          <label className="block mb-1 text-sm font-medium">{t("بريد إلكتروني")}</label>
           <input
             type="email"
             name="email"
@@ -291,7 +291,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
         {/* Phone Field */}
         <div className="w-1/2">
           <label className="block mb-1 text-sm font-medium">
-            {t("Phone Number")}
+            {t("رقم التليفون")}
           </label>
           <input
             type="tel"
@@ -314,7 +314,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
 
             <div className="flex flex-col md:flex-row md:gap-4 w-full">
       <div className="md:w-1/3 md:mt-3">
-        <label className="block text-sm font-medium">{t("Country")}</label>
+        <label className="block text-sm font-medium">{t("دولة")}</label>
         <input
           type="text"
           name="country"
@@ -352,7 +352,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
       </div> */}
 
       <div className="mt-2 md:w-1/3">
-        <label className="block mb-1 text-sm font-medium">{t("State")}</label>
+        <label className="block mb-1 text-sm font-medium">{t("ولاية")}</label>
          {states.length > 0 && (
         <Select
           name="state"
@@ -376,7 +376,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
             value: city.name,
             label: city.name,
           }))}
-          placeholder={t("Select a State")}
+          placeholder={t("اختر دولة")}
           className="text-sm"
           classNamePrefix="react-select"
           isClearable
@@ -411,7 +411,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
 </div> */}
 
       <div className="mt-2 md:w-1/3">
-        <label className="block mb-1 text-sm font-medium">{t("City")}</label>
+        <label className="block mb-1 text-sm font-medium">{t("مدينة")}</label>
          {cities.length > 0 && (
         <Select
           name="city"
@@ -433,7 +433,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
             value: city.name,
             label: city.name,
           }))}
-          placeholder={t("Select a city")}
+          placeholder={t("اختر مدينة")}
           className="text-sm"
           classNamePrefix="react-select"
           isClearable
@@ -447,7 +447,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
 
             {/* Address Field */}
        <div>
-        <label className="block mb-1 text-sm font-medium">{t("Address")}</label>
+        <label className="block mb-1 text-sm font-medium">{t("عنوان")}</label>
         <textarea
           name="billing_address"
           value={formData.billing_address}
@@ -467,7 +467,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
         {/* Password Field */}
         <div className="w-1/2 relative">
           <label className="block mb-1 text-sm font-medium">
-            {t("Password")}
+            {t("كلمة المرور")}
           </label>
           <input
             type={showPassword ? "text" : "password"}
@@ -496,7 +496,7 @@ export default function RegisterForm({ onSubmit, isLoading }) {
 
         <div className="w-1/2 relative">
           <label className="block mb-1 text-sm font-medium">
-            {t("Confirm Password")}{" "}
+            {t("تأكيد كلمة المرور")}{" "}
           </label>
           <input
             type={showConfirmPassword ? "text" : "password"}
@@ -560,10 +560,10 @@ export default function RegisterForm({ onSubmit, isLoading }) {
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               ></path>
             </svg>
-            {t("Creating Account...")}{" "}
+            {t("إنشاء الحساب")}{" "}
           </span>
         ) : (
-          t("Register")
+          t("يسجل")
         )}
       </button>
     </form>

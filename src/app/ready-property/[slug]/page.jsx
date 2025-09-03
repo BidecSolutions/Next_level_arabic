@@ -56,7 +56,7 @@ useEffect(() => {
 
     <GetInTouch
           page={{
-            guide_section_heading: "GET IN TOUCH FOR A FREE GUIDE",
+            guide_section_heading: "تواصل معنا للحصول على دليل مجاني",
             guide_section_image: property?.agent?.profile_image,
             guide_section_name: property?.agent?.name,
             guide_section_contact: property?.agent?.phone_no,

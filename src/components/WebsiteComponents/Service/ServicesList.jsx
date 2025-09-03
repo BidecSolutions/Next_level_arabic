@@ -13,13 +13,7 @@ export default function ServicesList({ propData }) {
 
   const description =
     data?.exclusive_list_of_nlre_description ||
-    `Whether you own a residential property or a commercial one and wish
-     to rent it out, then visit Next Level real estate. We provide
-     high-quality property management services for a premium annual
-     property management fee. Renting commercial vs residential real
-     estate is not the same. A commercial property that is built to
-     accommodate businesses requires a little more and more thoughtful
-     effort to find the right tenant.`;
+    `سواء كنت تملك عقارًا سكنيًا أو تجاريًا وترغب في تأجيره، تفضل بزيارة شركة نيكست ليفل للعقارات. نقدم خدمات إدارة عقارات عالية الجودة مقابل رسوم سنوية مميزة. يختلف استئجار العقارات التجارية عن استئجار العقارات السكنية. فالعقار التجاري المُصمم لاستيعاب الشركات يتطلب جهدًا أكبر وأكثر دقة للعثور على المستأجر المناسب.`;
 
   return (
     // <div className="flex flex-col-reverse md:flex-row items-center gap-[40px] justify-center w-full">
@@ -81,7 +75,7 @@ export default function ServicesList({ propData }) {
         {/* Heading and Description */}
         <div className="   flex flex-col justify-center md:justify-start ">
           <h4 className="text-[17px] font-newsLetter  lg:text-[32px]  text-center md:text-start text-[#8F8F8F]">
-            {data ? data?.exclusive_list_of_nlre_heading : "Exclusive List Heading"}
+            {data ? data?.exclusive_list_of_nlre_heading : "عنوان القائمة الحصرية"}
           </h4>
           <div className="mb-1">
             <div
@@ -98,7 +92,7 @@ export default function ServicesList({ propData }) {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="    text-[11px] font-montserrat text-[#8F8F8F]   px-2 py-1 rounded-md"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             )}
           </div>

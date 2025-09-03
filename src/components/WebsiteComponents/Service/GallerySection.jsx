@@ -173,7 +173,7 @@ export default function GallerySection({ propData, page }) {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="text-[11px] font-montserrat text-[#8F8F8F] px-2 py-1 rounded-md"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             )}
           </div>
@@ -183,7 +183,7 @@ export default function GallerySection({ propData, page }) {
               className="px-6 py-2 font-montserrat bg-[#8F8F8F] hover:bg-transparent hover:text-[#8F8F8F] border hover:border-[#8F8F8F] text-white rounded-[6.5px]"
               onClick={() => setIsModalOpen(true)}
             >
-              Book a Valuation
+             حجز التقييم
             </button>
 
             <button className="ml-2 p-1.5 border-2 border-[#555555] text-xl text-[#555555] rounded-[3.5px]">

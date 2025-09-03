@@ -128,12 +128,12 @@ export const Faqs = ({ pmId, propData }) => {
   return (
     <div className="flex justify-center items-start w-full p-6 lg:pb-24 gap-4 flex-col md:w-[90%] bg-transparent text-white">
       <h4 className="md:text-4xl font-newsLetter text-2xl text-gray-500 py-8">
-        Frequently Asked Questions
+        الأسئلة الشائعة
       </h4>
 
       {displayData.length === 0 ? (
         <p className="text-[25px] font-montserrat w-full flex justify-center text-gray-500">
-          No FAQs available
+          لا توجد أسئلة وأجوبة متاحة
         </p>
       ) : (
         displayData.map((faq, index) => (

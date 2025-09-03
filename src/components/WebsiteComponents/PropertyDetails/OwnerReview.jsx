@@ -23,7 +23,7 @@ const OwnerReview = ({ property }) => {
         <div className="flex flex-col justify-center text-center md:text-start gap-4 md:pl-4 md:w-[50%]">
           <h2 className="text-2xl md:text-[35px] macbook:text-[45px] macbook:leading-[45px] md:leading-[35px] uppercase md:pb-2 text-[#8F8F8F] font-newsLetter">
             {property?.ownerSaysHeading ||
-              "What Abdul Ahad Says About This Project"}
+              "ماذا يقول عبد الأحد عن هذا المشروع"}
           </h2>
 
           {property?.ownerSays && property.ownerSays.length > 500 ? (
@@ -44,7 +44,7 @@ const OwnerReview = ({ property }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs md:text-lg text-start font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -56,11 +56,11 @@ const OwnerReview = ({ property }) => {
           {/* Signature */}
           <div>
             <p className="text-[#555555] text-[20px] macbook:text-[35px] font-semibold">
-              <span> — </span> Abdul Ahad
+              <span> — </span> عبد الأحد
             </p>
             <p className="text-[#555555] text-[10px] macbook:text-[18px] font-semibold pl-6">
-              Managing Director <br />
-              Next Level Real Estate
+              المدير العام <br />
+              عقارات المستوى التالي
             </p>
           </div>
         </div>

@@ -12,11 +12,7 @@ export const HowToBuy2 = ({ howToBuyData, page }) => {
 
   const description =
     howToBuyData?.description ||
-    `Embark on a journey through Dubai’s diverse districts with our all-encompassing area guide. Whether you're drawn to the
-historical richness of Deira, the bustling business environment of Downtown, or the serene landscapes of The Lakes, our guide
-provides detailed insights into what makes each area unique. Delve into the characteristics of each district, from lifestyle
-amenities to cultural hotspots, ensuring you find the perfect spot that suits your needs. Our guide serves as your gateway to
-understanding Dubai's varied neighborhoods, helping you explore the city's rich tapestry of communities.`;
+    `انطلق في رحلة عبر أحياء دبي المتنوعة مع دليلنا الشامل للمناطق. سواءً كنت منجذبًا إلى الثراء التاريخي لديرة، أو بيئة الأعمال النابضة بالحياة في وسط المدينة، أو المناظر الطبيعية الهادئة في البحيرات، فإن دليلنا يقدم لك رؤىً تفصيلية حول ما يجعل كل منطقة فريدة. تعمق في خصائص كل منطقة، من مرافق نمط الحياة إلى المعالم الثقافية، لضمان العثور على المكان المثالي الذي يناسب احتياجاتك. يُعد دليلنا بمثابة بوابتك لفهم أحياء دبي المتنوعة، ويساعدك على استكشاف النسيج الغني لمجتمعات المدينة.`;
 
   return (
     <div className="flex justify-center w-full py-10 macbook:py-48">
@@ -27,7 +23,7 @@ understanding Dubai's varied neighborhoods, helping you explore the city's rich 
           <div className="relative w-full lg:w-[90%] macbook:w-[80%]">
             <img
               src={`${Image_URL}/${page?.how_to_buy_2_image}`}
-              alt={page?.buy_image_alt || "How to Buy"}
+              alt={page?.buy_image_alt || "كيفية الشراء"}
               className="w-[300px] lg:w-[650px] md:h-[500px] md:w-[400px] macbook:w-[600px] macbook:h-[550px] rounded-br-[150px] md:rounded-br-[100px]"
               onError={(e) => {
                 e.currentTarget.src = Image_NotFound;
@@ -39,7 +35,7 @@ understanding Dubai's varied neighborhoods, helping you explore the city's rich 
         {/* Text Section */}
         <div className="md:w-[40%] lg:w-[45%] macbook:w-[50%] flex flex-col items-center md:items-start gap-3">
           <h1 className="text-3xl md:text-5xl lg:text-[25px] font-newsLetter macbook:text-[60px] text-[#A39D9D] text-center md:text-start">
-            {page?.how_to_buy_2_heading || "How To Buy"}
+            {page?.how_to_buy_2_heading || "كيفية الشراء"}
           </h1>
 
           {page?.how_to_buy_2_description &&
@@ -61,7 +57,7 @@ understanding Dubai's varied neighborhoods, helping you explore the city's rich 
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -73,8 +69,7 @@ understanding Dubai's varied neighborhoods, helping you explore the city's rich 
           <Link
             href="/areas/"
             className="p-2 px-4 macbook:py-4 font-montserrat macbook:text-[20px] rounded-md text-md text-white bg-[#A39D9D] hover:bg-transparent hover:text-[#A39D9D] border hover:border-[#A39D9D] w-fit flex justify-center items-center gap-2"
-          >
-            Get Free Areas Guide
+          >احصل على دليل المناطق مجانًا
           </Link>
         </div>
       </div>

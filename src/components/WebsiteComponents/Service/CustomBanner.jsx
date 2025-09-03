@@ -175,29 +175,29 @@ const CustomBanner = ({ pmId, propData }) => {
 
         const captchaValue = recaptcha.current?.getValue();
         if (!captchaValue) {
-            alert("Please Verify the Captcha");
+            alert("يرجى التحقق من الكابتشا");
             return;
         }
         if (!formData.name.trim()) {
-            alert("Name is required");
+            alert("الاسم مطلوب");
             return;
         }
         if (!formData.phone.trim()) {
-            alert("Phone number is required");
+            alert("رقم الهاتف مطلوب");
             return;
         }
         if (!formData.email.trim()) {
-            alert("Email is required");
+            alert("البريد الإلكتروني مطلوب");
             return;
         }
         if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            alert("Invalid email format");
+            alert("تنسيق البريد الإلكتروني غير صالح");
             return;
         }
 
         const fullPhone = `+${code}${formData.phone.replace(/\s+/g, "")}`;
         if (!isValidPhoneNumber(fullPhone, code)) {
-            toast.error("Invalid phone number for selected country.");
+            toast.error("رقم الهاتف غير صالح للبلد المحدد.");
             return;
         }
 
@@ -220,7 +220,7 @@ const CustomBanner = ({ pmId, propData }) => {
                 phone: "",
                 description: "",
             });
-            toast.success("Form submitted successfully");
+            toast.success("تم إرسال النموذج بنجاح");
             setIsModalOpen(false);
         } catch (error) {
             console.error("Error submitting form:", error.message);
@@ -231,7 +231,7 @@ const CustomBanner = ({ pmId, propData }) => {
                     .join("\n");
                 alert(errorMessages);
             } else {
-                alert("Network error or server is down. Please try again later.");
+                alert("خطأ في الشبكة أو الخادم معطل. يُرجى المحاولة لاحقًا.");
             }
         } finally {
             setLoading(false);
@@ -252,13 +252,13 @@ const CustomBanner = ({ pmId, propData }) => {
                 <h1 className="text-2xl font-newsLetter md:text-5xl text-center font-bold uppercase">
                     {data
                         ? data?.banner_heading
-                        : "Top-Notch Rental Property Management Experts"}
+                        : "خبراء إدارة العقارات الإيجارية من الدرجة الأولى"}
                 </h1>
                 <button
                     className="my-4 px-4 p-2 font-montserrat text-[14px] md:text-[16px] py-2 bg-[#8F8F8F] text-white rounded-[5px] duration-300 hover:bg-[#6d6969]"
                     onClick={handleOpenModal}
                 >
-                    Get Free Consultation
+                    احصل على استشارة مجانية
                 </button>
             </div>
 

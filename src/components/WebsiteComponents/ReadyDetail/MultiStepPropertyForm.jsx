@@ -13,12 +13,12 @@ const MultiStepPropertyForm = () => {
   const property = {
     form: [
       {
-        heading: "Select the Number of Bedroom",
+        heading: "حدد عدد غرف النوم",
         fields: [
-          { label: "Studio", value: "Studio" },
-          { label: "1 Bedroom Flats", value: "1 Bedroom Flats" },
-          { label: "2 Bedroom Flats", value: "2 Bedroom Flats" },
-          { label: "3+ Bedroom Flats", value: "3+ Bedroom Flats" },
+          { label: "استوديو", value: "Studio" },
+          { label: "شقق بغرفة نوم واحدة", value: "1 Bedroom Flats" },
+          { label: "شقق بغرفتي نوم", value: "2 Bedroom Flats" },
+          { label: "شقق مكونة من 3 غرف نوم أو أكثر", value: "3+ Bedroom Flats" },
         ],
       },
     ],
@@ -196,13 +196,13 @@ const MultiStepPropertyForm = () => {
       return (
         <>
           <h3 className="text-xl md:text-2xl font-semibold text-[#A39D9D] mb-6">
-            LEAVE A REQUEST AND ASSISTANT WILL SELECT THE PROPERTY
+            اترك طلبًا وسيقوم المساعد باختيار العقار
           </h3>
           <div className="flex flex-col gap-4">
             <input
               type="text"
               name="fullName"
-              placeholder="Name"
+              placeholder="اسم"
               value={formData.fullName}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none text-lg"
@@ -217,7 +217,7 @@ const MultiStepPropertyForm = () => {
                 type="tel"
                 name="phoneNumber"
                 maxLength="15"
-                placeholder="Phone Number"
+                placeholder="رقم التليفون"
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
                 className="w-full border-b-[0.5px] font-montserrat mb-2 macbook:text-[22px] border-gray-300 outline-none py-2 text-gray-600"
@@ -246,7 +246,7 @@ const MultiStepPropertyForm = () => {
           {property?.form_main_heading}
         </h2>
         <p className="text-sm text-gray-600 mb-4">
-          Step {currentStep} of {totalSteps}
+         خطوة {currentStep} ل {totalSteps}
         </p>
         <div className="w-full bg-gray-200 rounded-full h-1.5">
           <div
@@ -279,7 +279,7 @@ const MultiStepPropertyForm = () => {
             onClick={goToNextStep}
             className="flex items-center px-6 py-3 border border-[#A39D9D] rounded-lg text-[#A39D9D] font-medium hover:bg-gray-500 hover:text-white transition-colors duration-200"
           >
-            NEXT QUESTION <IoChevronForward />
+           السؤال التالي <IoChevronForward />
           </button>
         ) : (
           <button
@@ -287,7 +287,7 @@ const MultiStepPropertyForm = () => {
             className="px-8 py-3 bg-gray-500 text-white rounded-lg font-semibold hover:bg-white hover:text-gray-500 border hover:border-gray-500 transition-colors duration-200 shadow-md"
             disabled={loading}
           >
-            {loading ? "Submitting..." : "Submit"}
+            {loading ? "تقديم" : "يُقدِّم"}
           </button>
         )}
       </div>

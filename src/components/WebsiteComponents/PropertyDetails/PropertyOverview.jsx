@@ -53,7 +53,7 @@ const PropertyOverview = ({ property }) => {
       {/* Right Section - Info */}
       <div className="flex flex-col items-center mt-10 macbook:gap-5 md:items-start md:w-[40%] text-center md:text-start">
         <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] font-newsLetter">
-          {property.propertyOverviewHeading || "Project Overview"}
+          {property.propertyOverviewHeading || "نظرة عامة على المشروع"}
         </h2>
 
         {/* Description with Read More */}
@@ -76,7 +76,7 @@ const PropertyOverview = ({ property }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -89,12 +89,12 @@ const PropertyOverview = ({ property }) => {
         {/* Property Details */}
         <div className="grid mt-4 grid-cols-2 gap-4 w-full text-gray-700">
           {[
-            { label: "Type", value: property?.project_type === 1 ? "Ready" : "Off Plan", icon: "/property-detail/type.png" },
-            { label: "Total Rooms", value: property?.no_of_rooms || "NaN", icon: "/property-detail/bed.png" },
-            { label: "Bedroom", value: property?.no_of_bedrooms || "NaN", icon: "/property-detail/bed.png" },
-            { label: "Size", value: property?.land_area || "NaN", icon: "/property-detail/area.png" },
-            { label: "Developer", value: property?.developer?.name || "NaN", icon: "/property-detail/developer.png" },
-            { label: "Year Built", value: property?.build_year || "NaN", icon: "/property-detail/type.png" }
+            { label: "يكتب", value: property?.project_type === 1 ? "مستعد" : "خارج الخطة", icon: "/property-detail/type.png" },
+            { label: "إجمالي الغرف", value: property?.no_of_rooms || "نان", icon: "/property-detail/bed.png" },
+            { label: "غرفة نوم", value: property?.no_of_bedrooms || "نان", icon: "/property-detail/bed.png" },
+            { label: "مقاس", value: property?.land_area || "نان", icon: "/property-detail/area.png" },
+            { label: "المطور", value: property?.developer?.name || "نان", icon: "/property-detail/developer.png" },
+            { label: "سنة البناء", value: property?.build_year || "نان", icon: "/property-detail/type.png" }
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-1">
               <div className="bg-white rounded-full">

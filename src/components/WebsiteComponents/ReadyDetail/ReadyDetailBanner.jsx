@@ -59,13 +59,13 @@ const ReadyDetailBanner = ({ property }) => {
               onClick={openPhotosModal}
               className="flex items-center px-4 py-2 bg-white text-gray-800 rounded-full shadow-md hover:bg-gray-100 transition-colors"
             >
-              📷 {images.length} photos
+              📷 {images.length} صور
             </button>
             <button
               onClick={handleMapClick}
               className="flex items-center px-4 py-2 bg-white text-gray-800 rounded-full shadow-md hover:bg-gray-100 transition-colors"
             >
-              🗺️ Map
+              🗺️ رسم خريطة
             </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const ReadyDetailBanner = ({ property }) => {
                 onClick={openPhotosModal}
                 className="flex items-center px-4 py-2 bg-white text-gray-800 rounded-full shadow-md hover:bg-gray-100 transition-colors"
               >
-                View All Photos
+               عرض جميع الصور
               </button>
             </div>
           </div>

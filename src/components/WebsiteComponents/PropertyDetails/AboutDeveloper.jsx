@@ -45,7 +45,7 @@ const AboutDeveloper = ({ property }) => {
         {/* Text Section */}
         <div className="md:w-[40%] macbook:w-[40%] flex flex-col items-center md:items-start justify-center gap-3 my-4">
           <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] text-center md:text-start font-newsLetter">
-            {property?.devloperHeading || "About Developer"}
+            {property?.devloperHeading || "حول المطور"}
           </h2>
 
           <div className="text-[16px] macbook:text-[25px] macbook:leading-[40px] text-[#555555] md:leading-[23px] text-center md:text-start">
@@ -66,7 +66,7 @@ const AboutDeveloper = ({ property }) => {
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="mt-2 text-gray-600 text-xs md:text-lg font-medium hover:underline"
                 >
-                  {isExpanded ? "Read Less" : "Read More"}
+                  {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
                 </button>
               </>
             ) : (
@@ -80,7 +80,7 @@ const AboutDeveloper = ({ property }) => {
             href={`/developer/${property?.developer?.slug}`}
             className="px-[8px] py-[10px] cursor-pointer text-[12px] md:px-4 macbook:text-[18px] bg-[#A39D9D] md:py-2 md:text-[14px] flex items-center gap-[10px] text-white rounded-[5px]"
           >
-            View Developer Properties
+            عرض خصائص المطور
           </Link>
         </div>
 

@@ -22,7 +22,7 @@ const categoryIcons = {
 };
 
 const LandmarksSection = ({ property }) => {
-  const heading = property?.section_5_heading || "Nearby Landmarks";
+  const heading = property?.section_5_heading || "معالم قريبة";
   const content = property?.section_5_content || {};
 
   const imagePath = property?.section_5_image
@@ -31,7 +31,7 @@ const LandmarksSection = ({ property }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const defaultCategories = ["School", "Hospital", "Airport", "Supermarkets", "Banks", "Petrol"];
+  const defaultCategories = ["مدرسة", "مستشفى", "مطار", "محلات السوبر ماركت", "البنوك", "بنزين"];
 
   const defaultItems = defaultCategories
     .map((category) => {
@@ -94,7 +94,7 @@ const LandmarksSection = ({ property }) => {
               onClick={openModal}
               className="hidden md:block mt-2 px-6 py-2 bg-[#8F8F8F] text-white rounded hover:bg-gray-700 transition"
             >
-              View All Nearby
+              عرض الكل القريبة
             </button>
           )}
         </div>
@@ -104,7 +104,7 @@ const LandmarksSection = ({ property }) => {
             onClick={openModal}
             className="md:hidden block mt-6 px-6 py-2 bg-[#8F8F8F] text-white rounded hover:bg-gray-700 transition"
           >
-            View All Nearby
+            عرض الكل القريبة
           </button>
         )}
       </div>

@@ -223,7 +223,7 @@ export default function PropertyManagementCycle({ propData }) {
         <h3 className="text-center font-newsLetter text-[#8F8F8F] uppercase text-[17px] md:text-[34px] my-8 pb-4">
           {data.management_cycle_heading
             ? data.management_cycle_heading
-            : "Property Management Cycle"}
+            : "دورة إدارة الممتلكات"}
         </h3>
         <div className="flex justify-center w-full">
           <div className="w-[100%] lg:w-[90%] macbook:max-w-screen-2xl">

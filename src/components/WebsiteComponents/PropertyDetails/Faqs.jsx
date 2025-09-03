@@ -13,7 +13,7 @@ export const Faqs = ({ faqs }) => {
   return (
     <div className="flex justify-center w-full md:w-[60%] gap-4 flex-col bg-transparent text-white">
       <h3 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] py-8 font-newsLetter">
-        Frequently asked questions
+        الأسئلة الشائعة
       </h3>
       {faqs?.slice(0, 5).map((faq, index) => (
         <div key={index} className="w-full border-b mb-2">

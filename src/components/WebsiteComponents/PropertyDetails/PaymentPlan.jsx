@@ -25,7 +25,7 @@ const PaymentPlan = ({ property }) => {
         {/* Heading and Subtext */}
         <div className="flex flex-col mt-[20px] md:mt-[0px] items-center text-center px-4 pt-6 pb-4">
           <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] text-center leading-[30px] w-[94%] md:w-[90%] macbook:w-[80%] uppercase font-newsLetter">
-            {property?.planHeading || "NaN"}
+            {property?.planHeading || "العنوان الافتراضي"}
           </h2>
 
           {property?.planDesc && property.planDesc?.length > 500 ? (
@@ -45,7 +45,7 @@ const PaymentPlan = ({ property }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -70,11 +70,11 @@ const PaymentPlan = ({ property }) => {
               <div className="text-[15px] md:text-[28px] font-semibold macbook:text-[40px]">
                 {property?.first_installment
                   ? parseInt(property.first_installment)
-                  : "NaN"}
+                  : "نان"}
                 %
               </div>
             </div>
-            <div className="text-[10px] md:text-[15px]">Down Payment</div>
+            <div className="text-[10px] md:text-[15px]">دفعة مبدئية</div>
           </div>
 
           {/* During Construction */}
@@ -90,11 +90,11 @@ const PaymentPlan = ({ property }) => {
               <div className="text-[18px] md:text-[28px] font-semibold">
                 {property?.second_installment
                   ? parseInt(property.second_installment)
-                  : "NaN"}
+                  : "نان"}
                 %
               </div>
             </div>
-            <div className="text-[10px] md:text-base">During Construction</div>
+            <div className="text-[10px] md:text-base">أثناء البناء</div>
           </div>
 
           {/* Handover */}
@@ -108,11 +108,11 @@ const PaymentPlan = ({ property }) => {
                 onError={(e) => (e.target.src = Image_NotFound)}
               />
               <div className="text-[18px] md:text-[28px] font-semibold">
-                {property?.hand_over ? parseInt(property.hand_over) : "NaN"}%
+                {property?.hand_over ? parseInt(property.hand_over) : "نان"}%
               </div>
             </div>
             <div className="text-[10px] md:text-[15px]">
-              Handover after Completion
+              التسليم بعد الانتهاء
             </div>
           </div>
         </div>

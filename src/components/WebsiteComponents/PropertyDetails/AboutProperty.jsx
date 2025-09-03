@@ -46,7 +46,7 @@ export default function AboutProperty({ property }) {
         <div className="md:w-[40%] macbook:w-[50%] flex flex-col items-center md:items-start gap-3 my-4">
           <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] text-center md:text-start md:leading-[50px] font-newsLetter">
             About the{" "}
-            {property?.property_name || "Property Name"}
+            {property?.property_name || "اسم العقار"}
           </h2>
 
           {property?.property_description &&
@@ -68,7 +68,7 @@ export default function AboutProperty({ property }) {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (

@@ -179,7 +179,7 @@ export default function EfficientProperty({ propData, heading, des }) {
     }, []);
 
     const description =
-        des || propData?.known_for_efficient_description || "We are known for efficiency.";
+        des || propData?.known_for_efficient_description || "نحن معروفون بالكفاءة.";
 
     const imageSrc = propData?.owner_image
         ? `${Image_URL}${propData.owner_image}`
@@ -204,7 +204,7 @@ export default function EfficientProperty({ propData, heading, des }) {
                 {/* Right Side: Content */}
                 <div className="flex flex-col items-center md:items-start py-8 md:py-1 text-center md:text-start gap-4 md:w-[45%] macbook:w-[30%] md:h-[100%]">
                     <p className="text-2xl font-newsLetter md:text-[34px] md:pb-4 text-[#8F8F8F]">
-                        {heading || propData?.known_for_efficient_heading || "Known for Efficiency"}
+                        {heading || propData?.known_for_efficient_heading || "معروف بالكفاءة"}
                     </p>
                     {/* <div className={`text-gray-600 mb-6 leading-relaxed ${isExpanded ? "max-h-[32rem] overflow-y-auto" : "max-h-[20rem] overflow-hidden"} transition-all duration-300`}>
             <ParseBody body={description} />
@@ -231,7 +231,7 @@ export default function EfficientProperty({ propData, heading, des }) {
                                 onClick={() => setIsExpanded(!isExpanded)}
                                 className="border bg-[#8F8F8F] font-montserrat text-white w[120px] px-4 py-2 rounded-md"
                             >
-                                {isExpanded ? "Read More" : "Read Less"}
+                                {isExpanded ? "اقرأ المزيد" : "اقرأ أقل"}
                             </button>
                         )}
                     </div>
@@ -251,7 +251,7 @@ export default function EfficientProperty({ propData, heading, des }) {
                     <div className="mb-2 flex items-center md:items-start flex-col md:mt-1 gap-1">
                         <p className="text-[26px] text-[#6B6B6B] text-center md:text-start font-montserrat">
                             {/* {owner?.name || "Salwa Arafoui"} */}
-                            Salwa Arafoui
+                            سلوى عرفاوي
                         </p>
                     </div>
 
@@ -260,12 +260,12 @@ export default function EfficientProperty({ propData, heading, des }) {
                         <Link
                             href={`/agent/salwa-arfaoui`}
                             className="flex items-center font-montserrat text-[11px] gap-2 px-2 md:px-6 py-2 bg-[#8F8F8F] border border-[#8F8F8F] text-white hover:bg-transparent hover:text-[#8F8F8F] rounded-md"                        >
-                            View Profile
+                            عرض الملف الشخصي
                         </Link>
                         <div className="flex gap-2">
                             <button
                                 className="p-2 border rounded"
-                                onClick={() => handleWhatsAppClick(owner?.mobile_no || "+971552588870", "Hello, I want to connect!")}
+                                onClick={() => handleWhatsAppClick(owner?.mobile_no || "+971552588870", "مرحبًا، أريد الاتصال!")}
                             >
                                 <FaWhatsapp />
                             </button>

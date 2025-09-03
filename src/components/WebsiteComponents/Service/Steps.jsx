@@ -32,7 +32,7 @@ export const Steps = ({ propData }) => {
           {/* Step 01 */}
           <StepCard
             stepNumber="01"
-            heading={data?.find_the_right_tenant_heading || "Find the Right Tenant"}
+            heading={data?.find_the_right_tenant_heading || "العثور على المستأجر المناسب"}
             details={data?.find_the_right_tenant_details}
           />
 
@@ -94,7 +94,7 @@ const StepCard = ({ stepNumber, heading, details }) => {
                   </div>
                 </SwiperSlide>
               ))
-            : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+            : "Lorem Ipsum هو ببساطة نص شكلي (بلا معنى) يستخدم في صناعة الطباعة والتنضيد."}
         </Swiper>
       </div>
     </div>

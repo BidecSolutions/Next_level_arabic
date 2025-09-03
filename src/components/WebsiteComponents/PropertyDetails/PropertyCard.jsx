@@ -20,23 +20,23 @@ function PropertyCard({ property }) {
             {property?.addresses?.area_id !== null && (
               <span className="px-2 py-1 bg-white md:bg-[#A39D9D] text-black md:text-white rounded-[6px] text-[9px] macbook:text-[18px] macbook:py-[10px] flex items-center md:font-semibold font-montserrat">
                 <Link href={`/area/${property?.addresses?.area?.slug}`}>
-                  {property?.addresses?.area?.name || "NaN"}
+                  {property?.addresses?.area?.name || "نان"}
                 </Link>
               </span>
             )}
             <span className="px-2 py-1 bg-white md:bg-[#A39D9D] text-black md:text-white rounded-[6px] text-[9px] macbook:text-[18px] macbook:py-[10px] flex items-center md:font-semibold font-montserrat">
               <Link href={`/${property?.project_type === 1 ? "off-plan" : "off-plan"}`}>
-                {property?.project_type === 1 ? "OFF PLAN" : "OFF PLAN"}
+                {property?.project_type === 1 ? "خارج الخطة" : "خارج الخطة"}
               </Link>
             </span>
             <span className="px-2 py-1 bg-white md:bg-[#A39D9D] text-black md:text-white rounded-[6px] text-[9px] macbook:text-[18px] macbook:py-[10px] flex items-center md:font-semibold uppercase font-montserrat">
               <Link href={`/developer/${property?.developer?.slug}`}>
-                {property?.developer?.name || "NaN"}
+                {property?.developer?.name || "نان"}
               </Link>
             </span>
           </div>
           <p className="flex gap-1 text-[16px] md:text-[18px] macbook:text-[30px] text-white md:text-[#8F8F8F] font-newsLetter">
-            STARTING PRICE:{" "}
+            السعر الابتدائي:{" "}
             {property?.starting_price ? (
               <span className="flex gap-1">
                 {property?.starting_price}
@@ -49,18 +49,18 @@ function PropertyCard({ property }) {
                 />
               </span>
             ) : (
-              "NaN"
+              "نان"
             )}
           </p>
           <p className="text-white md:text-[#555555] md:font-medium text-[14px] macbook:text-[30px] md:text-[17px] font-montserrat">
-            Easy Installment Plan
+            خطة التقسيط السهلة
           </p>
           {property?.addresses?.area_id !== null && (
             <div className="flex items-center text-center md:text-start justify-center text-white md:text-[#555555] mt-1">
               <MdLocationOn className="mr-1 font-medium text-white md:text-[#555555] text-[20px] macbook:text-[30px]" />
               <Link href={`/area/${property?.addresses?.area?.slug}`}>
                 <p className="text-white md:text-[#555555] md:font-medium text-[14px] md:text-[17px] macbook:text-[30px] font-montserrat">
-                  {property?.addresses?.area?.name || "NaN"}
+                  {property?.addresses?.area?.name || "نان"}
                 </p>
               </Link>
             </div>
@@ -79,10 +79,10 @@ function PropertyCard({ property }) {
             />
             <div>
               <p className="text-[19px] md:text-[25px] macbook:text-[30px] text-white md:text-[#555555] font-newsLetter">
-                {property?.agent?.name || "NaN"}
+                {property?.agent?.name || "نان"}
               </p>
               <p className="text-white md:text-gray-600 text-[14px] md:text-[15px] macbook:text-[22px]">
-                Call the project expert
+               اتصل بخبير المشروع
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ function PropertyCard({ property }) {
                 href={`/agent/${property?.agent?.slug}`}
                 className="flex items-center gap-2 macbook:text-[15px] text-[10px] px-6 py-2 bg-white md:bg-[#A39D9D] text-black md:text-white hover:bg-transparent border hover:border-[#A39D9D] hover:text-[#A39D9D] rounded-md"
               >
-                See Profile
+               انظر الملف الشخصي
               </Link>
               <a
                 href={`mailto:${property?.agent?.email}`}

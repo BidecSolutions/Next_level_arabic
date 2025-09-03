@@ -50,7 +50,7 @@ const AboutLocation = ({ property }) => {
         {/* Left Column - Location Info */}
         <div className="md:w-[40%] macbook:w-[40%] flex flex-col items-center md:items-start gap-3 my4">
           <h2 className="text-2xl md:text-3xl mb-4 text-[#8F8F8F] text-center md:text-start font-newsLetter">
-            {property?.locationHeading || "About Location"}
+            {property?.locationHeading || "حول الموقع"}
           </h2>
 
           {property?.locationDesc && property.locationDesc?.length > 500 ? (
@@ -71,7 +71,7 @@ const AboutLocation = ({ property }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="mt-2 text-gray-600 text-xs macbook:text-lg font-medium hover:underline"
               >
-                {isExpanded ? "Read Less" : "Read More"}
+                {isExpanded ? "اقرأ أقل" : "اقرأ المزيد"}
               </button>
             </>
           ) : (
@@ -84,7 +84,7 @@ const AboutLocation = ({ property }) => {
             className="p-2 px-4 macbook:py-4 macbook:text-[20px] rounded-md text-md text-white bg-[#A39D9D] w-fit flex justify-center items-center gap-2"
             onClick={() => setIsModalOpen(true)}
           >
-            Request Available Units & Prices
+            طلب الوحدات المتاحة والأسعار
           </button>
         </div>
 

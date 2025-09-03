@@ -61,8 +61,8 @@ const Banner = ({ property }) => {
   const handleShare = async () => {
     if (typeof window !== "undefined") {
       const shareData = {
-        title: "Amazing Content",
-        text: "Check out this amazing project!",
+        title: "محتوى مذهل",
+        text: "تعرف على هذا المشروع المذهل",
         url: window.location.href,
       };
       if (navigator.share) {
@@ -72,7 +72,7 @@ const Banner = ({ property }) => {
           console.error("Error sharing:", err);
         }
       } else {
-        alert("Sharing is not supported in this browser.");
+        alert("لا يدعم هذا المتصفح المشاركة.");
       }
     }
   };
@@ -159,13 +159,13 @@ const Banner = ({ property }) => {
         <div className="flex md:pl-[100px] gap-[10px] left-[10%] md:w-[50%] items-center md:items-start flex-col">
           <div className="flex w-[90%] flex-col gap-[20px]">
             <h1 className="text-center md:text-start text-[26px] md:text-[45px] font-newsLetter">
-              {property?.property_name || "Property Name"}
+              {property?.property_name || "اسم العقار"}
             </h1>
             <div className="md:w-[150%] text-[16px] md:text-[18px] h-12 md:h-32 overflow-hidden font-montserrat font-light">
               {property?.property_introduction ? (
                 <ParseBody body={property.property_introduction} />
               ) : (
-                "Property Introduction"
+                "مقدمة الملكية"
               )}
             </div>
           </div>
@@ -176,14 +176,14 @@ const Banner = ({ property }) => {
               className="px-[8px] py-[10px] cursor-pointer text-[12px] md:px-4 bg-[#A39D9D] border border-[#A39D9D] hover:bg-transparent flex items-center gap-[10px] text-white rounded-[5px]"
             >
               <IoCloudDownloadOutline className="text-[20px]" />
-              Download Brochure
+              تحميل الكتيب
             </a>
             <button
               className="px-[18px] py-[10px] text-[12px] md:px-4 flex items-center gap-[10px] border border-white hover:border-[#A39D9D]"
               onClick={handleShare}
             >
               <CiShare2 className="text-[20px]" />
-              Share
+              يشارك
             </button>
           </div>
         </div>

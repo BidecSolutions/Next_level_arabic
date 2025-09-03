@@ -14,16 +14,16 @@ const PropertyAmenitiesAndMap = ({ property, pageName }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const propertyTypeOptions = [
-    { id: "1", name: "Apartment" },
-    { id: "2", name: "Villas" },
-    { id: "3", name: "Townhouse" },
-    { id: "4", name: "Penthouse " },
-    { id: "5", name: "Duplexes" },
+    { id: "1", name: "شقة" },
+    { id: "2", name: "فلل" },
+    { id: "3", name: "تاون هاوس" },
+    { id: "4", name: "كنة" },
+    { id: "5", name: "دوبلكس" },
   ];
 
   const getPropertyTypeName = (id) => {
     const found = propertyTypeOptions.find((type) => type.id === id?.toString());
-    return found ? found.name : "N/A";
+    return found ? found.name : "لا يوجد";
   };
 
   return (
@@ -58,13 +58,13 @@ const PropertyAmenitiesAndMap = ({ property, pageName }) => {
         >
           <IoCloudDownloadOutline className="text-[18px] macbook:text-[40px]" />
           <span className="text-[14px] md:text-[12px] macbook:text-[20px]">
-            Download Free PDF Brochure
+            تنزيل كتيب PDF مجانًا
           </span>
         </button>
 
         {/* Property Information */}
         <h2 className="text-xl md:text-3xl font-newsLetter text-[#A39D9D] mb-6">
-          Property Information
+         معلومات الملكية
         </h2>
         <div className="w-full md:w-5/6 mb-8">
           <div className="border border-gray-200 rounded-lg overflow-hidden">
@@ -95,16 +95,16 @@ const PropertyAmenitiesAndMap = ({ property, pageName }) => {
 
         {/* Property Overview */}
         <h2 className="text-xl md:text-3xl font-newsLetter text-[#A39D9D] mb-6">
-          Property Overview
+          نظرة عامة على الممتلكات
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-8">
           {[
-            { label: "Property Type", value: property?.section_2_content?.[0]?.text, icon: "/property_type.png" },
-            { label: "Property Size", value: property?.section_2_content?.[2]?.text, icon: "/size.png" },
-            { label: "Bedrooms", value: property?.section_2_content?.[1]?.text, icon: "/bedroom.png" },
-            { label: "Bathrooms", value: property?.section_2_content?.[3]?.text, icon: "/bathroom.png" },
-            { label: "Purpose", value: property?.section_2_content?.[4]?.text, icon: "/purpose.png" },
-            { label: "Usage", value: property?.section_2_content?.[5]?.text, icon: "/usage.png" },
+            { label: "نوع العقار", value: property?.section_2_content?.[0]?.text, icon: "/property_type.png" },
+            { label: "حجم العقار", value: property?.section_2_content?.[2]?.text, icon: "/size.png" },
+            { label: "غرف نوم", value: property?.section_2_content?.[1]?.text, icon: "/bedroom.png" },
+            { label: "الحمامات", value: property?.section_2_content?.[3]?.text, icon: "/bathroom.png" },
+            { label: "غاية", value: property?.section_2_content?.[4]?.text, icon: "/purpose.png" },
+            { label: "الاستخدام", value: property?.section_2_content?.[5]?.text, icon: "/usage.png" },
           ].map((detail, index) => (
             <div key={index} className="flex items-center">
               <div className="text-gray-500 mr-3">

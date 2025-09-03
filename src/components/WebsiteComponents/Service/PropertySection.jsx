@@ -53,7 +53,7 @@ export default function PropertySection({ pmId: pmIdProp, propData: propDataProp
         <div className="flex flex-col justify-center h-[100%] items-center text-center">
           {/* Heading */}
           <h3 className="text-white font-newsLetter text-[23px] md:text-[34px] md:leading-[53px] md:w-[60%]">
-            {data?.property_management_heading || "Who We Are?"}
+            {data?.property_management_heading || "من نحن؟"}
           </h3>
 
           {/* Description */}
@@ -62,7 +62,7 @@ export default function PropertySection({ pmId: pmIdProp, propData: propDataProp
             dangerouslySetInnerHTML={{
               __html:
                 data?.property_management_description ||
-                "Discover our expert real estate services, tailored to help you find the perfect property with ease and confidence",
+                "اكتشف خدماتنا العقارية المتخصصة، المصممة خصيصًا لمساعدتك في العثور على العقار المثالي بكل سهولة وثقة",
             }}
           />
 
@@ -72,13 +72,13 @@ export default function PropertySection({ pmId: pmIdProp, propData: propDataProp
               className="bg-white border text-[12px] w-[90px] md:w-[200px] font-montserrat border-white text-[#555555] py-2 md:px-4 rounded-[8.8px] hover:bg-transparent hover:text-white"
               onClick={() => (window.location.href = "tel:+97144542828")}
             >
-              Call us
+             اتصل بنا
             </button>
             <button
               className="bg-transparent font-montserrat w-[190px] md:w-[250px] text-[11px] border border-white text-white py-2 md:px-4 rounded-[8.8px]"
               onClick={() => setIsModalOpen(true)}
             >
-              Schedule an Appointment
+              حدد موعدًا
             </button>
           </div>
         </div>

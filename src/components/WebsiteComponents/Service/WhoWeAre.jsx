@@ -40,13 +40,7 @@ export default function WhoWeAre({ pmId: pmIdProp, propData: propDataProp }) {
 
   const description =
     data?.who_we_are_description ||
-    `Whether you own a residential property or a commercial one and wish
-    to rent it out, then visit Next Level real estate. We provide
-    high-quality property management services for a premium annual
-    property management fee. Renting commercial vs residential real
-    estate is not the same. A commercial property that is built to
-    accommodate businesses requires a little more and more thoughtful
-    effort to find the right tenant.`;
+    `سواء كنت تملك عقارًا سكنيًا أو تجاريًا وترغب في تأجيره، تفضل بزيارة شركة نيكست ليفل للعقارات. نقدم خدمات إدارة عقارات عالية الجودة مقابل رسوم سنوية مميزة. يختلف استئجار العقارات التجارية عن استئجار العقارات السكنية. فالعقار التجاري المُصمم لاستيعاب الشركات يتطلب جهدًا أكبر وأكثر دقة للعثور على المستأجر المناسب..`;
 
   return (
     <div className="flex flex-col-reverse md:flex-row items-center gap-[40px] macbook:gap-[60px] justify-center w-full my-24">
@@ -54,7 +48,7 @@ export default function WhoWeAre({ pmId: pmIdProp, propData: propDataProp }) {
       <div className="md:w-[40%] flex flex-col justify-center">
         <div className="mb-8">
           <h3 className="text-[17px] font-newsLetter md:text-[34px] text-center md:text-start text-[#8F8F8F]">
-            {data?.who_we_are_heading || "Who We Are?"}
+            {data?.who_we_are_heading || "من نحن؟"}
           </h3>
           <div className="md:w-[70%]">
             <div>
@@ -73,7 +67,7 @@ export default function WhoWeAre({ pmId: pmIdProp, propData: propDataProp }) {
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="text-gray-500 md:text-start font-montserrat text-center mt-2 underline cursor-pointer text-[14px]"
                 >
-                  {isExpanded ? "Show Less" : "Show More"}
+                  {isExpanded ? "عرض أقل" : "عرض المزيد"}
                 </p>
               )}
             </div>
@@ -90,14 +84,14 @@ export default function WhoWeAre({ pmId: pmIdProp, propData: propDataProp }) {
               <img src="/about/icon1.png" alt="Icon" className="w-10 h-10" />
               <div className="flex flex-col items-center md:items-start gap-[2px] md:w-52">
                 <h4 className="text-[16px] font-montserrat md:text-[16px] text-center md:text-start font-semibold text-[#555555]">
-                  {detail?.title || "Default Title"}
+                  {detail?.title || "العنوان الافتراضي"}
                 </h4>
                 <p
                   className="mt-1 text-[13px] font-montserrat text-center md:text-start text-[#555555]"
                   dangerouslySetInnerHTML={{
                     __html:
                       detail?.description ||
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                      "Lorem Ipsum هو ببساطة نص شكلي (بلا معنى) يستخدم في صناعة الطباعة والتنضيد.",
                   }}
                 />
               </div>
@@ -114,7 +108,7 @@ export default function WhoWeAre({ pmId: pmIdProp, propData: propDataProp }) {
               ? `${Image_URL}/${data?.who_we_are_image}`
               : Image_NotFound
           }
-          alt={data?.who_we_are_image_alt || "Who We Are"}
+          alt={data?.who_we_are_image_alt || "من نحن"}
           className="w-[550px] h-[450px] max-h-[30rem] rounded-tl-[150px]"
         />
       </div>

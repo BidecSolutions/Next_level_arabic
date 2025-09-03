@@ -57,7 +57,7 @@ const LandmarksSection = ({ property }) => {
       {/* Right Column - Landmarks */}
       <div className="w-full py-16 md:py-28 md:w-[57%] lg:w-[120%] xl:w-[68%] macbook:w-[65%] p-4 md:p-6 bg-gray-100 rounded-lg flex flex-col items-center macbook:gap-[20px] md:rounded-none md:rounded-tr-lg md:rounded-br-lg">
         <h2 className="text-xl font-newsLetter text-[#8F8F8F] md:text-[25px] macbook:text-[40px] text-center md:text-start md:w-[50%] uppercase mb-6 leading-10">
-          {property?.nearByHeading || "Nearby Locations"}
+          {property?.nearByHeading || "المواقع القريبة"}
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:w-[50%] text-gray-700">

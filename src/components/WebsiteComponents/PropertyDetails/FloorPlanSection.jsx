@@ -266,7 +266,7 @@ const FloorPlanSection = ({ floorInfos = [], property }) => {
         {/* Right Section with Text and Buttons */}
         <div className="flex flex-col items-center md:items-start w-full md:w-[40%] macbook:w-[35%] macbook:justify-center macbook:gap-[30px] gap-[10px] mt8 md:mt-0 md:pl-8">
           <p className="text-2xl md:text-3xl text-center md:text-start text-[#8F8F8F] macbook:text-[45px] macbook:leading-[45px] uppercase font-newsLetter">
-            Floor Plans Of {property?.property_name}
+            خطط الكلمة من {property?.property_name}
           </p>
 
           {/* Bedroom Tabs */}
@@ -315,7 +315,7 @@ const FloorPlanSection = ({ floorInfos = [], property }) => {
               {selectedFloorName}
             </p>
             <p className="text-[#555555] text-center md:text-start text-[18px] macbook:text-[35px]">
-              Total: {selectedFloor?.floor_size || "N/A"}
+              Total: {selectedFloor?.floor_size || "لا يوجد"}
             </p>
           </div>
 
@@ -325,14 +325,14 @@ const FloorPlanSection = ({ floorInfos = [], property }) => {
               className="mt-4 px-6 py-3 macbook:py-4 cursor-pointer macbook:px-8 macbook:text-[27px] bg-[#A39D9D] text-white hover:bg-transparent hover:text-[#A39D9D] border hover:border-[#A39D9D] rounded-lg shadow-md"
               onClick={handleOpenModalFloor}
             >
-              Open All Floor Plans
+              افتح جميع مخططات الطوابق
             </a>
             <a
               onClick={handleOpenModal}
               className="mt-4 px-3 py-3 cursor-pointer macbook:py-4 macbook:px-8 macbook:text-[27px] bg-white text-[#A39D9D] gap-[10px] rounded-lg shadow-md border border-[#A39D9D] flex items-center"
             >
               <IoCloudDownloadOutline className="text-[20px] macbook:text-[18px]" />
-              Download Brochure
+              تحميل الكتيب
             </a>
           </div>
         </div>

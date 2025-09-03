@@ -22,7 +22,7 @@ export const Banner = ({ page }) => {
         <h1 className="text-2xl md:text-5xl text-center font-newsLetter">
           {page?.banner_heading
             ? page?.banner_heading
-            : "Ready To Move-In Projects"}
+            : "مشاريع جاهزة للسكن"}
         </h1>
 
         {page?.banner_description ? (
@@ -31,7 +31,7 @@ export const Banner = ({ page }) => {
           </div>
         ) : (
           <p className="text-lg md:text-xl font-montserrat">
-            Home \ Ready Projects
+            الصفحة الرئيسية \ المشاريع الجاهزة
           </p>
         )}
       </div>

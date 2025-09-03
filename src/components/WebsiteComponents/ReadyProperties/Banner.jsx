@@ -146,7 +146,7 @@ const handleSubmit = async (e) => {
   const captchaValue = recaptcha.current ? recaptcha.current.getValue() : null;
 
   if (!captchaValue) {
-    alert("Please Verify the Captcha");
+    alert("يرجى التحقق من الكابتشا");
     return;
   }
 
@@ -154,7 +154,7 @@ const handleSubmit = async (e) => {
   const isValid = isValidPhoneNumber(fullPhone, code);
 
   if (!isValid) {
-    toast.error("Invalid phone number for selected country.");
+    toast.error("رقم الهاتف غير صالح للبلد المحدد.");
     return;
   }
 
@@ -176,7 +176,7 @@ const handleSubmit = async (e) => {
       subject: page,
     });
 
-    toast.success("Form Sent Successfully");
+    toast.success("تم إرسال النموذج بنجاح");
 
     setFormData({
       name: "",
@@ -191,7 +191,7 @@ const handleSubmit = async (e) => {
       link.target = "_blank";
       link.click();
     } else {
-      alert("Brochure PDF is not available now. It will be sent soon.");
+      alert("كتيب PDF غير متوفر حاليًا. سيتم إرساله قريبًا.");
     }
 
     setIsModalOpen(false);
@@ -213,7 +213,7 @@ const handleSubmit = async (e) => {
     <div className="flex justify-center text-white">
       {loading ? (
         <div className="flex items-center font-montserrat justify-center h-[34rem] md:h-[600px] w-full bg-gray-800 rounded-bl-[50px] rounded-br-[50px] md:rounded-bl-[90px] md:rounded-br-[90px]">
-          <p>Loading...</p>
+          <p>تحميل</p>
         </div>
       ) : (
         <Swiper
@@ -242,7 +242,7 @@ const handleSubmit = async (e) => {
                   }}
                 >
                   <h2 className="text-2xl font-newsLetter md:text-[35px] xl:text-[25px] text-center font-semibold uppercase">
-                    {banner?.name || "Default Heading"}
+                    {banner?.name || "العنوان الافتراضي"}
                   </h2>
                   {/* <div className="flex gap-[30px] justify-center flex-wrap md:flex-nowrap mt-8">
                     <div className="flex items-center gap-[5px]">
@@ -332,7 +332,7 @@ const handleSubmit = async (e) => {
                 }}
               >
                 <h2 className="text-2xl font-newsLetter md:text-[35px] xl:text-[25px] text-center font-semibold uppercase">
-                  OffPlan Projects
+                  مشاريع قيد الإنشاء
                 </h2>
               </div>
             </SwiperSlide>
